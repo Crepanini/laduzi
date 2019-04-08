@@ -10,5 +10,6 @@ class Hospital < ApplicationRecord
   validates :close_at, presence: true
   validates :longitude, presence: true
   validates :latitude, presence: true
-end
 
+  acts_as_commentable
+end

@@ -1,2 +1,7 @@
 <h1>Hospitals#show</h1>
 <p>Find me in app/views/hospitals/show.html.erb</p>
+<%= simple_form_for[@hospital, @comment] do |f| %>
+  <%= f.input :comment.title %>
+  <%= f.input :comment.comment %>
+  <%= f.button :submit %>
+<% end %>
