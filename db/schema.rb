@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2019_04_08_095616) do
   create_table "hospitals", force: :cascade do |t|
     t.string "image"
     t.string "name"
-    t.string "addressraill"
+    t.string "address"
     t.integer "price"
     t.datetime "open_at"
     t.datetime "close_at"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_04_08_095616) do
     t.float "latitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "tel"
   end
 
   create_table "users", force: :cascade do |t|
