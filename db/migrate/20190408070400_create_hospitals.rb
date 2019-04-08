@@ -5,8 +5,8 @@ class CreateHospitals < ActiveRecord::Migration[5.2]
       t.string :name
       t.string :addressraill
       t.integer :price
-      t.datetime :opening_time
-      t.datetime :closing_time
+      t.datetime :open_at
+      t.datetime :close_at
       t.float :longitude
       t.float :latitude
 
