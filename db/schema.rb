@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2019_04_08_082151) do
   create_table "hospitals", force: :cascade do |t|
     t.string "image"
     t.string "name"
-    t.string "addressraill"
+    t.string "address"
     t.integer "price"
     t.datetime "open_at"
     t.datetime "close_at"
