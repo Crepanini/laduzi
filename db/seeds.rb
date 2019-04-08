@@ -9,19 +9,18 @@
 Hospital.delete_all if Rails.env.development?
 
 
-Hospital.create![image: , name: ]
+Hospital.create![image: , name: "Shanghai International Medical Center", address: "4358 Kangxin Highway, Pudong New District, Shanghai", price: 3211, open_at: "8:30", close_at: "17:00", tel:"021-60236000" ]
 
 
 
 
-# create_table "hospitals", force: :cascade do |t|
-#   t.string "image"
-#   t.string "name"
-#   t.string "addressraill"
-#   t.integer "price"
-#   t.datetime "open_at"
-#   t.datetime "close_at"
-#   t.float "longitude"
-#   t.float "latitude"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
+
+t.string :image
+t.string :name
+t.string :address
+t.integer :price
+t.datetime :open_at
+t.datetime :close_at
+t.float :longitude
+t.float :latitude
+:tel
