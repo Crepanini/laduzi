@@ -8,14 +8,23 @@ class HospitalsController < ApplicationController
   end
 
   def show
-
     # displaying commentss
     set_hospital
-    @comments =  @hospital.comments
+    @comments = @hospital.comments
+    @comment = @hospital.comments.create
 
   end
 
+  def new
+    set_hospital
+    @hospital.comment = Comment.new
+  end
 
+  def create
+    commentable = set_hospital
+    comment = commentable.comments.create(comment_params)
+    comment.save
+  end
 
   private
 
@@ -24,7 +33,7 @@ class HospitalsController < ApplicationController
   end
 
   def comment_params
-    params.require(:comment).permit(:title, :comment, :user)
+    params.require(:comment).permit(:title, :comment)
   end
 
 
