@@ -7,6 +7,7 @@
   color: gray;
   position: relative;
   margin-bottom: 15px;
+  border-radius: 10px;
 }
 
 .card-description {
@@ -22,7 +23,7 @@
 
 .time-price {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 10px;
   font-weight: bold;
 }
