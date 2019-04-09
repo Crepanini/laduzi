@@ -1,2 +1,28 @@
-<h1>Hospitals#index</h1>
-<p>Find me in app/views/hospitals/index.html.erb</p>
+<div class="banner"> Laduzi
+  <p class="tagline"> Find the best clinic in two clicks</p>
+</div>
+<%= render 'shared/dropdown' %>
+<div class="row">
+  <% @hospitals.each do |hospital| %>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="card" >
+        <%= image_tag hospital.image, class: "card-img" %>
+        <div class="card-description">
+          <p id="name"><%= hospital.name%></p>
+          <div class="time-price">
+            <div><p> ¥<%=hospital.price%></p></div>
+            <div><p><%= hospital.open_at.to_formatted_s(:time) %> - <%=hospital.close_at.to_formatted_s(:time) %></p></div>
+          </div>
+          <p><%=hospital.address%></p>
+          <%= link_to "", hospital_path(hospital), class: 'card-link' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+
+
