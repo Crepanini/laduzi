@@ -5,15 +5,17 @@
   <% @hospitals.each do |hospital| %>
     <div class="col-xs-12 col-sm-6 col-md-4">
       <div class="card" >
-        <%= cl_image_tag hospital.image, class: "card-img" %>
+        <%= image_tag hospital.image, class: "card-img" %>
         <div class="card-description">
-          <p id="brand"><%= hospital.name%></p>
-          <p><%=hospital.addressraill%></p>
-          <p><%=hospital.price%></p>
-          <p><%=hospital.open_at%> - <%=hospital.close_at%></p>
+          <p id="name"><%= hospital.name%></p>
+          <div class="time-price">
+            <div><p> ¥<%=hospital.price%></p></div>
+            <div><p><%= hospital.open_at.to_formatted_s(:time) %> - <%=hospital.close_at.to_formatted_s(:time) %></p></div>
+          </div>
+          <p><%=hospital.address%></p>
+          <%= link_to "", hospital_path(hospital), class: 'card-link' %>
         </div>
       </div>
-      <%= link_to "", hospital_path(hospital), class: 'card-link' %>
     </div>
   <% end %>
 </div>
