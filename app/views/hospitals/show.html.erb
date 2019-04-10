@@ -1,3 +1,6 @@
+
+<h1>Hospitals#show</h1>
+<hr>
 <h1 class="name"><%= @hospital.name%></h1>
 <div class="hospital">
   <div class="description" >
@@ -14,4 +17,13 @@
 
   </div>
 </div>
+
+<h2>Comments</h2>
+<% @hospital.comments.each do |comment| %>
+  User: <%= comment.user.first_name %> <%= comment.user.last_name %><br>
+  Title: <%= comment.title %><br>
+  Comment: <%= comment.comment %><br>
+  <hr>
+<% end %>
+<%= render 'comments/new' %>
 

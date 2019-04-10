@@ -14,11 +14,16 @@ gem 'sassc-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
+gem 'acts_as_commentable', '3.0.1'
+gem 'simple_form'
 
 # devise
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
+
+# pundit
+gem 'pundit'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
