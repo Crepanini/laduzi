@@ -1,5 +1,6 @@
 # comments_controller.rb
 class CommentsController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
 
   def show
     set_hospital
@@ -11,18 +12,22 @@ class CommentsController < ApplicationController
     commentable = set_hospital
     @comment = Comment.new
     commentable.comment = @comment
+
   end
 
   def create
-    commentable = set_hospital
+    set_hospital
     @comment = Comment.new(comment_params)
+    @comment.commentable = @hospital
+    @comment.user = current_user
     @comment.save
+    redirect_to hospital_path(@hospital)
   end
 
   private
 
   def set_hospital
-    @hospital = Hospital.find(params[:id])
+    @hospital = Hospital.find(params[:hospital_id])
   end
 
   def comment_params

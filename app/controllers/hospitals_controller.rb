@@ -1,30 +1,17 @@
 class HospitalsController < ApplicationController
   # skip_before_action :authenticate_user!, only: [:index, :show]
 
-  # skip_before_action :authenticate_user!, only: [:index, :show]
+  before_action :set_hospital
 
   def index
     @hospitals = Hospital.all
   end
 
   def show
-    # displaying commentss
-    set_hospital
-    @comments = @hospital.comments
-    @comment = @hospital.comments.create
-
+    # displaying comments
+    @comment = Comment.new
   end
 
-  def new
-    set_hospital
-    @hospital.comment = Comment.new
-  end
-
-  def create
-    commentable = set_hospital
-    comment = commentable.comments.create(comment_params)
-    comment.save
-  end
 
   private
 
