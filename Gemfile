@@ -17,6 +17,8 @@ gem 'webpacker'
 
 # devise
 gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
