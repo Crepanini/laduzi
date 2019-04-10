@@ -267,6 +267,9 @@ Devise.setup do |config|
       image_size: 'square',  # 50x50, guaranteed ratio
       secure_image_url: true
   end
+
+
+
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
