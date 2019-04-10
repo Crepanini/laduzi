@@ -19,6 +19,8 @@ gem 'simple_form'
 
 # devise
 gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 
 # pundit
 gem 'pundit'
