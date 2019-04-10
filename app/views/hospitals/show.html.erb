@@ -1,6 +1,23 @@
+
 <h1>Hospitals#show</h1>
 <hr>
-<!-- return all the existing comments -->
+<h1 class="name"><%= @hospital.name%></h1>
+<div class="hospital">
+  <div class="description" >
+    <div><%= image_tag @hospital.image, height: 400, width: 400,class: "hospital-img" %></div>
+    <div class="card-description hospital">
+      <div class="time-price">
+        <div><p> ¥<%= @hospital.price%></p></div>
+        <div><p><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p></div>
+      </div>
+      <p><%= @hospital.address%></p>
+    </div>
+  </div>
+  <div class="review">
+
+  </div>
+</div>
+
 <h2>Comments</h2>
 <% @hospital.comments.each do |comment| %>
   User: <%= comment.user.first_name %> <%= comment.user.last_name %><br>
@@ -9,3 +26,4 @@
   <hr>
 <% end %>
 <%= render 'comments/new' %>
+
