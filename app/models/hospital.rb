@@ -11,4 +11,7 @@ class Hospital < ApplicationRecord
   validates :longitude, presence: true, uniqueness: true
   validates :latitude, presence: true, uniqueness: true
   validates :tel, presence: true, uniqueness: true
+
+  acts_as_commentable
+
 end
