@@ -1,9 +1,15 @@
-<hr>
 <h1 class="name"><%= @hospital.name%></h1>
 <div class="hospital">
   <div class="description" >
     <div><%= image_tag @hospital.image, height: 400, width: 400,class: "hospital-img" %></div>
-    <div class="card-description">
+
+    <div class="tags">
+      <% @hospital.tag_list.each do |tag| %>
+        <%= link_to tag, tagged_path(tag: tag), class: "tag" %>
+      <% end %>
+    </div>
+    <div class="card-description hospital">
+
       <div class="time-price">
         <div>
           <p> ¥<%= @hospital.price%></p>
@@ -16,6 +22,8 @@
     </div>
   </div>
   <div class="review">
+   
+
     <div class= "overflow">
       <h2>Comments</h2>
       <% @hospital.comments.each do |comment| %>
@@ -35,3 +43,4 @@
   data-markers="<%= @marker.to_json %>"
   data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
 ></div>
+

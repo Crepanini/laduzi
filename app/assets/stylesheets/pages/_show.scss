@@ -19,6 +19,20 @@
   object-fit: cover;
 }
 
+.tag {
+  border: gray solid 1px;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.tag:hover {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 .description {
   width: 30%;
 }
@@ -28,4 +42,5 @@
   width:400px;
   height:400px;
 }
+
 

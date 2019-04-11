@@ -13,6 +13,7 @@ class Hospital < ApplicationRecord
   validates :tel, presence: true, uniqueness: true
 
   acts_as_commentable
+  acts_as_taggable_on :tags
 
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_address?

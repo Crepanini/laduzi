@@ -1,5 +1,4 @@
-<div class="btn-group">
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<!--     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Distance
     </button>
     <div class="dropdown-menu">
@@ -8,18 +7,28 @@
       <a class="dropdown-item" href="#">Something else here</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Insurer
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Insurer</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    </div> -->
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Insurer
+  </button>
+  <div class="dropdown-menu">
+    <% @insurers.each do |insurer| %>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, tag: insurer)%>"><%= insurer%></a>
+    <% end %>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Provider Type
+  </button>
+  <div class="dropdown-menu">
+    <% @provider_types.each do |type| %>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, tag: type)%>"><%=  type.capitalize%></a>
+    <% end %>
+  </div>
+</div>
+<!--      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Price
     </button>
     <div class="dropdown-menu">
@@ -28,28 +37,28 @@
       <a class="dropdown-item" href="#">Something else here</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Language
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Language</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Specialty
-    </button>
-    <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Specialty</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    </div> -->
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Language
+  </button>
+  <div class="dropdown-menu">
+    <% @languages.each do |language| %>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, tag: language)%>"><%= language.capitalize %></a>
+    <% end %>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Specialty
+  </button>
+  <div class="dropdown-menu">
+    <% @specialties.each do |specialty| %>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, tag: specialty)%>"><%= specialty.capitalize %></a>
+    <% end %>
+  </div>
+</div>
+<!-- <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Rating
     </button>
     <div class="dropdown-menu">
@@ -58,5 +67,4 @@
       <a class="dropdown-item" href="#">Something else here</a>
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </div>
+    </div> -->
