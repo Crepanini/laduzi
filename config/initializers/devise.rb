@@ -261,12 +261,16 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   Devise.setup do |config|
-    config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"],
+    config.omniauth :facebook, ENV["FB_ID"], ENV["FB_SECRET"]
+    {
       scope: 'email',
       info_fields: 'email, first_name, last_name',
       image_size: 'square',  # 50x50, guaranteed ratio
       secure_image_url: true
+    }
+  end
 
+ Devise.setup do |config|
     config.omniauth :google_oauth2, ENV['GOOGLE_CLIENT_ID'], ENV['GOOGLE_CLIENT_SECRET']
      {
         scope: 'userinfo.email, userinfo.profile, http://gdata.youtube.com',

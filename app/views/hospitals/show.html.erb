@@ -1,10 +1,9 @@
-<h1>Hospitals#show</h1>
 <hr>
 <h1 class="name"><%= @hospital.name%></h1>
 <div class="hospital">
   <div class="description" >
     <div><%= image_tag @hospital.image, height: 400, width: 400,class: "hospital-img" %></div>
-    <div class="card-description hospital">
+    <div class="card-description">
       <div class="time-price">
         <div>
           <p> ¥<%= @hospital.price%></p>
@@ -13,20 +12,22 @@
           <p><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p>
         </div>
       </div>
-      <p><%= @hospital.address%></p>
+      <div class="address"><p><%= @hospital.address%></p></div>
     </div>
   </div>
   <div class="review">
+    <div class= "overflow">
+      <h2>Comments</h2>
+      <% @hospital.comments.each do |comment| %>
+        User: <%= comment.user.first_name %> <%= comment.user.last_name %><br>
+        Title: <%= comment.title %><br>
+        Comment: <%= comment.comment %><br>
+        <hr>
+      <% end %>
+    </div>
+    <%= render 'comments/new' %>
   </div>
 </div>
-<h2>Comments</h2>
-<% @hospital.comments.each do |comment| %>
-  User: <%= comment.user.first_name %> <%= comment.user.last_name %><br>
-  Title: <%= comment.title %><br>
-  Comment: <%= comment.comment %><br>
-  <hr>
-<% end %>
-<%= render 'comments/new' %>
 <div
   id="map"
   style="width: 100%;
