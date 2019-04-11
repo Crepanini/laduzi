@@ -12,13 +12,13 @@ class HospitalsController < ApplicationController
     if params[:tag].present?
       return @hospitals = Hospital.tagged_with(params[:tag])
     else
-      return @hospitals = Hospital.all
+      @hospitals = Hospital.all
     end
 
 
     # search bar
     if params[:query].present?
-      @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
+      return @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
       @markers = @hospitals.map do |hospital|
         {
           lat: hospital.latitude,
