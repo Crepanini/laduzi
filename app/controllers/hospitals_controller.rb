@@ -3,7 +3,6 @@ class HospitalsController < ApplicationController
   before_action :set_hospital, only: :show
 
   def index
-
     if params[:tag].present?
       @hospitals = Hospital.tagged_with(params[:tag])
     else
@@ -50,6 +49,4 @@ class HospitalsController < ApplicationController
   def set_hospital
     @hospital = Hospital.find(params[:id])
   end
-
-
 end
