@@ -266,8 +266,16 @@ Devise.setup do |config|
       info_fields: 'email, first_name, last_name',
       image_size: 'square',  # 50x50, guaranteed ratio
       secure_image_url: true
-  end
 
+    config.omniauth :google_oauth2, ENV['GOOGLE_CLIENT_ID'], ENV['GOOGLE_CLIENT_SECRET']
+     {
+        scope: 'userinfo.email, userinfo.profile, http://gdata.youtube.com',
+        prompt: 'select_account',
+        image_aspect_ratio: 'square',
+        image_size: 50
+      }
+
+  end
 
 
   # ==> Warden configuration
