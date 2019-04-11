@@ -4,15 +4,17 @@ class HospitalsController < ApplicationController
 
   def index
 
-    if params[:tag].present?
-      @hospitals = Hospital.tagged_with(params[:tag])
-    else
-      @hospitals = Hospital.all
-    end
     @insurers = ["Allianz", "AXA PPP", "AXA ICBC", "AXA Tianping", "BUPA", "CIGNA", "Discovery Health", "Generali", "MSH", "NOW Health"]
-    @provider_types = ["private", "public"]
-    @languages = ["chinese", "english", "cantonese", "french", "spanish", "russian"]
-    @specialties = ["family medicine", "pediatrics", "cardiology", "dermatology"]
+    @provider_types = ["Private", "Public"]
+    @languages = ["Chinese", "English", "Cantonese", "French", "Spanish", "Russian"]
+    @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology"]
+
+    if params[:tag].present?
+      return @hospitals = Hospital.tagged_with(params[:tag])
+    else
+      return @hospitals = Hospital.all
+    end
+
 
     # search bar
     if params[:query].present?
@@ -43,6 +45,7 @@ class HospitalsController < ApplicationController
       lat: @hospital.latitude,
       lng: @hospital.longitude
     }
+
   end
 
   private
