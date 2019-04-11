@@ -1,4 +1,3 @@
-
 <h1>Hospitals#show</h1>
 <hr>
 <h1 class="name"><%= @hospital.name%></h1>
@@ -7,17 +6,19 @@
     <div><%= image_tag @hospital.image, height: 400, width: 400,class: "hospital-img" %></div>
     <div class="card-description hospital">
       <div class="time-price">
-        <div><p> ¥<%= @hospital.price%></p></div>
-        <div><p><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p></div>
+        <div>
+          <p> ¥<%= @hospital.price%></p>
+        </div>
+        <div>
+          <p><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p>
+        </div>
       </div>
       <p><%= @hospital.address%></p>
     </div>
   </div>
   <div class="review">
-
   </div>
 </div>
-
 <h2>Comments</h2>
 <% @hospital.comments.each do |comment| %>
   User: <%= comment.user.first_name %> <%= comment.user.last_name %><br>
@@ -26,4 +27,10 @@
   <hr>
 <% end %>
 <%= render 'comments/new' %>
-
+<div
+  id="map"
+  style="width: 100%;
+  height: 600px;"
+  data-markers="<%= @marker.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+></div>
