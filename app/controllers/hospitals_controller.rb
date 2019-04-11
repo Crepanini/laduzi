@@ -5,14 +5,23 @@ class HospitalsController < ApplicationController
 
   def index
     @hospitals = Hospital.all
-
-    # mapbox
-    @hospitals_for_mapbox = Hospital.where.not(latitude: nil, longitude: nil)
-    @markers = @hospitals_for_mapbox.map do |hospital|
-      {
-        lat: hospital.latitude,
-        lng: hospital.longitude
-      }
+    # search bar
+    if params[:query].present?
+      @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
+      @markers = @hospitals.map do |hospital|
+        {
+          lat: hospital.latitude,
+          lng: hospital.longitude
+        }
+      end
+    else
+      @hospitals = Hospital.all
+      @markers = @hospitals.map do |hospital|
+        {
+          lat: hospital.latitude,
+          lng: hospital.longitude
+        }
+      end
     end
   end
 
