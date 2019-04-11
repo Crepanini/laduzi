@@ -7,8 +7,10 @@
 }
 
 .hospital {
+  display: flex;
+  justify-content: space-around;
   margin: 30px;
-  width: 50%;
+  margin-right: 0;
 }
 
 .hospital-img {
@@ -30,3 +32,15 @@
   opacity: 0.5;
   text-decoration: none;
 }
+
+.description {
+  width: 30%;
+}
+
+.overflow {
+  overflow:scroll;
+  width:400px;
+  height:400px;
+}
+
+

@@ -26,6 +26,9 @@ gem 'omniauth-google-oauth2'
 # pundit
 gem 'pundit'
 
+# geocode
+gem 'geocoder'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end

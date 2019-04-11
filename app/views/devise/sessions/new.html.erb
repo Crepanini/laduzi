@@ -21,6 +21,15 @@
           </div>
         <% end %>
 
+        <%= link_to user_google_oauth2_omniauth_authorize_path, class: "btn btn-primary" do %>
+              <i class="fab fa-google"></i>
+              <%= "Sign in with Google" %>
+            <% end %>
+
+            <%= link_to user_facebook_omniauth_authorize_path, class: "btn btn-primary" do%>
+              <i class="fab fa-facebook-f"></i>
+              <%= "Sign in with Facebook" %>
+            <% end %>
         <%= render "devise/shared/links" %>
       </div>
    </div>
