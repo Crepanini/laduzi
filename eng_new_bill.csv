@@ -1,0 +1,779 @@
+city,special provider,provider type,name,specialties,address,mon-fri,sat-sun,appointment tel,foreign lang. service,appointment recommended
+Suzhou,No,Private,SingHealth Medical & Dental @ Rong An,"Dental Care, Internal Medicine, Pediatrics, General Medicine"
+Tianjin,No,Public,"First Teaching Hospital of Tianjin University of Traditional Chinese Medicine South Branch, Guo Yi Tang (VIP Department)",Acupuncture
+Harbin,No,Public,First Teaching Hospital of Harbin Medical College,""
+Chongqing,No,Public,The First Affiliated Hospital of Chongqing Medical University,"Cardiovascular, Endocrinology, Neurology, Respiratory, Cardiothoracic Surgery, General Surgery, Ophthalmology, Otolaryngology, Comprehensive Cancer"
+Chongqing,No,Public,"The First Affiliated Hospital of Chongqing Medical University, Jin Shan Hospital",Gynecology，obstetrics
+Beijing,No,Wellness Checkup,Meinian Health Xuanwumen Clinic,Physical Checkup
+Beijing,No,Wellness Checkup,Beijing MJ Wellness Center,Physical Checkup
+Beijing,No,Wellness Checkup,Meinian Health Sun Palace Clinic,Physical Checkup
+Beijing,No,Private,AMCARE Women's & Children's Hospital,"OB/GYN, Pediatrics"
+Beijing,No,Private,Beijing Amcare Women's and Children's Hospital  Yayuncun,"OB/GYN, Pediatrics"
+Beijing,No,Public,"Beijing Massage Hospital, VIP Department","TCM treatment, TCM physiotherapy"
+Beijing,No,Public,Beijing Airport Hospital,"Endocrinology, Ophthalmology, Urology"
+Beijing,No,Public,The Sixth Medical Center of PLA General Hospirtal VIP Department,"ENT, Lumbar Disc Disease, Sarcoidosis, Optometry Diseases, Neurological Diseases, Nuclear Medicine, Orthopedics, Respiratory Medicine, Cardiology, Ophthalmology"
+Beijing,No,Public,"Peking University Third Hospital, Consultation Center","Sport Medicine, Orthopedic, Gastroenterology, Respiratory Medicine, Ophthalmology"
+Beijing,No,Public,Beijing Hospital,"Cardiovascular, TCM, Neurology, Respiratory"
+Beijing,No,Public,"Peking Union Medical College Hospital, International Medical Services","E.N.T., Pneumology, Rheumatology, OB & GYN, Osteology, Endocrinology, Neurology, Gastroenterology"
+Beijing,No,Public,"Beijing Tiantan Hospital Affiliated to Capital Medical University, VIP Clinic","Neurology, Neurosurgery"
+Beijing,No,Public,"Beijing University of Chinese Medicine Dongzhimen Hospital, International Medical Department","Orthopedics, Gynecology, Massage, Urinary Systems Disease, Cardiovascular Internal Medicine"
+Beijing,No,Public,The Seventh Medical Center of PLA General Hospirtal VIP Department,"Orthopedics, Cardiovascular Internal Medicine and Surgery, Neurology and Neurosurgery, Ophthalmology, Endocrinology"
+Beijing,No,Public,"Beijing Anzhen Hospital, VIP Department","Cardiology, Cardiac Surgery, Gynecology & Obstetrics."
+Beijing,No,Public,"Beijing Ditan Hospital, VIP Department","Liver Disease, Infectious Disease"
+Beijing,No,Public,Wangjing Hospital VIP Clinic of CACMS,"Orthopaedics, Massage, Acupuncture, Kidney disease, Rheumatology"
+Beijing,No,Public,Peking University International Hospital,"Haematology, Tumor Center, Kidney Disease, Orthopedic Department, Sports Medicine Center, Ophthalmology, Nerve Disease"
+Dalian,No,Public,"The Second Affiliated Hospital of Dalian Medical University, VIP Department","Organ Transplants, Tumors, Cardiovascular Diseases, Psychological Consultations"
+Dalian,No,Public,International Medical Center of First Affiliated Hospital of Dalian Medical University (Branch 2),"Cardiovascular Diseases, Gastroenterology, Neurology, Neurosurgery, Orthopaedics"
+Guangzhou,No,Public,"Guangdong General Hospital, Concord Medical Center","Hepatobiliary Surgery, Cardiovascular Diseases, Tumors, Rheumatology"
+Hangzhou,No,Private,Hangzhou Amcare Women & Children's Hospital,"OB/GYN, Pediatrics"
+Hangzhou,No,Public,"Zhejiang Provincial People's Hospital, VIP Dept","Cardio-chest Surgery, General Surgery, Mini-invasive Surgery"
+Nanjing,No,Public,Nanjing Drum Tower Hospital,"Orthopedics, Gastroenterology, Endocrinology, General Surgery, Rheumatology"
+Shanghai,No,Private,Shanghai International Medical Center,"Orthopedics, Urology, Thoracic Surgery, Gastroenterology, Ophthalmology"
+Shanghai,No,Public,"Longhua Hospital, VIP Clinic","TCM Surgery, TCM Internal Medicine, TCM Orthopedics"
+Shanghai,No,Public,"Children's Hospital of Shanghai, Putuo Branch, VIP Clinic","Cardiothoracic Surgery, Neurology"
+Shanghai,No,Public,"Renji Hospital, VIP Department","Gastroenterology, Rheumatology, OB/GYN, Urology"
+Shanghai,No,Public,"Huadong Hospital, VIP Department","Urology, Gastrointestinal Endoscopy, Osteoporosis, Gerontology, Gynecological Oncology"
+Shanghai,No,Public,"Children's Hospital of Shanghai,VIP Department","Cardiothoracic Surgery, Neurology"
+Shanghai,No,Public,"Ruijin Hospital, VIP Department","Endocrine, Homeopathy, Gastroenterology, Nephrology, Cardiovascular Disease"
+Shenyang,No,Public,"Liaoning Jinqiu Hospital, VIP Department","Cardiovascular Diseases, Neurology"
+Shenyang,No,Public,"Shengjing Hospital Affiliated to China Medical University, Medical Service Center for Foreign Nationals","Gynecology, Infectious Diseases, Stomatology, General Surgery, Pediatric Surgery"
+Shenyang,No,Public,"Shengjing Hospital Affiliated to China Medical University, VIP Department","Gynecology, Infectious Diseases, Stomatology, General Surgery, Pediatric Surgery"
+Suzhou,No,Private,Gentle Medical Clinic,"Internal Medicine, Pediatrics, Outpatient Surgery, Vaccination"
+Suzhou,No,Private,SingHealth Medical Clinic,"Internal Medicine, Pediatrics, Outpatient Surgery, Vaccination"
+Suzhou,No,Public,"The Second Affiliated Hospital of Soochow University, VIP Department","Orthopedics, Neurology, OB&GYN, Health Checkup"
+Xi'an,No,Public,Shaanxi Provincial People’s Hospital,"Cardiology, Urinary Surgery, Orthopedics, Gastroenterology, Neurosurgery, Neurology, Pediatrics, Gerontology"
+Shenyang,No,Public,People’s hospital of Liaoning Province,"Neurosurgery, Neurology, Endocrinology, Vascular Surgery, Medicine、Gynecology & Obstetrics, Urology, Pediatric"
+Beijing,No,Private,Beijing Amcare Women's & Children's Hospital -Wanliu,"OB/GYN, Pediatrics"
+Beijing,No,Public,"Peking University Sixth Hospital , VIP Clinic",Mental Disease
+Shanghai,No,Public,"Renji Hospital, International Medical Department","Gastroenterology, Rheumatology, OB/GYN, Urology"
+Shanghai,No,Public,Shanghai Public Health Center,Disease Department
+Shanghai,No,Public,Shanghai Public Health Center,Disease Department
+Beijing,No,Public,Beijing Heping Hospital,"Internal medicine, Surgery"
+Shanghai,No,Wellness Checkup,Shanghai REME Medical & Health Group Jing An Health Screening Center,Physical Checkup
+Beijing,No,Dental,Beijing Arrail Dental Clinic-Aegean Clinic,Dental
+Shanghai,No,Private,Shanghai Universal Medical Imaging Diagnostic Center,Medical Diagnostic Imaging
+Hangzhou,No,Private,Hangzhou Intech Rehabilitation Hospital,Rehabilitation
+Beijing,No,Private,Beijing Jingdu Children Hospital,"Pediatrics, Pediatric Hematology-Oncology, TCM, Asthma"
+Shanghai,No,Private,Shanghai American-Sino Women’s & Children’s Hospital,"OB/GYN, Pediatrics"
+Guangzhou,No,Public,"Sun Yat-Sen Memorial Hospital, Boji Medical Center",Checkup
+Shenzhen,No,Private,Zan TCM Clinic of Shenzhen Feicuimingzhu,TCM
+Chengdu,No,Private,Chengdu Zan TCM Clinic,TCM
+Beijing,No,Private,PKU Healthcare Management Center (Beijing Yijiandian Clinic Limited Company),Physical Checkup，TCM
+Beijing,No,Wellness Checkup,Beijing Lejian Physical Checkup Center,Physical Checkup
+Beijing,No,Wellness Checkup,Ikang Evergreen Medical International (Checkup Department),Physical Checkup
+Beijing,No,Private,Beijing Jiangong Hospital  International Department,"Cardiology, Cardiac Surgery, Neurosurgery, Thoracic Surgery, Osteology"
+Beijing,No,Private,New Century International Children's Hospital,"Internal Medicine, Pediatric Surgery, Urology, Neurology, E.N.T."
+Beijing,Yes,Private,Beijing United Family Financial Street Clinic,Family Medicine
+Beijing,No,Private,Beijing Xingyuanjinfang TCM Hospital,"Diabetes, Anorectal, Acupuncture, Pediatrics"
+Beijing,No,Private,Beijing New Century Harmony Pediatric Clinic,"Pediatric, GP, Gynecology, Ophthalmology, Dermatology"
+Beijing,Yes,Private,Beijing United Family- Shunyi Clinic,"Family Medicine, Pediatrics, Family Counseling"
+Beijing,No,Private,Beijing Baodao Healthcare,"OB/GYN, Pediatrics"
+Beijing,No,Private,International Department of Beijing DCN Orthopaedic Hospital,"Athletic Rehabilitation, Orthopaedic Surgery，TCM, Dental Clinic, GP"
+Beijing,No,Private,Beijing Eyemax Hospital,Ophthalmology
+Beijing,No,Private,Beijing Bo Ai Tang TCM Clinic-Zhongguancun,"TCM Cancer, TCM Dermatology, TCM Internal Medicine, TCM Gynaecology"
+Beijing,Yes,Private,Beijing United Family Wudaokou Clinic,"Family Medicine, Preventive Care, Gynecology, Paediatrics"
+Beijing,No,Private,Beijing New Journey Cancer Hospital,"Thoracic Surgery, General Surgery, Oncology, Traditional Chinese Medicine"
+Beijing,No,Private,Beijing Bo Ai Tang TCM Clinic-South Railway Station,"TCM Cancer, TCM Dermatology, TCM Internal Medicine, TCM Gynaecology"
+Beijing,No,Private,"Hong Kong International Medical Clinic, Beijing","General Treatment, Health Checkup for Immigration"
+Beijing,No,Private,Beijing Gushengtang hospital of traditional Chinese medicine,"TCM Internal Medicine, TCM Gynaecology, TCM Pediatric"
+Beijing,No,Private,Beijing Guss Clinic,"Endocrinology, Traditional Chinese Medicine, Gynecology, Cardiology, Pediatrics, Neurology"
+Beijing,No,Private,Beijing Huimin TCM Children’s Hospital,TCM Pediatric
+Beijing,No,Private,Beijing Ping Xin Tang Wangfujing TCM Clinic,"TCM Internal Medicine, TCM Gynaecology, TCM Pediatric"
+Beijing,No,Private,Beijing New Deheng Clinic,"OB/GYN, E.N.T, Ophthalmology, TCM, Psychiatric"
+Beijing,No,Private,Beijing Eaton Medical Centre,"Preventive Medical Check-up, Eyecare Center"
+Beijing,No,Private,Beijing Yanhuang TCM Hospital,"TCM Cancer, TCM Internal Medicine"
+Beijing,No,Private,Z' an Clinic,"TCM Internal Medicine, Orthopedics, Acupunture"
+Beijing,No,Private,Beijing Puhua  International Hospital,"Orthopedic and Trauma Surgery, Podiatry, Neurology and Neurosurgery, Rehabilitation"
+Beijing,No,Private,Capital Healthcare Hospital For Children and Women,"OB/GYN, Pediatrics"
+Beijing,No,Private,Beijing Aier-Intech Eye Hospital,"Macular Diseases, Diabetic Ophthalmopathy, Strabismus, Amblyopic, Children's Eye Diseases"
+Beijing,No,Private,Beijing Children's Hospital East Branch,"TCM, Dental , Nephrology, Dermatology, Ophthalmology"
+Beijing,No,Private,Beijing 21st Century Hospital,"Pediatrics, Gynecology, TCM, Orthopaedics, Surgery"
+Beijing,No,Private,Beijing HarMoniCare  Women & Children’s Hospital,"OB/GYN, Pediatrics"
+Beijing,No,Private,Beijing Liying Hospital for Obstetrics and Gynecology,OB/GYN
+Beijing,No,Private,Beijing Mary’s Hospital for Women and Infants,"OB/GYN, Pediatrics"
+Beijing,No,Private,"Mary’s Orthopedic Hospital, Beijing",Orthopedics
+Beijing,No,Private,GlobalCare Women & Children's Hospital,"GYN, OB, Pediatric, Dentistry"
+Beijing,No,Private,Beijing New Century Women's and Children's Hospital,"Pediatrics, OB"
+Beijing,No,Private,Smile Angel Children’s Hospital,"Pediatrics, Cleft Lip and Palate"
+Beijing,No,Private,Beijing Intech Rehabilitation Hospital,Rehabilitation
+Beijing,No,Private,Beijing Premiere & Promise Hospital,"Rehabilitation, Sport Medicine, Postoperative Rehabilitation"
+Beijing,No,Private,Sanfine International Hospital,"GP, Internal Medicine, Surgery, Women’s Health and Wellness, Pediatrics, Ophthalmology, ENT, Dermatology, Rehabilitation, Traditional Chinese Medicine"
+Beijing,No,Private,Beijing Vitup Hospital,"Health Checkup, TCM"
+Beijing,No,Private,Ikang Evergreen Medical International (Outpatient Department),"Cardiovascular Diseases, Tumor, Dental"
+Beijing,No,Private,Beijing Horizon Sports Medicine Clinic,"Rehabilitation, Physiotherapy"
+Beijing,No,Private,MedicGo General Medical Practice,General Medicine
+Beijing,No,Private,Beijing Passion International  Medical Center,"Surgery, Gynecology, Ophthalmology, E.N.T., Dermatology"
+Beijing,No,Private,Beijing Ping Xin Tang Jin YangTCM Clinic,"TCM Internal Medicine, TCM Gynaecology, TCM Pediatric"
+Beijing,No,Private,"Beijing Lingyixiaohe Women and Children's Hospital, Beiyuan Branch","Gynecology, Pediatrics"
+Beijing,No,Private,Beijing Amcare Clinic,"Internal medicine, Surgery, Gynecology, Pediatrics, Dental Clinic ,Dermatology, Ophthalmology, ENT"
+Beijing,No,Private,Beijing Enjoyhealth Hospital,"GP, Cardiology"
+Beijing,No,Private,Zan TCM Clinic of Beijing Meilun,"TCM Internal Medicine, Orthopedics, Acupunture"
+Beijing,No,Private,Bayley and Jackson Medical Center,"General Medicine, Oral Care, Family Care"
+Beijing,No,Private,Oasis International Clinics – Chaoyang Park Clinic,"Family Medicine, TCM"
+Beijing,No,Private,Jing Xin Traditional Chinese Medicine Clinic,"Orthopedics, Dermatology, Nephritis, Rhinitis, Sinusitis, Hepatopathy, Mastopathy"
+Beijing,No,Private,Vista Clinic,"General Medicine, Comprehensive Medical Care"
+Beijing,Yes,Private,Beijing United Family Hospital,"Pediatrics, Family Counseling, OB/GYN, Dermatology & Laser Skin Clinic, E.N.T."
+Beijing,No,Private,OASIS international Hospital,Family Medicine
+Beijing,Yes,Private,International Medical Center-Beijing,"Reproductive System Diseases, Dentistry"
+Beijing,Yes,Private,Beijing United Family- CBD Clinic,"Family Medicine, Pediatrics, Family Counseling"
+Beijing,Yes,Private,Beijing United Family Guangqumen Clinic,"Family Medicine, Preventive Care, Psychological Consultations"
+Beijing,Yes,Private,Beijing United Family Jianguomen Clinic,"Family Medicine, Dental, Alternative Medicine, Check-up, Pediatrics, OB/GYN, Dermatology, E.N.T."
+Beijing,Yes,Private,Beijing United Family Liangma Clinic,Family Medicine
+Beijing,Yes,Private,Beijing United Family New Hope Oncology Center,Oncology
+Beijing,No,Private,"Beijing Lingyixiaohe Women and Children's Hospital, Huilongguan Branch","Gynecology, Pediatrics"
+Beijing,No,Public,"Beijing Friendship Hospital, Capital Medical University, International Medical Center","Diseases of Digestive System, Urology, Integrated Traditional and Western Medicine, Health Checkup"
+Beijing,No,Public,"Guang An Men Hospital, International Medical Department","Tumors, Skin Disease, Endocrine Disease, Anorectal Disease, Urinary Systems Disease"
+Beijing,No,Public,"Beijing Friendship Hospital, Medical Health Center 3rd Clinic","Diseases of Digestive System, Urology, Integrated Traditional and Western Medicine, Health Checkup"
+Beijing,No,Public,"Beijing Yanhua Hospital, VIP International Department","Cancer, Orthopedics, Cardiology"
+Beijing,No,Public,"Beijing Chaoyang Hospital, VIP Clinic","Respiratory Medicine, Gastroenterology, Gynecology & Obstetrics, Pediatrics Internal Medicine"
+Beijing,No,Public,China-Japan Friendship Hospital International Medical Center,"Neurology, Rheumatology, Endocrinology, Anorectal"
+Beijing,No,Dental,Beijing SDM Dental-Euro Plaza Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-Shunyi Ronghe Clinic,Dental
+Beijing,No,Dental,A&S Dental Clinic-ZGC Clinic,Dental
+Beijing,No,Dental,Beijing SDM Dental-Yuan Da Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-Cuiwei Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Baishiqiao Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Weigongcun Clinic,Dental
+Beijing,No,Dental,BYBO DENTAL GROUP,Dental
+Beijing,No,Dental,Beijing Arrail Dental - Oriental Plaza Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-Detail Dental,Dental
+Beijing,No,Dental,A&S Dental Clinic-IVY Clinic,Dental
+Beijing,No,Dental,A&S Dental Clinic-CBD Clinic,Dental
+Beijing,No,Dental,Beijing SDM Dental-21st Century Clinic,Dental
+Beijing,No,Dental,Beijing SDM Dental-China World Trade Center Clinic,Dental
+Beijing,No,Dental,Beijing SDM Dental-Sunshine Plaza Clinic,Dental
+Beijing,No,Dental,Beijing Kowa Dental Jiaming Clinic,Dental
+Beijing,No,Dental,Beijing Kowa Dental,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-The Place Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-Fulllink Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-CITIC Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-Central-P Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-Exchange Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-Somerset Clinic,Dental
+Beijing,No,Dental,Beijing ARRAIL Dental Clinic-INDIGO Clinic,Dental
+Beijing,No,Dental,Smart Health Medical and Dental Center,Dental
+Beijing,No,Dental,IDC Dental Beijing,Dental
+Beijing,No,Dental,Jiamei Dental Dayuecheng Clinic,Dental
+Beijing,No,Dental,Jiamei Dental China World Trade Center Clinic (Tonghuihe Clinic),Dental
+Beijing,No,Dental,Jiamei Dental Sanlitun Clinic,Dental
+Beijing,No,Dental,Jiamei Dental South Wangjing Road Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Yayuncun Clinic,Dental
+Beijing,No,Dental,Rytime Dental,Dental
+Beijing,No,Dental,May Flower Dental,Dental
+Beijing,No,Dental,Beijing Arrail Dental - Seasonsplace Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Financial Street Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Yuetan Clinic,Dental
+Beijing,No,Dental,May Flower Dental,Dental
+Changshu,No,Wellness Checkup,Meinian Health Changshu Clinic,Physical Checkup
+Changzhou,No,Public,"Changzhou Dental Hospital, VIP Clinic",Stomatology
+Changzhou,No,Public,"Changzhou Fourth People’s Hospital, International Medical Center",Oncology
+Changzhou,No,Public,"Changzhou TCM Hospital, VIP Clinic",TCM
+Changzhou,No,Public,"Changzhou 2nd People's Hospital, VIP Medical Center & Checkup Center (Temporarily Closed)","Physical Checkup, Internal Medicine"
+Chengdu,No,Wellness Checkup,Meinian Health Wuhou Clinic,Physical Checkup
+Chengdu,No,Wellness Checkup,Meinian Health Jinniu Clinic,Physical Checkup
+Chengdu,No,Wellness Checkup,Meinian Health Xinghui Clinic,Physical Checkup
+Chengdu,No,Wellness Checkup,Meinian Health Gaoxin Clinic,Physical Checkup
+Chengdu,No,Private,Angle Women's &Chlidren's Hospital,OB/GYN
+Chengdu,No,Private,Global Doctor Chengdu Clinic,"General Medicine, Family Medicine, Emergency Medical Treatment"
+Chengdu,No,Private,Chengdu New Century Women's &Chlidren's Hospital,"Pediatrics Internal Medicine, Pediatrics Surgery, E.N.T., OB/GYN, Rehabilitation"
+Chengdu,No,Public,Chengdu Dayi County People’s Hospital,"Glycuresis, Rheumatology"
+Chengdu,No,Dental,Yafei Dental - Dashijie Clinic,Dental
+Chengdu,No,Dental,Yafei Dental - Shuangnan Clinic,Dental
+Chengdu,No,Dental,Yafei Dental - Guojielou Clinic,Dental
+Chengdu,No,Dental,Yafei Dental - Junyue Clinic,Dental
+Chengdu,No,Dental,Yafei Dental - Luomashi Clinic,Dental
+Chengdu,No,Dental,Chengdu Jinjiang Ibyer Dental Clinic,Dental
+Chengdu,No,Dental,Yafei Dental - Jinglan Clinic,Dental
+Dalian,No,Wellness Checkup,Meinian Health Xinghai Second Clinic,Physical Checkup
+Dalian,No,Wellness Checkup,Meinian Health Diwujun Clinic,Physical Checkup
+Dalian,No,Private,Vitup Nanshan Road Clinic & Dalian Vitup Checkup Center,"Internal Medicine, Health Checkup"
+Dalian,No,Private,Dalian Vitup Renmin Road Clinic,"Internal Medicine, Health Checkup"
+Dalian,No,Private,E-care International Clinic,"TCM, Physiotherapy, Dental, Pediatrics ( TCM, Internal Medicine, Dental), Dermatology"
+Dalian,No,Private,Dalian Clover Clinic,Integrated TCM & Western Medicine
+Dalian,No,Private,Dalian Development Clover Clinic,Integrated TCM & Western Medicine
+Dalian,No,Public,"First Affiliated Hospital of Dalian Medical University, VIP Clinic (Branch 3)","Cardiovascular Diseases, Gastroenterology, Neurology, Neurosurgery, Orthopaedics"
+Dalian,No,Dental,Smile Dental Clinic,Dental
+Dongguan,No,Wellness Checkup,Meinian Health Dongguan Clinic,Physical Checkup
+Dongguan,No,Private,Global Doctor-Dongguan Clinic,Family Medicine
+Dongguan,No,Dental,Angel Dental - Changan,Dental
+Dongguan,No,Dental,Dongguan South City Ibyer Dental Clinic,Dental
+Dongguan,No,Dental,Angel Dental - Dongcheng,Dental
+Dongying,No,Wellness Checkup,Meinian Health Dongying Clinic,Physical Checkup
+Guangzhou,No,Wellness Checkup,Meinian Health East Tianhe Road Clinic,Physical Checkup
+Guangzhou,No,Wellness Checkup,Meinian Health Zhujiang New City Clinic,Physical Checkup
+Guangzhou,No,Private,Guangzhou Can Am International Medical Center,"General Medicine, OB/GYN"
+Guangzhou,No,Private,Outpatient Clinic,"Cardiology, General Medicine, Neurology, Orthopaedics"
+Guangzhou,Yes,Private,Guangzhou United Family Clinic,"Family Medicine, Pediatric"
+Guangzhou,No,Private,Bellaire International Clinic,"Chiropractic Medicine, Obstetrics & Gynecology, Pediatrics, E.N.T., Ophthalmology"
+Guangzhou,No,Private,Wales International Medical Center,"Gynecology, Dentistry, ENT, Ophthalmology"
+Guangzhou,No,Private,Guangzhou Zan TCM Clinic,TCM
+Guangzhou,No,Private,Eur Am International Medical Center,"General Medicine, OB/GYN"
+Guangzhou,No,Private,Global Doctor Prime Healthcare,"General Medicine, Family Medicine, Emergency Medical Treatment"
+Guangzhou,No,Private,Distinct HealthCare Zhujiang New Town Medical Center,"Paediatrics, Dermatology"
+Guangzhou,No,Public,"6th Hospital Affiliate to Zhongshan University, Graceland Medical Center","Gastroenterology, Anorectal, Hepatobiliary Surgery, Cardiovascular Diseases"
+Guangzhou,No,Public,"Clifford Hospital, VIP Center","Stomatology, Tumors, Kidney Diseases, Organ Transplant, Acupuncture and Massage"
+Guangzhou,No,Public,"Nanfang Hospital, Huiqiao Building","Hepatobiliary Surgery, Cardiovascular Diseases, Nephrology, Neurosurgery, Gastroenterology"
+Guangzhou,No,Dental,Guangzhou Bybo Dental Clinic-IFC Dental Clinic,Dental
+Guangzhou,No,Dental,Guangzhou Bybo Dental Clinic-Wiston Dental Clinic,Dental
+Guangzhou,No,Dental,Dr.Lu International Dental Clinic,Dental
+Guangzhou,No,Dental,Guangzhou ARRAIL Dental Clinic-Gaode Clinic ,Dental
+Guangzhou,No,Dental,Guangzhou Xinyi Dental Clinic,Dental
+Guiyang,No,Wellness Checkup,Meinian Health Kangyan Clinic,Physical Checkup
+Harbin,No,Wellness Checkup,Meinian Health Nangang Clinic,Physical Checkup
+Harbin,No,Wellness Checkup,Meinian Health Daowai Clinic,Physical Checkup
+Hami,No,Wellness Checkup,Meinian Health Hami Clinic,Physical Checkup
+Hangzhou,No,Wellness Checkup,Meinian Health Yan'an Road Clinic,Physical Checkup
+Hangzhou,No,Wellness Checkup,Meinian Health Binjiang Clinic,Physical Checkup
+Hangzhou,No,Private,Hangzhou Aima Maternity Hospital,"Internal Medicine, Gynecology, Obstetrics, Pediatrics, TCM"
+Hangzhou,No,Private,Hangzhou Can Am International Medical Center,"GP, Physical Therapy"
+Hangzhou,No,Private,Hangzhou American-Sino OBGYN Pediatrics Services,"Obstetrics, Gynaecology, Pediatrics"
+Hangzhou,No,Public,"Zhejiang Hospital, Anchor International Healthcare Center","Geriatrics, Critical Care Medicine, Cardiology"
+Hangzhou,No,Public,"Sir Run Run Shaw Hospital, International Medical Center","Micro Injury Surgery, Angiocardiopathy Interventional Therapy"
+Hangzhou,No,Public,"The Second Affiliated Hospital Zhejiang University School of Medicine, International Medicine Department (Binjiang Branch)","Cardiovascular Diseases, Orthopedics, Ophthalmology, Neurology, General Surgery , Burns, Tumors, Dermatology, Respiratory Internal Medicine"
+Hangzhou,No,Dental, Hangzhou Arrail Dental Clinic-EAC Clinic,Dental
+Hangzhou,No,Dental,Hangzhou Ivy Dental Clinic,Dental
+Hefei,No,Wellness Checkup,Meinian Health Boruikang Clinic,Physical Checkup
+Hohhot ,No,Wellness Checkup,Meinian Health Hohhot Clinic,Physical Checkup
+Hohhot ,No,Dental,Hohhot Yafei Dental,Dental
+Jilin,No,Wellness Checkup,Meinian Health Fengman Clinic,Physical Checkup
+Ji'nan,No,Wellness Checkup,Meinian Health Minghu Clinic,Physical Checkup
+Ji'nan,No,Public,"Shandong Provincial Qianfoshan Hospital, International Medical Center","Cardiology, Gastroenterology, Endocrinology, Nephrology, Neurology"
+Jiyuan,No,Wellness Checkup,Meinian Health Jiyuan Clinic,Physical Checkup
+Jinzhou,No,Wellness Checkup,Meinian Health Jinzhou Clinic,Physical Checkup
+Kunming,No,Wellness Checkup,Meinian Health Kunming Clinic,Physical Checkup
+Kunming,No,Private,Kunming Sino-UK Angel Women's & Children's Hospital,OB/GYN
+Kunming,No,Private,Yunnan Richland Hospital,"Internal Medicine, Dental Treatment"
+Kunming,No,Dental,Kunming Ibyer Holiday Resort Dental Clinic,Dental
+Kunming,No,Dental,Kunming Ibyer Dental Clinic,Dental
+Kunming,No,Dental,Kunming Ibyer Xin Ying Dental Clinic,Dental
+Kunshan,No,Wellness Checkup,Meinian Health Kunshan Clinic,Physical Checkup
+Lanzhou,No,Wellness Checkup,Meinian Health Lanzhou Qilihe Clinic,Physical Checkup
+Linyi,No,Wellness Checkup,Meinian Health Linyi Clinic,Physical Checkup
+Luoyang,No,Wellness Checkup,Meinian Health Luoyang Clinic,Physical Checkup
+Luoyang,No,Public,New District Hospital of The First Affiliated Hospital of Henan University of Science and Technology,"Encephalopathy Center, Gynecology, Pediatrics, Minimal Invasive Surgery, Health Management"
+Luoyang,No,Dental,Luoyang Liuhe Dental Hospital,Dental
+Nanchang,No,Wellness Checkup,Meinian Health Jingdong Clinic,Physical Checkup
+Nanchang,No,Wellness Checkup,Meinian Health Changgeng Clinic,Physical Checkup
+Nanjing,No,Wellness Checkup,Meinian Health Zhangfuyuan Clinic,Physical Checkup
+Nanjing,No,Private,Nanjing HSCYBELE Obstetrics and Gynecology Hospital,"OB/GYN, Pediatrics"
+Nanjing,No,Private,Global Doctor Nanjing Clinic,"General Medicine, Family Medicine, Emergency Medical Treatment"
+Nanjing,No,Public,"Nanjing First Hospital, Social Service Dept","Cardiology, Thoracic Surgery, Endocrinology, Urology"
+Nanning,No,Wellness Checkup,Meinian Health Nanning Clinic,Physical Checkup
+Ningbo,No,Public,"Ningbo No.2 Hospital, Patients Service Center","Neurology, Urology, General Surgery, Hepatology, Burns"
+Ningbo,No,Public,"Ningbo No.1 Hospital, International Healthcare Center","Hematology, Cardiology, OB/GYN"
+Ningbo,No,Public,"International Medical Center, Ningbo Development Zone Center Hospital","Orthopaedics, Neurology, Cardiovascular Disease"
+Ningbo,No,Dental,Ningbo Jiangbei Ibyer Dental Hospital,Dental
+Puyang,No,Wellness Checkup,Meinian Health Puyang Clinic,Physical Checkup
+Qingdao,No,Wellness Checkup,Meinian Health Shinan Clinic,Physical Checkup
+Qingdao,No,Private,Qingdao Women & Infants Hospital,"OB, GYN, Pediatrics"
+Qingdao,No,Private,Bellaire Medical Center,"Pain Management, Chiropractic, Physiotherapy, Rehabilitation, Acupuncture, Deep Muscle Massage"
+Qingdao,No,Private,"Julia Clinic, Qingdao","Respiratory Medicine, Gastroenterology, Neurology, Cardiology"
+Qingdao,No,Public,"Qingdao Municipal Hospital (East Branch), International Clinic","Cardiovascular Diseases, Neurology, Diseases of Digestive System"
+Qingdao,No,Public,Cham Shan International Medical Center,"Orthopaedic Rehabilitation Center, Traditional Chinese Medicine, OB/GYN, Pediatric"
+Qingdao,No,Public,"The Affiliated Hospital of Qingdao University, International Medical Center","Gynecology, Pediatrics, Ophthalmology, ENT, Dermatology"
+Qingdao,No,Public,Qingdao Central Hospital International Medical Center,"Tumor Treatment, Orthopedics"
+Qingdao,No,Dental,Qingdao Gentle Dental Clinic,Dental
+Xiamen,No,Private,The City Medical Consultancy,"General Medicine, Pediatrics"
+Xiamen,No,Public,"Xiamen Maternity and Child Health Care Hospital, VIP Maternity & Gyn. Center",OB/GYN
+Xiamen,No,Dental,Xiamen Arrail dental clinic-International Clinic,Dental
+Shanghai,No,Wellness Checkup,Shanghai MJ Health Screening Center,Physical Checkup
+Shanghai,No,Wellness Checkup,Meinian Health Suhe No.1 Clinic,Physical Checkup
+Shanghai,No,Wellness Checkup,Meinian Health Yangpu Clinic,Physical Checkup
+Shanghai,No,Wellness Checkup,Meinian Health Xiaomuqiao Clinic,Physical Checkup
+Shanghai,No,Wellness Checkup,Meinian Health Lujiazui Changhang Clinic,Physical Checkup
+Shanghai,No,Wellness Checkup,Meinian Health Pudong Dongfang Road Clinic,Physical Checkup
+Shanghai,No,Wellness Checkup,Meinian Health Jing'an Clinic,Physical Checkup
+Shanghai,No,Wellness Checkup,St. John's Health Clinic,Physical Checkup
+Shanghai,No,Wellness Checkup,Meinian Health Huangpu Clinic,Physical Checkup
+Shanghai,No,Private,"Shanghai AIER Eye Hospital, International Patient Service Centre","Glaucoma, Cataract, Cornea Diseases"
+Shanghai,No,Private,Shanghai DeltaWest Clinic,"Heart Disease, GP, Gynaecology, Pediatrics"
+Shanghai,No,Private,Shanghai Sky Clinic,"General Medicine, Gynecology, Pediatrics, Dental"
+Shanghai,No,Private,Shanghai Kanghui Clinic,"Dermatology, Internal Medicine, Surgery, Pediatrics, ENT, Cardiology"
+Shanghai,No,Private,Sun-Tec Medical Center (Temporarily Closed),"Gynecology, Dermatology, Pediatrics, Internal Medicine, TCM"
+Shanghai,No,Private,Shanghai Tenghe Clinic,"Internal Medicine, Pediatrics, Surgery, Orthopedics, Ophthalmology, ENT, Gynecology, Traditional Chinese Medicine, Dental, Rehabilitation"
+Shanghai,No,Private,SAKURA Clinic,"Internal Medicine, OB/GYN, Pediatrics, TCM"
+Shanghai,No,Private,SAKURA Garden Clinic,"Internal Medicine, OB/GYN, Pediatrics, TCM"
+Shanghai,No,Private,Wellem-Shanghai Gubei Pediatrics Clinic,"Pediatrics, Child Wellness Checkup, Vaccine，TCM"
+Shanghai,Yes,Private,Shanghai United Family Hospital,"Family Medicine, Internal Medicine, Surgery, Pediatrics, OB/GYN"
+Shanghai,Yes,Private,St.Michael Hospital,"Cerebrovascular Diseases, Intracranial Tumors, Craniocerebral Trauma, Children’s Neural Diseases, Spinal Cord Injuries"
+Shanghai,Yes,Private,Shenton Health Hong Qiao Medical Center,"Family Medicine, Pediatrics, Chiropractic, Gynecology, Ophthalmology, Gynecology, Dermatology,TCM, Sports Medicine/Orthopedics"
+Shanghai,No,Private,American-Sino OB/GYN/Pediatrics Services,"Obstetrics, Four Dimensional Ultrasound"
+Shanghai,No,Private,"Shanghai Boai Hospital, International Medical Center","Internal Medicine, Surgery."
+Shanghai,No,Private,Shanghai Landseed Hospital,"General Medicine, Family Medicine, Pediatrics, Obstetrics&Gynecology"
+Shanghai,No,Private,"Shanghai Landseed Hospital, International Medical Center","General Medicine, Family Medicine, Pediatrics, Obstetrics&Gynecology"
+Shanghai,No,Private,"Shanghai Renai Hospital, International Medical Center","Orthopedics, Gynecology, Gallstones, Minimally Invasive Surgery"
+Shanghai,No,Private,Shanghai Yodak Cardio-Thoracic Hospital International Department,"Cardiovascular Medicine, Adult Cardiac Surgery, Pediatric Cardiac Center, Central Catheter Center, Thoracic Department"
+Shanghai,No,Private,Doctors & Herbalists Health Center,"General Medicine, Gynaecology, Dermatology, Orthopaedics & Traumatology"
+Shanghai,No,Private,Western Eye Center,Ophthalmology
+Shanghai,No,Private,Raffles Medical Center,Family Medicine
+Shanghai,No,Private,St. Reiss (Shanghai) Medical Center (Temporarily Closed),"GP, Cardiology, Dermatology, E.N.T., Endocrinology"
+Shanghai,No,Private,Shanghai Eaton Medical Centre,"Family and Internal Medicine, Health Checkup, Pediatrics, General Ophthalmology"
+Shanghai,No,Private,Towako Clinic Shanghai,"Urology, Gynecology, TCM, Dermatology, Rehabilitation"
+Shanghai,No,Private,Shanghai True Vision Eye Clinic,"Ophthalmology, Laser Corrections, Presbyopia, Cataract, Retinal Disease"
+Shanghai,No,Private,Sunray Children's Clinic,"General Clinic, Children's Health Care, Asthma"
+Shanghai,No,Private,Shanghai Kaiyuan Orthopedic Hospital,"Orthopaedic, Rehabilitation, General Sugery, Internal Medicine"
+Shanghai,No,Private,"Shanghai Ruidong Hospital, International Medical Center","Endoscopy Center for Digestive Diseases, Physical Checkup"
+Shanghai,No,Private,EuroEyes Shanghai,"Ophthalmology, Laser Corrections, Presbyopia, Cataract, Retinal Disease"
+Shanghai,No,Private,Shanghai Towa Bund Medical Center,"Internal Medicine, Surgery, ENT, Gynecology, Traditional Chinese Medicine, Dental, Rehabilitation, Pediatrics"
+Shanghai,No,Private,Shanghai Global HealthCare Pudong Center,"Health Care, Internal Medicine"
+Shanghai,No,Private,Rainbow Children's Clinic,"Pediatrics, TCM"
+Shanghai,No,Private,"Body & Soul Medical Clinic, Pudong Clinic","Gynecology, Acupuncture, Tuina-massage, Physiotherapy, Psychological Consultations"
+Shanghai,No,Private,Shanghai Healthway Medical Center(Jin Qiao) (Temporarily Closed),Family Medicine
+Shanghai,No,Private,Worldpath Clinic International,"OB/GYN, Pediatrics, Internal Medicine, General Surgery"
+Shanghai,No,Private,Sunray Children's Clinic,"General Clinic, Children's Health Care, Asthma"
+Shanghai,Yes,Private,Shanghai East International Medical Center,"Family Medicine, Pediatrics, Obstetrics, Gynecology, Chiropractic Treatments"
+Shanghai,Yes,Private,ParkwayHealth-Shanghai JinMao Tower Medical Center,"Obstetrics & Gynecology, Pediatrics, Cardiology, Physiotherapy, Psychology"
+Shanghai,Yes,Private,ParkwayHealth-Jin Qiao Medical and Dental Center,"Obstetrics and Gynecology, Pediatrics, E.N.T., Gastroenterology, Psychology"
+Shanghai,Yes,Private,American Medical Center,"Sports Medicine, Rehabilitation Medicine, Minimally Invasive Surgery, Preventive Medicine"
+Shanghai,No,Private,"Body & Soul Medical Clinic, Minhang Clinic","Gynecology, Acupuncture, Tuina-massage, Physiotherapy, Psychological Consultations"
+Shanghai,No,Private,Sunshine Children's Clinic,"General Clinic, Children's Health Care, Asthma"
+Shanghai,Yes,Private,Shanghai United Family Fengshang Clinic Shanghai United Family Minhang Clinic),"Family Medicine, Family Counseling"
+Shanghai,No,Private,Shanghai Columbia Bainuo Clinic,"Gynecology, Pediatrics, Dermatology, Rehabilitation, ENT，TCM"
+Shanghai,No,Private,Shanghai Global HealthCare Puxi Center,"Health Care, Internal Medicine"
+Shanghai,No,Private,"Body & Soul Medical Clinic, Jing'an Clinic","Acupuncture, Physiotherapy"
+Shanghai,No,Private,Shanghai Xinshijie Eye Hospital International Medical Center,"Ophthalmology, Laser Corrections, Presbyopia, Cataract, Retinal Disease"
+Shanghai,Yes,Private,ParkwayHealth-Shanghai Gleneagles International Medical & Surgical Center,"Obstetrics & Gynecology, Gastroenterology, Cardiology, Ophthalmology, ENT"
+Shanghai,Yes,Private,ParkwayHealth-Shanghai Centre Medical and Dental Centers,"Internal Medicine, Pediatrics, Dental Service, Immigration Health Screening Center"
+Shanghai,No,Private,SinoUnited Health Clinic-Shanghai Centre Clinic,"Family Medicine, internal Medicine, Cardiology, Sports Medicine, Physical Therapy, Neurology"
+Shanghai,No,Private,Shanghai Ruijin Guangci Clinic,"Internal Medicine, Endocrinology"
+Shanghai,No,Private,New Vision Eye Clinic-International Patient Services,Ophthalmology
+Shanghai,No,Private,"Body & Soul Medical Clinic, Huangpu Clinic","Gynecology, Acupuncture, Tuina-massage, Physiotherapy, Psychological Consultations"
+Shanghai,No,Private,Shanghai Xin Hua Tang Medical Center (Temporarily Closed),"Gynecology, Pediatrics, Orthopedics, Ophthalmology, Traditional Chinese Medicine"
+Shanghai,Yes,Private,ParkwayHealth-Specialty and Inpatient Center,"Obstetrics and Gynecology, Pediatrics, ENT, Cardiology, Physiotherapy"
+Shanghai,No,Public,"Shanghai Tongren Hospital, VIP Dept.  (Shanghai Changning District Central Hospital)","Orthopedics, Cardiovascular Diseases, Kidney Diseases"
+Shanghai,No,Public,"Huashan Hospital, Worldwide Medical Center","Dermatology, Neurology, Nephrology, Rehabilitation Medicine, Orthopedics"
+Shanghai,No,Public,"Shanghai 6th People’s Hospital, Worldwide Medical Center","Orthopedics, Endocrinology and Metabolism, ENT"
+Shanghai,No,Public,"Yixian Hospital (Zhongshan Hospital, VIP Department)","Pneumology, General Surgery, Cardial Surgery, Thoracic Surgery"
+Shanghai,No,Public,"International Peace Maternity & Child Health Hospital of the China Welfare Institute, VIP Department","Obstetrics, Prenatal Exams, First Aid Center for New Born Infants"
+Shanghai,No,Public,"Shanghai First People's Hospital Songjiang Branch, International Medical Care Center","Ophthalmology, Urinary Surgery, Physical Checkup"
+Shanghai,No,Public,"Shanghai Tongji Hospital, VIP Department","Gastroenterology, Nephrology, Neurology, General Surgery"
+Shanghai,No,Public,"Shanghai East Hospital, VIP Department","Orthopedics, Cardiovascular, Oral Implant"
+Shanghai,No,Public,"Shanghai Children's Medical Center,Special Service Clinic","Cardiovascular Diseases, Cardiothoracic Surgery, Children's Health Care, Psychotherapy"
+Shanghai,No,Public,"Shanghai Pudong Hospital, VIP Department","Orthopedics, Diabetes Surgery, Vascular Surgery, OB/GYN"
+Shanghai,No,Public,"Shanghai Punan Hospital, International Medical Center","Neurosurgery, Sleep Apnea Syndrome, Psychiatry, Ophthalmology"
+Shanghai,No,Public,"Shanghai Seventh People's Hospital, VIP Departmen","Urology, Endocrine, Dermatology, Geriatric Medicine"
+Shanghai,No,Public,Shuguang Hospital (Eastern Branch VIP Department),"Integrated Traditional and Western Medicine, Orthopedics, Anorectic, Hepatitis"
+Shanghai,No,Public,"Shanghai East Hospital South Branch, VIP Department","TCM, Cardiology, Psychological Consultation"
+Shanghai,No,Public,"Children's Hospital of Fudan University,International Medical Center","Neurology, Kidney Diseases, Homeopathy Center, Angiocardiopathy Center"
+Shanghai,No,Public,"Shanghai Minhang TCM Hospital, VIP Clinic/Korean Clinic","General Physician, Gynecology, ENT, TCM"
+Shanghai,No,Public,"Shuguang Hospital, Specialist Center","Liver Diseases, Kidney Diseases, Orthopedics"
+Shanghai,No,Public,"Shanghai First People's Hospital, International Medical Care Center","Ophthalmology, Urinary Surgery, Health Checkup, ENT"
+Shanghai,No,Dental,Dr Wells Shanghai Landun Dental Clinic (China),Dental
+Shanghai,No,Dental,New York Dental Clinic,Dental
+Shanghai,No,Dental,Shanghai Byer Dental Clinic-Changning Longzhimeng Plaza Office,Dental
+Shanghai,No,Dental,Tokushinkai Takashimaya Dental Clinic,Dental
+Shanghai,No,Dental,Tokushinkai Dental Clinic Shanghai(Hong Qiao),Dental
+Shanghai,No,Dental,Alpha Dental Clinic,Dental
+Shanghai,No,Dental,Shanghai ARRAIL Dental Clinic-Hongqiao Clinic,Dental
+Shanghai,No,Dental,Dr Wells Shanghai Lanhua Dental Clinic (China),Dental
+Shanghai,No,Dental,CAD Dental Centre,Dental
+Shanghai,No,Dental,Shanghai ARRAIL Dental Clinic-Putuo Parkside Plaza Clinic,Dental
+Shanghai,No,Dental,Dr Wells Shanghai Lanbo Dental Clinic (China),Dental
+Shanghai,No,Dental,Kowa Dental Inc,Dental
+Shanghai,No,Dental,Shanghai Byer Dental Clinic-Pudong Hua Mu Dental Clinic,Dental
+Shanghai,No,Dental,Shanghai Byer Dental Clinic-Pudong Laya Plaza Office,Dental
+Shanghai,No,Dental,Tokushinkai Dental Clinic Shanghai (Jin Qiao),Dental
+Shanghai,No,Dental,Tokushinkai Dental Clinic Shanghai(Lian Yang) ,Dental
+Shanghai,No,Dental,ShangHai LanXin Dental,Dental
+Shanghai,No,Dental,Shanghai ARRAIL Dental Clinc-HongJia Clinic,Dental
+Shanghai,No,Dental,Shanghai ARRAIL Dental Clinic-Time Clinic,Dental
+Shanghai,No,Dental,Shanghai ARRAIL Dental Clinic-Zhengda Clinic,Dental
+Shanghai,No,Dental,DD Dental,Dental
+Shanghai,No,Dental,Shanghai  Branemark Osseointegration Center,Dental
+Shanghai,No,Dental,Tokushinkai Dental Clinic Shanghai (Jing An),Dental
+Shanghai,No,Dental,Jsmiles Dental Clinic,Dental
+Shanghai,No,Dental,Shanghai Arrail Dental Clinic-Jing'an Park Clinic,Dental
+Shanghai,No,Dental,Malo Clinic,Dental
+Shanghai,No,Dental,Shanghai Byer Dental Clinic-East Tian Di Dental Clinic,Dental
+Shanghai,No,Dental,Tokushinkai Dental Clinic Shanghai (Ge Wei),Dental
+Shanghai,No,Dental,Rejoy Dental Clinic,Dental
+Shanghai,No,Dental,Shanghai Ruide Dental Clinic (Temporarily Closed),Dental
+Shanghai,No,Dental,Shanghai ARRAIL Dental Clinc-Henderson Metropolitan Clinic,Dental
+Shanghai,No,Dental,Shanghai ARRAIL Dental Clinic-Corporate Avenue Clinic,Dental
+Shenzhen,No,Wellness Checkup,Meinian Health Nanshan Science and Technology South District Clinic,Physical Checkup
+Shenzhen,No,Wellness Checkup,Meinian Health Nanshan Science and Technology District Clinic,Physical Checkup
+Shenzhen,No,Wellness Checkup,Meinian Health Nanshan Shekou Clinic,Physical Checkup
+Shenzhen,No,Private,Shenzhen HOME Women's and Children's Hospital,"OB/GYN, Pediatrics"
+Shenzhen,No,Private,Shenzhen Amcare Women & Children's Hospital,"OB/GYN, Pediatrics"
+Shenzhen,No,Private,Shenzhen Can Am International Medical Center,"General medicine, Pediatrics, OB/GYN"
+Shenzhen,No,Private,Shenzhen Puji Clinic (Temporarily Closed),"Health Checkup, Gynaecology, TCM, ENT"
+Shenzhen,No,Private,Shenzhen Renji International Clinic,Physical Checkup
+Shenzhen,No,Private,Shenzhen Vista-SK International Medical Center,"Family Medicine, Gynecology, Pediatrics, Dental Clinic, Sports Medicine"
+Shenzhen,No,Private,Distinct HealthCare Coastal City Medical Center,Pediatric
+Shenzhen,No,Private,Distinct HealthCare Specialty & Surgical Center,"Ophthalmology, Apnoea Monitor, Dermatology"
+Shenzhen,No,Private,Far East Women & Children's Hospital International Medical Center,"Pediatric, Gynaecology, Obstetrics"
+Shenzhen,No,Private,Shenzhen Z'an TCM Clinic,TCM
+Shenzhen,No,Private,Chiho Medical Centre,"General Medicine, Internal Medicine, Surgery, Paediatrics, Gynaecology"
+Shenzhen,No,Private,Distinct Healthcare Exhibition Center Clinic,"GP, Internal Medicine, OB/GYN, Paediatrics"
+Shenzhen,No,Public,Beijing University Shenzhen Hospital VIP,"Gynecology, Ophthalmology, E.N.T., Dermatology"
+Shenzhen,No,Public,"Shenzhen 2nd People’s Hospital, VIP Department","Orthopedics, Neurosurgery, Urinary Surgery, E.N.T., Nephrology"
+Shenzhen,No,Public,"The University of Hong Kong - Shenzhen Hospital, International Medical Center","OB/GYN, Pediatrics, Orthopedics, Ophthalmology"
+Shenzhen,No,Dental,Shenzhen ARRAIL Dental Clinic-Heng Yu Clinic,Dental
+Shenzhen,No,Dental,Shenzhen ARRAIL Dental Clinic-OCT Bay Clinic,Dental
+Shenzhen,No,Dental,Shenzhen ARRAIL Dental Clinic-Di Wang Clinic,Dental
+Shenzhen,No,Dental,Shenzhen Bybo Dental Clinic- Huaqiangbei Dental Clinic,Dental
+Shenzhen,No,Dental,Shenzhen ARRAIL Dental Clinic-Donghai Clinic,Dental
+Shenzhen,No,Dental,Shenzhen ARRAIL Dental Clinic-Noble Clinic,Dental
+Shenyang,No,Wellness Checkup,Meinian Health Shenhe Clinic (No VIP area),Physical Checkup
+Shenyang,No,Wellness Checkup,Meinian Health Heping Clinic (VIP area),Physical Checkup
+Shenyang,No,Private,Shenyang Madein Women's and Children's Hospital,"OB/GYN, Pediatrics"
+Shenyang,No,Dental,Shenyang Da Dong Bybo Dental Clinic,Dental
+Shenyang,No,Dental,Shenyang Heping Bybo Dental Clinic,Dental
+Shenyang,No,Dental,Shenyang Tiexi Bybo Dental Clinic,Dental
+Shijiazhuang,No,Wellness Checkup,Meinian Health Qiaoxi Clinic,Physical Checkup
+Suzhou,No,Wellness Checkup,Meinian Health Xiangcheng Clinic,Physical Checkup
+Suzhou,No,Wellness Checkup,Meinian Health Donghuan Clinic,Physical Checkup
+Suzhou,Yes,Private,ParkwayHealth SIP Medical Center,"GP, Dental Service, Psychology, Behavioral Health"
+Suzhou,No,Private,Suzhou BenQ International Medical Center,"GP, Dental, Rehabilitation, Surgery, Health Checkup"
+Suzhou,No,Public,"The Second Affiliated Hospital of Soochow University, VIP Department","Orthopedics, Neurology, OB&GYN, Health Checkup"
+Suzhou,No,Dental,Tokushinkai Dental Clinic-Suzhou Industrial Park,Dental
+Suzhou,No,Dental,S S Dental Clinic,Dental
+Suzhou,No,Dental,Tokushinkai Dental Clinic-Suzhou New District,Dental
+Taizhou,No,Dental,Taizhou Yafei Dental,Dental
+Taiyuan,No,Wellness Checkup,Meinian Health Changfeng Clinic,Physical Checkup
+Tangshan,No,Wellness Checkup,Meinian Health Tangshan Clinic,Physical Checkup
+Tianjin,No,Wellness Checkup,Meinian Health Binhai Clinic,Physical Checkup
+Tianjin,No,Wellness Checkup,Meinian Health Balitai Clinic,Physical Checkup
+Tianjin,No,Wellness Checkup,Meinian Health Daguangming Bridge Clinic,Physical Checkup
+Tianjin,No,Wellness Checkup,Ikang Guobin Tianjin Nanjing Road Jili Building VIP Branch,Physical Checkup
+Tianjin,No,Private,Tianjin Teda Puhua Hospital,Cardiovascular Diseases
+Tianjin,No,Private,Tianjin Western Hospital,Family Medicine
+Tianjin,No,Private,Tianjin Amcare Women’s & Children’s Hospital,"OB/GYN, Pediatrics"
+Tianjin,No,Private,Tianjin Nankai Deji Clinic (Temporarily Closed),"Family Medicine, Dental Center, Traditional Chinese Medicine"
+Tianjin,No,Private,ACUPUNCTURE ZHAO,"Internal Medicine, Traditional Chinese Medicine, Gynecology, Dermatology"
+Tianjin,No,Private,IMHealthcare Medical Clinic- Hexi,Family Medicine
+Tianjin,Yes,Private,Tianjin United Family Hospital,"General Medicine, Family Medicine"
+Tianjin,No,Private,Tianjin New Century Women’s and Children's Hospital,"Internal Medicine, Pediatric Surgery, Urology, Neurology, ENT"
+Tianjin,No,Public,"Teda Hospital, International Department","Western Rehabilitation, Psychology, Traumatic Orthopedics, Cardiovascular Medicine and Surgery, Neurology and Neurosurgery, Pediatric"
+Tianjin,No,Public,"Tianjin First Central Hospital, International Medical Center","Internal Medicine, Surgery, Comprehensive Pediatric Internal Medicine, Gynecology & Obstetrics"
+Tianjin,No,Public,"Tianjin Medical University General Hospital, International Medical Center","Internal Medicine, Surgery, Comprehensive Pediatric Internal Medicine, Gynecology, Physical Examination"
+Tianjin,No,Dental,Renew Dental Clinic,Dental
+Tianjin,No,Dental,ARRAIL Dental-Tianjing International Clinic,Dental
+Wenzhou,No,Public,The 2nd Affiliated Hospital & Yuying Children’s Hospital of Wenzhou Medical University,Orthopedics、Pediatric、Cardiovascular Medicine、Gynecology & Obstetrics
+Urumqi,No,Wellness Checkup,Meinian Health Urumqi Clinic,Physical Checkup
+Urumqi,No,Private,Xinjiang Jia Yin Hospital International Clinic,"GP, Dental Clinic"
+Wuxi,No,Wellness Checkup,Meinian Health Wuxi Jianzhu Clinic,Physical Checkup
+Wuxi,No,Private,Wuxi Friendship Complex Polyclinic,"Internal Medicine, Pediatrics, Traditional Chinese Medicine,Gynecology, Clinical laboratory"
+Wuxi,Yes,Private,Wuxi United Family Healthcare Center,General Medicine
+Wuxi,No,Public,"Wuxi No.2 People's Hospital, Puren International Medical Center","Dermatology, Cerebral Surgery, Neurosurgery, Ophthalmology"
+Wuxi,No,Dental,Tokushinkai Wuxi Dental Clinic,Dental
+Wuhan,No,Wellness Checkup,Meinian Health Wuchang Clinic,Physical Checkup
+Wuhan,No,Wellness Checkup,Meinian Health Hankou Clinic,Physical Checkup
+Wuhan,No,Wellness Checkup,Meinian Health Hanyang Clinic,Physical Checkup
+Wuhan,No,Private,Global Doctor-Wuhan Clinic (Temporarily Closed),Family Medicine
+Wuhan,No,Private,Wuhan Optics Valley Hospital,"Internal Medicine, Surgery, OB/GYN, Dentistry"
+Wuhan,No,Public,"Zhongnan Hospital of Wuhan University, VIP Department","Cardiovascular Diseases, First Aid Center"
+Wuhan,No,Public,"Wuhan Tongji Hospital,VIP Department","Respiratory Medicine, General Surgery, OB/GYN, Urology Surgery"
+Xi'an,No,Wellness Checkup,Xi’an Puhui Health Checkup Center,Physical Checkup
+Xi'an,No,Wellness Checkup,Meinian Health Delipu Clinic,Physical Checkup
+Xi'an,No,Wellness Checkup,Meinian Health Jianguo Clinic,Physical Checkup
+Xi'an,No,Wellness Checkup,Meinian Health Nanmen Clinic ,Physical Checkup
+Xi'an,No,Private,Xi’an Liren Hospital,Family Medicine
+Xi'an,No,Private,Xi'an Angel Women's & Children's Hospital,"OB/GYN, Pediatrics"
+Xi'an,No,Public,"Xi'an Gaoxin Hospital, International Medical Department","Gynecology & Obstetrics, Pediatrics, Neurology"
+Xi'an,No,Dental,Xi’an Haifeng Dental Clinic,Dental
+Xi'an,No,Dental,Xi’an Jiamei Dental Clinic,Dental
+Xinxiang,No,Wellness Checkup,Meinian Health Xinxiang Clinic,Physical Checkup
+Yanbian,No,Wellness Checkup,Meinian Health Baishan Clinic,Physical Checkup
+Changchun,No,Wellness Checkup,Meinian Health Nanguan Clinic,Physical Checkup
+Changchun,No,Wellness Checkup,Ikang Guobin Changchun Yatai Hongcheng Xiyu Branch,Physical Checkup
+Changchun,No,Wellness Checkup,Meinian Health Jianshe Road Clinic,Physical Checkup
+Changchun,No,Private,Jilin Heart Hospital,Cardiovascular Diseases
+Changchun,No,Dental,Jilin Baihe Dental Hospital,Dental
+Changsha,No,Wellness Checkup,Meinian Health Tianxin Clinic,Physical Checkup
+Changsha,No,Wellness Checkup,Meinian Health Furong Clinic,Physical Checkup
+Changsha,No,Private,"Hunan Want Want Hospital, International Medical Center","Neurology, General Surgery, OB/GYN, Pediatrics"
+Changsha,No,Public,"Xiangya Hospital, International Medical Center","Neurology, Endocrinology, Cardiothoracic Surgery"
+Zhengzhou,No,Wellness Checkup,Meinian Health Jinshui Clinic,Physical Checkup
+Zhengzhou,No,Wellness Checkup,Meinian Health Zhongzhou Clinic,Physical Checkup
+Zhengzhou,No,Dental,Huiji Ibyer Ao Hua Dental Clinic,Dental
+Chongqing,No,Wellness Checkup,Meinian Health Jiangbei Clinic,Physical Checkup
+Chongqing,No,Private,Global Doctor Chongqing Clinic,"General Medicine, Family Medicine, Emergency Medical Treatment"
+Chongqing,No,Public,"Third Hospital Affiliated to Third Military Medical University, People's Liberation Army of China (Chongqing Daping Hospital), VIP Clinic","Cardiovascular Medicine, Geriatrics, Gastroenterology, Pneumology, Neurology"
+Chongqing,No,Dental,Yongchuan Bybo Dental Hospital,Dental
+Chongqing,No,Dental,Jiangbei Dental Clinic,Dental
+Zhuhai,No,Public,"The Fifth Affiliated Hospital of Sun Yat-Sen University, VIP Medical Services","Cardiology, Urology Surgery, Osteology"
+Zhuhai,No,Dental,Zhuhai Liu He Dental Hospital,Dental
+Zhuhai,No,Dental,Zhuhai Liu He Dental Clinic,Dental
+Beijing,No,Public,"Xiyuan Hospital, CACMS  International Medical Center","Cardiovascular Disease, Blood Disease, Senile Disease, Diabetes, Gastrointestinal Disease"
+Beijing,No,Private,Oasis International Clinics-Huikang Clinic,"Family Medicine, TCM"
+Shanghai,No,Dental,Shanghai ARRAIL Dental Clinic –Biyun Clinic,Dental
+Guangzhou,No,Private,Distinct HealthCare Taojin Medical Center,"Pediatrics, Child Care, Gynecology, GP, Ophthalmology, Dermatology"
+Beijing,No,Private,Distinct HealthCare Xihongmen Medical / Dental Center,"Internal medicine,Dental, OB/GYN, Dermatology, Paediatric"
+Shenzhen,No,Private,Global doctor Shenzhen Clinic,"GP, Internal, Chirurgery, Gynecologist, Physiotherapy, Check-up, Dermatology, Stomatology"
+Beijing,No,Private,Distinct HealthCare Xihongmen & Well Children Center,well baby
+Beijing,No,Dental,Beijing International Health Dental,Dental
+Beijing,No,Private,Beijing Eden Hospital,"Endocrine Disease, Stomatology"
+Suzhou,No,Private,Suzhou New Century International Children's Hospital,"Neonatology, Paediatric Medicine, Paediatric Surgery, ENT, Child Care"
+Beijing,No,Dental,Arrail Dental CapitaMall clinic,Dental
+Beijing,No,Dental,Arrail Dental LIVAT Clinic,Dental
+Shanghai,No,Dental,Arrail Dental Lianyang Clinic,Dental
+Hangzhou,No,Dental,Arrail Dental Hangzhou Tower Clinic,Dental
+Shenzhen,No,Dental,Arrail Dental Century Place Clinic,Dental
+Shenzhen,No,Dental,Arrail Dental Zhenye International Clinic,Dental
+Shenyang,No,Private,Shenyang He Shi Eye Hospital,Ophthalmology
+Shenyang,No,Private,Roicare Hospital&Clinic,"OB/GYN, Pediatrics"
+Beijing,No,Public,"Beijing AerospaceGeneral Hospital, General Ward","Thoracic Surgery, Surgery,Physical Checkup"
+Beijing,No,Private,Beijing Henghe Integrative Medicine Hospital,"& Gynecology,Internal Medicine,Oncology,Surgery,Breast Surgery"
+Beijing,No,Private,Beijing Z’an TCM Clinic (Guanshe),"TCM Internal Medicine, Orthopedics, Acupunture"
+Beijing,No,Private,PKUcare Rehabilitation Hospital,All types of Rehabilitation
+Beijing,No,Private,Capital Medical University of Beijing Medical Center Hospital Otolaryngology,"Otology, Rhinology, Pharygolarygology, Head and Neck Surgery, Ophthalmology, Stomatology"
+Beijing,No,Private,St.Marco.Hospital,"Burns surgery, Orthopedics"
+Yantai,No,Private,Luye Babath Rehabilitation hospital,All types of Rehabilitation
+Shanghai,No,Private,Jiahui Clinic (Jing’an),"General Practice, Pediatric, Dermatology, Dental,E.N.T."
+Chengdu,No,Public,Chengdu Jinjiang District Dongda Community Service Center,"Practice, Dental Care, Traditional Chinese Medicine, Integrated Traditional and Western Medicine, Child Health Care, Preventive Care"
+Suzhou,No,Public,The affiliated Suzhou Eye Hosptial of Wenzhou Medical College,Ophthalmology
+Shenzhen,No,Private,Shenzhen Guangyuyuan TCM clinic,TCM
+Guangzhou,No,Private,Guangzhou Noah HealthCare,"care,OB/Gyn,GP,ultrasound center"
+Guangzhou,n/a,Private,Guangzhou I Born Women's Hospital (International Maternity Center of the 3rd Affiliated Hospital of Sun Yat-sen University),Gynecology Obstetrics Neonatology care care
+Shanghai,No,Private,Pantheon Clinic (panxi'ang),Ophthalmology E.N.T Family Medicine
+Hangzhou,No,Private,Dingxiang clinic,"General Practice, Pediatric"
+Hangzhou,No,Private,Dingxiang clinic,"General Practice, Pediatric."
+Shanghai,No,Public,Shanghai Lake Malaren Obsterics &Gynecology Hospital,OB/GYN
+Beijing,No,Private,YAHE hospital for Beijing women and children's,"Gynecology, Pediatrics"
+Shanghai,No,Private,Shanghai Dongyv Clinic,"Internal Medicine, Pediatrics, Surgery, Orthopedics, Ophthalmology, ENT, Gynecology, Traditional Chinese Medicine, Dental, Rehabilitation"
+Shanghai,No,Private,UMP Xintiandi Medical Centre,"Family Doctor(GM/IM), Dermatology,GYN,Surgery, Urinary Sugery,Cardiology,Digestive Dept.,TCM,Stomatology"
+Shanghai,No,Private,Shanghai EverBetter Obstetrics and Gynecology Hospital,"Obstetrics, Gynecology(hysteroscoy/laparoscopy),Family Planning,Reproductive Health and Infertility"
+Hangzhou,No,Public,Zhejiang University International Hospital,"Infectious disease department, General Sugery, OB/GYN, Urology, Nephrology, Breast Surgery"
+Shenzhen,No,Private,Shenzhen Guo Yao Tang TCM Clinic,TCM
+Wuhan,No,Private,Wuhan Baijia Maternity Hospital,OB/GYN
+Beijing,n/a,Private,Robusprout Children’s Clinic,"pediatrics, child health care, child ophthalmology, ENT, stomatology, dermatology, psychiatry, TCM"
+Ji'nan,No,Public,Jinan Central Hospital,"Burn, urology, cardiology. Pediatric, orthopedics, Gynecology, dermatology, general surgery"
+Shenzhen,No,Dental,U-dental—Shenzhen Futian Times Technology Clinic,Dental
+Shenzhen,No,Dental,U-dental—Shenzhen Futian Jinrun Clinic,Dental
+Shenzhen,No,Dental,U-dental—Shenzhen Futian Pacific Financial Clinic,Dental
+Shenzhen,No,Dental,U-dental—Shenzhen Futian U-dental Jiade Clinic,Dental
+Shenzhen,No,Dental,U-dental—Shenzhen Nanshan Tianli Clinic,Dental
+Shenzhen,No,Dental,U-dental—Shenzhen Nanshan China Resources City Clinic,Dental
+Shenzhen,No,Dental,U-dental—Shenzhen Luohu U-dental Sanjiu Clinic,Dental
+Dongguan,No,Dental,U-dental—Dongguan U-dental Lide Clinic,Dental
+Chengdu,No,Private,Ommay,"General Medicine, Family Medicine, Emergency Medical Treatment"
+Hangzhou,No,Public,"The Second Affiliated Hospital Zhejiang University School of Medicine, International Medicine Department","Cardiovascular Diseases, Orthopedics, Ophthalmology, Neurology, General Surgery , Burns, Tumors, Dermatology, Respiratory Internal Medicine"
+Nanchang,No,Private,Global Doctor Prime Healthcare,"General Medicine, Family Medicine, Emergency Medical Treatment"
+Beijing,No,Dental,Arrail Dental Chaoyang Park Clinic,Dental
+ShangHai,No,Private,Shanghai DeltaHeath Hospital,"Prevention and Healthcare, Internal medicine, Surgery, General Surgery, Cardiac Surgery, Family Care, Gynecology, Pediatrics, Dermatology, Emergency Medicine, Extracorporeal Circulation, Ophthalmology, Anesthesiology, ENT"
+Beijing,Yes,Private,Beijing International SOS Clinic Managed by Raffles Medical,"Family Medicine, Ob/Gyn, ENT, Paediatric, Orthopaedics, Mental Health, Dental"
+Tianjin,Yes,Private,International SOS Tianjin Clinic Managed by Raffles Medical,Family Medicine
+Tianjin,Yes,Private,International SOS Tianjin TEDA Clinic Managed by Raffles Medical,Family Medicine
+Chengdu,No,Private,Chengdu Leo Clinic,"General Practice, acupuncture and moxibustion"
+Shanghai,No,Public,Zhongyida Traditional Chinese Medical Clinic,TCM
+Shenzhen,No,Private,"Shenzhen Yunshan Medical Management Co.,Ltd Yunshan Outpatient Department","Digestive Endoscopy,Sports Medicine and Rehabilitation, Medical Imaging"
+Beijing,No,Private,Distinct HealthCare Beijing Wangjing Medical Center,"GP, OB/GYN, Paediatric"
+Beijing,No,Dental,Distinct HealthCare Beijing Wangjing Dental & Well Child Center,"Well-Baby Checkup, Dentistry"
+Beijing,No,Private,Beijing Bo Ai Tang TCM Clinic-Wangjing,Gynaecology
+Beijing,No,Dental,Sunny Dental Clinic-Shine Hills,Dental
+Beijing,No,Private,Beijing Dr. Cui Yutao Pediatric Clinic,Pediatric
+Qingdao,No,Dental,Qingdao Paul Dental,Dental
+Beijing,No,Private,Beijing Yizhentang TCM Clinic,"TCM Internal Medicine, TCM Gynaecology, TCM Pediatric，TCM Orthopedics"
+Shanghai,No,Private,Shanghai Jiashang Clinic,"General Practice, Pediatric, Dental, Surgical Gastroenterology, Orthopedics and Sports Medicine"
+Beijing,No,Private,JP healthcare clinic,"Internal medicine   TCM,Dental Clinic"
+Beijing,No,Private,UMP Fortune Plaza Medical Centre,Family Doctor(GM/IM)
+Beijing,No,Private,Beijing U-Plus Clinic,"medicine,Gynecology,Pediatric,TCM,Dental,Chiropractor"
+Shanghai,No,Private,Rainbow Z Children’s Clinic,"Pediatrics,Child care"
+Shanghai,No,Private,Rainbow M Children’s Clinic,"Pediatrics,Child care"
+Shanghai,No,Private,Shanghai HumanHealth Integrated Medical Centre (Temporarily Closed),Medicine
+Shanghai,No,Private,GeneGrow Pediatrics Clinics,"pediatrics,child care"
+Hangzhou,No,Public,Mingzhou Hospital,Cardiovascular，orthopedics，Neurology，Emergency Medical Treatment
+Shanghai,No,Private,Yosemite Clinic,General Surgery
+Nanjing,No,Public,BenQ Hospital,Pediatrics、Family Medicine、Psychological Consult、OBS&GYN、Traditional Chinese medical
+Wuhan,No,Dental,SDM Dental Clinics,Dental
+Shanghai,No,Public,Shanghai QuYang Hospital,""
+Guangzhou,No,Private,Distinct HealthCare Chimelong Medical Center,"Pediatrics, Child Care, Gynecology, GP, Dentistry"
+Guangzhou,No,Private,Distinct HealthCare Tiyuxi Health Check-up & Day Surgery Center,"Health Check Up,Child Care, Esophagogastroscopy & Colonoscopy Assessment,Gynecological Surgery"
+Shenzhen,No,Private,Distinct HealthCare Qianhai Medical Center,"Pediatrics, Child Care, Gynecology, Dentistry"
+Chengdu,No,Private,Distinct HealthCare High-Tech Zone Medical Center,"Pediatrics, Child Care, Gynecology, GP, Dentistry, Dermatology"
+Shanghai,No,Private,Shanghai Insight Ancient Chinese Medicine Clinic,TCM
+Shanghai,No,Private,Wellem-Shanghai Lujiazui Clinic,"Pediatrics, Children health checkup, Vaccine, Pediatric ophthalmology，Pediatric dental, TCM"
+Shanghai,No,Private,Wellem-Shanghai Xintiandi Clinic,"Pediatrics, Children health checkup, Vaccine, Pediatric mental health, Pediatric Rehabilitation, Radiology, TCM"
+Shanghai,No,Private,Shanghai Landseed Hospital,"General Medicine, Family Medicine"
+Wuxi,No,Private,Wuxi Sunray  Clinic,"Clinic, Children's Health Care, TCM Dept，Physical Therapy"
+Shanghai,No,Wellness Checkup,Ikang Evergreen Medical  international (Shanghai),Physical Checkup
+Shanghai,No,Wellness Checkup,Shanghai Wangzu Guobin Medical Center,Physical Checkup
+Beijing,No,Private,Health in Here Boya Clinic,"GP，Internal Medicine, Pediatric，Dental，Gynecology"
+KunShan,No,Private,Kunshan Shengcao Out-patient Department,""
+Shanghai,No,Private,Rich Clinic-Jing'an,"Neurosurgery, Pediatrics, Rheumatology and Immunology, Gastroenterology, Endocrinology, TCM"
+Shanghai,No,Private,Cherry Clinic,Pediatric
+Beijing,No,Private,Beijing Sunbow Obstetrics&Gynecology Hospital,"OB/GYN, Pediatrics"
+Beijing,No,Private,Beijing Guss Pediatrics Clinic,Pediatric
+Changsha,No,Public,Hunan space flight hospital,"Neurology, Endocrinology, Cardiothoracic Surgery ,Cardiovascular Disease,"
+Haikou,n/a,Public,Hainan Cancer Hospital,""
+Beijing,No,Private,PEK HORIZON CLINIC,"Medicine of Rehabilitation ,Sports Medicine "
+Beijing,No,Public,"XinglinYuan TCM Medical Center,Beijing Traditional Chinese Medicine Hospital",TCM
+Beijing,No,Public,Beijing Tsinghua Changgung Hospital,""
+Changsha,No,Public,The 1st hospital of Hunan University of TCM,"Acupuncture and tuina recovery, pain treatment, liver disease"
+Wuhan,No,Public,The 3rd hospital of Wuhan,"Burn surgery,Senile disease of TCM，encephalopathy of TCM，Recovery，nursing scientific，digestive system department"
+Beijing,No,Public,The First Hospital of Tsinghua University,Cardiology Center、Orthopedics&Pediatrics
+Beijing,No,Dental,Diamond Dental,Dental
+Shanghai,No,Private,Shanghai Wonders Fullway Healthcare Clinic,""
+Beijing,n/a,Private,EuroEyes Beijing,Ophthalmology
+Nanjing,No,Public,Haw Hospital affiliated to Nanjing Medical University health check up Department,""
+Shanghai,No,Public,Shanghai Minghang District Central Hospital VIP Department,""
+Chongqing,No,Dental,Chongqing Meilian dental clinic,Dental
+Shenyang,No,Private,Northeast International Hospital,internal medicine
+Shanghai,No,Private,"SinoUnited Health Clinic-Gefei Center Clinic - Medical, Dental and Endoscopy Center","Family Medicine, Internal Medicine, GI, Urology, Dentistry, Dermatology, ENT, Gynecology, Pediatrics"
+Shenyang,NO,Private,International Department of Shenyang Deji Hospital,Family Medicine
+JiaXing,No,Public,JiaXing No.1  Hospital Health screening Department,""
+Beijing,No,Private,Health in Here CBD Clinic,"GP，Internal Medicine, Pediatric，Dental，Gynecology"
+Hangzhou,No,Public,Hangzhou Obsterics Hospital,"Gastroenterology, Obstetrics, Newborn Screening, Child Health Care"
+Hangzhou,No,Private,Tree ENT Clinic HangZhou,ENT
+Beijing,No,Private,Beijing Intech jingxi rehabilitation hospital,Rehabilitation
+Beijing,No,Public,HE BEI YANDA HOSPITAL,"Specialty Department: Gynecology, Obstetrics, Pediatrics ,TCM, Neurology, Neurosurgery, Cardiovascular Medicine, Surgery"
+Beijing,No,Dental,Jiamei Dental Xiangyun Clinic,Dental
+Qingdao,No,Public,The Huikang Hospital of Qingdao University Medical Group,Internal Medicine OB/GYN
+Shenzhen,No,Private,Globalcare Medical Centre,GP、Pediatrics、Dermatolog
+Guangzhou,No,Private,GuangZhou Z'an Kangze TCM Clinic ,TCM
+Shanghai,No,Dental,DDS Dental Puxi,Dental
+Shanghai,No,Dental,DDS Dental Pudong,Dental
+Shanghai,No,Dental,DDS Dental Huacao,Dental
+Shanghai,No,Dental,DDS Dental Hongqiao,Dental
+Shanghai,No,Dental,DDS Dental Qingpu,Dental
+Shanghai,No,Wellness Checkup,Shanghai International Travel Medical Care Clinic,Check up Vaccine
+Beijing,No,Private,Dou An Quan Healthcare Beijing Clinic,"Family Medicine, TCM"
+Zhengzhou,No,Public,Henan Provincial People's Hospital International Medical Center,"Cardiovascular, Neurology"
+Shanghai,No,Private,Shanghai Pubin Children's Hospital,"Chid & Adolescent Health Examination (Developmental & Behavioral Pediatrics),Respiratory & Asthmatic Clinic,Endocrinology, Dermatology, Ophthalmology, Dental Care, and Otolaryngology (E.N.T.), Pediatric Surgery"
+Wuhan,No,Public,Hubei GeneralHospital/Renmin Hospital of Wuhan University,"Cardiology, Neurology, Nephrology, Cardiothoracic Surgery, Ophthalmology, Psychiatry, Cardiothoracic Surgery , Clinical laboratory"
+Shanghai,No,Private,Shanghai Gushengtang Wanjia branch,"TCM Internal Medicine, TCM Gynaecology, TCM Pediatric"
+Guangzhou,No,Private,Guangzhou Gushengtang Taojin branch,TCM
+Guangzhou,No,Private,Guangzhou Gushengtang Tianhebei branch,TCM
+Guangzhou,No,Private,Guangzhou Gushengtang Junjing branch,TCM
+Guangzhou,No,Private,Guangzhou Gushengtang Dongshan branch,TCM
+Guangzhou,No,Private,Guangzhou Gushengtang Donghu branch,TCM
+Guangzhou,No,Private,Guangzhou Gushengtang Chigang branch,TCM
+Guangzhou,No,Private,Guangzhou Gushengtang Haizhu branch,TCM
+Guangzhou,No,Private,Guangzhou Gushengtang Fanyu branch,TCM
+Shenzhen,No,Private,Shenzhen Gushengtang Luohu branch,TCM
+Shenzhen,No,Private,Shenzhen Gushengtang baoan traditional Chinese medicine hall,TCM
+Shenzhen,No,Private,Shenzhen Gushengtang Zhuzilin branch,TCM
+Shenzhen,No,Private,The second branch of Shenzhen Gushengtang   Zhuzilin,TCM
+Shenzhen,No,Private,Shenzhen Gushengtang Nanshan branch,TCM
+Guangzhou,No,Dental,Guangzhou Bybo Dental Clinic-Chengkang Dental Clinic ,Dental
+Guangzhou,No,Dental,Guangzhou Bybo Dental Clinic-Xiexian Dental Clinic ,Dental
+Guangzhou,No,Dental,Guangzhou Bybo Dental Clinic-Hui'er Dental Clinic ,Dental
+Guangzhou,No,Dental,Guangzhou Bybo Dental Clinic-Jianxiang Dental Clinic ,Dental
+Shenzhen,No,Dental,Shenzhen Bybo Dental Clinic- Science Park Dental Clinic,Dental
+Shenzhen,No,Dental,Shenzhen Bybo Kangbo Dental Clinic- Kangle Dental Clinic,Dental
+Shenzhen,No,Dental,Shenzhen Bybo Jianshe Dental Clinic- Jianshe Road Dental Clinic,Dental
+Shenzhen,No,Dental,Shenzhen Bybo Haiyan Dental Clinic- Guomao Dental Clinic,Dental
+Shenzhen,No,Dental,Shenzhen Bybo By'er Dental  Hospital,Dental
+Shenzhen,No,Dental,Shenzhen Bybo Dental Clinic- Fortune Dental Clinic,Dental
+Shenzhen,No,Dental,Shenzhen Bybo Xinain Dental Clinic- Chegongmiao Dental Clinic,Dental
+Chengdu,No,Private,Chengdu AIER East Eye Hospital,Ophthalmology
+Changsha,No,Public,Changsha TCM hospital,"orthopedics and traumatology,acupuncture and moxibustion,anorectal section"
+Changsha,No,Public,The 2nd People's hospital of Hunan province/Hunan Brain Hospital,psychiatry
+Yantai,No,Private,Yantai Lvye Ailimei Obstetrics and Gynecology Hospital,"Gastroenterology, Obstetrics"
+Shanghai,No,Private,Rainbow J Children's Clinic,"Pediatrics, TCM, Dentistry"
+Zhengzhou,No,Dental,"Sunny Dental Hospital, Zhengzhou",Restoration Orthodontics Implant
+Chengdu,No,Private,Chengdu GaoXin Tencent clinic,internal medicine，stomatology
+Chengdu,No,Private,Chengdu Ailimei maternity hospital,OB/GYN
+Wuhan,No,Public,Wuhan Xiehe hospital international department,Family Medicine
+Wuhan,No,Public,Wuhan PuRen hospital,Surgery， Hematology
+Guangzhou,No,Private,Sing Health Medical @ Guangzhou,"Family Medicine, Pediatrics, Gynecology,Dermatology, Lab tests, Preventitive healthcare, Radiology/Imaging"
+Shanghai,No,Private,Shanghai HeShengTang Clinic,Internal Medicine; Acupunture & Massage therapy
+Nanjing,No,Private,GZ Clinic,Pediatrics、Family Medicine、Psychological Consult、OBS&GYN、Traditional Chinese medical、Plastic surgery、Rehabilitation etc
+Shenyang,No,Private,Madein International clinic,"GP, Gynecology, Obstetrics, Pediatrics"
+Langfang,No,Private,Hebei Yanda Ludaopei Hospitlal,Hematology
+Chengdu,No,Private,Care Alliance rehabilition hospital of Chengdu,Rehabilitation
+Beijing,No,Dental,Pu Jing Dental Clinic,Dental
+Beijing,No,Private,Beijing Tencent Clinic,GP、Pediatrics
+Dongguan,No,Public,Huaxin Building of Hong Wah Hospital,Cardiovascular Medicine
+Shenzhen,No,Private,Shenzhen Dazu Douan Health Management Co. Ltd.,Department of gynaecology、Urology、Gynecology of traditional Chinese medicine、Internal medicine
+Hangzhou,No,Public,Hangzhou Seventh People‘s hospital West Valley Clinic,"Sleep disorders, psychological consultation"
+Dalian,No,Private,Dalian VITUP International Hospital,"General practice, Internal Medicine, General surgery, Pediatrics, Dentistry, Gynecology, TCM"
+Beijing,No,Private,SinoRehab Clinic,rehabilitation medicine
+Wuxi,No,Private,Wuxi Mingci Cardio-vascular Hospital,"Internal Medicine, Cardiology, Cardiac Surgery, Endocri-nology, Rehabili-tation"
+Wenzhou,No,Dental,Dental Doctor Xincheng Branch,Dental
+Wenzhou,No,Dental,Wenzhou Lucheng Dental Clinic,Dental
+Shanghai,No,Private,SinoUnited Health Clinic-New Bund Medical and Surgery Center,"Family Medicine, internal Medicine, Sports Medicine, Physical Therapy, General Surgery, Psychology, Pediatrics, Dermatology, Neurology"
+Shenyang,No,Public,Shenyang Jishuitan hospital,"spinal surgery, hand surgery, orthopeadics, traumatic orthopeadics, burn plastic, cardiovascular"
+Shanghai,No,Private,Shanghai Jiahui International Hospital,"Oncology, Women’s health, Pediatric, Orthopedics and Sports Medicine"
+Beijing,No,Private,Beijing U-Plus FXM Clinic,Family Medicine
+Beijing,No,Private,Beijing Canaan Clinic,Oncology
+Yantai,No,Public,Yantai Stomatological Hospital,Dental
+Yantai,No,Public,Yantai Stomatological Hospital Xingfu Branch,Dental
+Yantai,No,Public,Yantai Stomatological Hospital Development Zone Branch,Dental
+Yantai,No,Public,Yantai Stomatological Hospital Yantai University Branch,Dental
+Yantai,No,Public,Yantai Stomatological Hospital Fushan Branch,Dental
+Yantai,No,Public,Yantai Stomatological Hospital Wolong Branch,Dental
+Shenzhen,No,Private,Wellem-Shenzhen Coastal City Clinic,"Pediatrics, Children health checkup, Pediatric ophthalmology，Pediatric dental, TCM"
+Shenzhen,No,Private,Wellem-Shenzhen Baoan Clinic,"Pediatrics, Children health checkup, Pediatric dental, TCM"
+Shenzhen,No,Private,Wellem-Shenzhen Shekou Clinic,"Pediatrics, Children health checkup, Pediatric dental, TCM"
+Hangzhou,No,Private,Wellem-Hangzhou Qingchun Clinic,"Pediatrics, Children health checkup, Pediatric dental, TCM"
+Hangzhou,No,Private,Hangzhou Quancheng International Medical Health Care Center,Cardiology、Pulmonary Medicine、Gastroenterology、General Sugery、Oncology、Gynecology、Orthopedics
+Wuhan,No,Private,Wuhan 1st dental hospital Jiangda branch,Dental
+Shenzhen,No,Dental,Shenzhen ARRAIL Dental Clinic-Zhuoyuehui Clinic,Cosmetic Dentistry/Invisalign/ Dental Implants/Pediatric Dentistry
+Shenzhen,No,Dental,U-dental—Shenzhen Nanshan China merchants plaza Clinic,Dental
+Shenzhen,No,Dental,U-dental—Shenzhen Nanshan Huanlehaian Clinic,Dental
+Shenzhen,No,Dental,U-dental—Shenzhen Futian Huaqiangbei Clinic,Dental
+Guangzhou,No,Dental,U-dental—Qiaoxin International Financial Center Clinic,Dental
+Shanghai,No,Public,Shanghai Proton and Heavy Ion Center,Oncologist
+Chengdu,No,Private,Chengdu parkway Shenton health,General practice，Cardiology
+Beijing,No,Private,UMP Shunyi Medical Centre,Family Doctor(GM/IM)
+Beijing,No,Private,UMP Wangjing SOHO Medical Centre,Family Doctor(GM/IM)
+Beijing,No,Public,Beijing Huimin Hospital,"Ophthalmology, Cardiovascular, Encephalopathy"
+Nanchang,n/a,Public,Nanchang No.1 Hospital,""
+Nanchang,n/a,Dental,Nanchang REAL Dental Clinic,""
+Nanchang,n/a,Private,Nanchang Sanxi Tan Clinic,""
+Beijing,No,Public,"Peking Union Medical College Hospital Xidan Branch, International Medical Services","Endocrinology，Breast Surgery,Immunology,oncology"
+Shanghai,No,Private,Jun He Tang TCM Clinic,"Department of Pediatrics, gynecology, oncology, acupuncture, and internal medicine"
+Shanghai,No,Private,Shanghai Baijia Maternity Hospital,OB/GYN
+Beijing,No,Dental,Jiamei Dental Zizhuyuan Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Yongdinglu Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Xinzhongjie Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Wangjingdonglu Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Sanyuanli Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Panjiayuan Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Jiuxianqiao Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Jingsong Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Jjntaiqiao Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Haidianqiao Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Guangqylu Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Fuwai Clinic,Dental
+Beijing,No,Dental,Jiamei Dental Fuchenglu Clinic,Dental
+Ningbo,No,Public,"BeilunPeople’s Hospital in Ningbo (the First Affiliated Hospital, Zhejiang University, Beilun District)","Neurology, Cardiovascular Disease"
+Hangzhou,No,Public,"International Medical Outpatient department, The First Affiliated Hospital, zhejiang university school of medicinel",Infectious diseases，Hematology，Nephrology，Digestive department，Respiratory Urology，Hepatopancreatobiliary Surgery，General Surgery，Vascular，Cardiothoracic
+Suzhou,No,Dental,Dental Doctor HUDONG Branch,""
+Changshu,No,Dental,Dental Doctor CHANGSHU Branch,""
+Kunshan,No,Dental,Dental Doctor KUNSHANBranch,""
+Wuxi,No,Private,Wuxi Baijia Maternity Hospital,"Department of Pediatrics, OB/GYN, Ultrasound"
+Beijing,No,Dental,BYBO DENTAL GROUP,Dental
+Guangzhou,No,Private,Ismart clinic,"Pediatrics, Gynaecology and obstetrics, Cardiovascular, TCM"
+Shenzhen,No,Private,Tecent Trusted doctors shenzhen clinic,"GP, Gynecology, Dermatology, Pediatrics, Internal medicine, TCM, Day surgery"
+Guangzhou,No,Private,Tecent Trusted doctors Guangzhou clinic,"GP, Gynecology, Dermatology, Pediatrics, Internal medicine, TCM, Day surgery"
+Beijing,No,Private,Beijing New Century Eden Chaowai Clinic,""
+Beijing,No,Private,Beijing New Century AODONG Clinic,"Gynecology, Obstertrics,TCM,Internal medicine,Pediatrics,E.N.T clinic，Ophthalmology,Dermatology"
+Qingdao,No,Private,"Qingdao New Century Women's and Children's Hospital Co.,Ltd.",Gynecology、Obstetrics、 Pediatrics
+changsha,No,Dental,Rytime Dental Clinic,Dental
+changsha,No,Dental,Rytime Dental Haotian VIP clinic,Dental
+changsha,No,Dental,Rytime Dental Haotian VIP clinic,Dental
+Beijing,No,Dental,Arrail Dental Shuangjing Yiqing Building Clinic,Dental
+Beijing,No,Private,GI Healthcare Beijing Tonghui Clinic,Gastroscopy & Colonoscopy
+Beijing,No,Private,Your Health&Wellness International Medical Clinic,""
+Beijing,No,Private,Beijing Hope Hospital,Thyroid nuclear medicine Thyroid surgery Thyroid Endocrinology Thyroid Ophthalmology
+Shanghai,No,Private,Shanghai Regen Medical Center,Cardiology Medicine Family Medicine Orthopedic Medicine Gynecology Traditional Chinese Medicine Dermatology
+Zhenjiang,No,Public,Zhenjiang No.1 people hospital,""
+Shanghai,No,Public,"Shanghai tenth People's Hospital, VIP department",""
+Beijing,No,Public,"VIP Clinic, Fuwai Hospital, Chinese Academy of Medical Sciences (Building2, near to the East  Gate of hospital)","Cardiovasology, Cardiac Surgery"
+Shanghai,No,Public,Children's Hospital of Fudan University -- Branch,"Neurology, Kidney Diseases, Recovery Center, Homeopathy Center, Angiocardiopathy Center"
+Shanghai,No,Public,Eye & ENT Hospital of Fudan University -- Fenyang Road,"Ophthalmology, E.N.T."
+Shanghai,No,Public,Eye & ENT Hospital of Fudan University -- Baoqing  Road,"Ophthalmology, E.N.T."
+Shanghai,No,Public,Fudan University Shanghai Cancer Center,"Colorectal Surgery, Radiation Oncology, Gastric Cancer and Soft Tissue, Pancreas & Hepatobiliary Surgery"
+Shanghai,No,Public,Shanghai Ninth People's Hospital Affiliated Shanghai Jiaotong University School of Medicine,"Stomatology, Orthopedics"
+Shanghai,No,Public,Renji Hospital -- East Branch,"Diseases of Digestive System, Cardiovascular Diseases, Hemeopathy, ‎Rheumatoid Diseases"
+Shanghai,No,Public,Renji Hospital -- West Branch,"Diseases of Digestive System, Cardiovascular Diseases, Hemeopathy,‎ Rheumatoid Diseases"
+Shanghai,No,Public,Xinhua Hospital Affiliated to Shanghai Jiaotong University Shool of Medicine,"Pediatrics, Cardiovascular Internal Medicine, Orthopedics"
+Shanghai,No,Public,"Shanghai Tenth People's Hospital , Tenth People's Hospital of Tongji University",Ophthalmology
+Shanghai,No,Public,Shanghai Pulmonary Hospital,"Thoracic Surgery, Cancer Department, Respiratory Department, Tuberculosis Department"
+Shanghai,No,Public,Shanghai Chest Hospital,"Thoracic Surgery, Cardiovascular Disease"
+Shanghai,No,Public,Shanghai Changhai Hospital,"Digestive System Department, Cardiothoracic Surgery, Urinary Surgery, Burns"
+Shanghai,No,Public,Shanghai Changzheng Hospital,"Orthopedics, General Surgery, Digestive System Disease, Cardiothoracic Sugery"
+Shanghai,No,Public,Yueyang Hospital of Integrated Traditional Chinese and Western Medicine  -- Ganhe Road,"TCM Gynaecology, Rehabilitation Department, Acupunture Department, Gout"
+Shanghai,No,Public,Yueyang Hospital of Integrated Traditional Chinese and Western Medicine --Qinghai Road,"TCM Gynaecology, Rehabilitation Department, Acupunture Department, Gout"
+Shanghai,No,Public,Zhongshan Hospital,"Pneumology, General Surgery, Cardial Surgery, Thoracic Surgery"
+Shanghai,No,Public,"Shanghai First Maternity and Infant Hospital, VIP Dept.","OB&GYN, Neonatology"
+Suzhou,No,Public,"The First Affiliated Hospital of Soochow University, International Medical Center","Hematology, Orthopedics"
+Suzhou,No,Public,"Suzhou Municipal Hospital, VIP Clinic","Gastroenterology, Obstetrics, Newborn Screening, Child Health Care"
+Wuxi,No,Private,Wuxi Phoenix Hospital,Family Medicine
+Xiamen,No,Private,Xiamen Changgeng Hospital,"Cleft Lip and Palate, Breast Cancer"
+Kunshan,No,Public,"Kunshan No.1 People’s Hospital, VIP Clinic","Cardiovascular, Cerebral Surgery, Nephrology, Hand Surgery, OB/GYN"
+Chengdu,No,Public,"West China Hospital, SCU.","Respiratory, Urology, Endocrinology, Neurology, Thoracic Surgery"
+Chongqing,No,Public,The first hospital affiliated to AMU (southwest hospital),"Burn department,Osteopathic medical,neurosuirgery"
