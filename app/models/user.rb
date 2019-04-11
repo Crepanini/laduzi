@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
-         :omniauthable, omniauth_providers: [:facebook]
+         :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
 
   def self.find_for_facebook_oauth(auth)
     user_params = auth.slice(:provider, :uid)
@@ -24,5 +24,30 @@ class User < ApplicationRecord
     end
 
     return user
+  end
+
+  def self.find_or_create_from_auth_hash(auth)
+    where(provider: auth.provider, uid: auth.uid).first_or_initialize.tap do |user|
+      user.provider = auth.provider
+      user.uid = auth.uid
+      user.first_name = auth.info.first_name
+      user.last_name = auth.info.last_name
+      user.email = auth.info.email
+      user.picture = auth.info.image
+      user.save!
+    end
+  end
+
+  def self.from_omniauth(access_token)
+    data = access_token.info
+    user = User.where(email: data['email']).first
+    # Uncomment the section below if you want users to be created if they don't exist
+    unless user
+      user = User.create(name: data['name'],
+      email: data['email'],
+      password: Devise.friendly_token[0, 20]
+      )
+    end
+    user
   end
 end
