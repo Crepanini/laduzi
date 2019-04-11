@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'hospitals/index'
   get 'hospitals/show'
+  get '/tagged', to: "hospitals#tagged", as: :tagged
   devise_for :users,
     controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   root to: 'pages#home'

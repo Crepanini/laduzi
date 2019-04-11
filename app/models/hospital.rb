@@ -13,5 +13,6 @@ class Hospital < ApplicationRecord
   validates :tel, presence: true, uniqueness: true
 
   acts_as_commentable
+  acts_as_taggable_on :tags
 
 end

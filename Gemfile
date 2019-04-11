@@ -16,6 +16,7 @@ gem 'uglifier'
 gem 'webpacker'
 gem 'acts_as_commentable', '3.0.1'
 gem 'simple_form'
+gem 'acts-as-taggable-on', '~> 6.0'
 
 # devise
 gem 'devise'
