@@ -17,11 +17,11 @@
           </div>
 
           <div class="form-actions">
-            <%= f.button :submit, "Log in", class: "btn btn-primary" %>
+            <%= f.button :submit, "Log in", class: "btn btn-secondary" %>
           </div>
         <% end %>
 
-        <%= link_to user_google_oauth2_omniauth_authorize_path, class: "btn btn-primary" do %>
+        <%= link_to user_google_oauth2_omniauth_authorize_path, class: "btn btn-danger" do %>
               <i class="fab fa-google"></i>
               <%= "Sign in with Google" %>
             <% end %>
