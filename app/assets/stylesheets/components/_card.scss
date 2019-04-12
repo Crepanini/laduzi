@@ -8,6 +8,7 @@
   position: relative;
   margin-bottom: 15px;
   border-radius: 10px;
+
 }
 
 .card-description {
@@ -54,6 +55,28 @@
   object-fit: cover;
 }
 
-.row {
-  margin: 30px;
+// .row {
+//   margin: 30px;
+//   display: flex;
+// }
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  flex-grow: 1;
+  margin:10px;
+}
+
+
+#map_index {
+  width: 400px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
