@@ -8,22 +8,23 @@
       <% end %>
     </div>
     <div class="card-description hospital">
-      <div class="time-price">
-        <div>
-          <p> ¥<%= @hospital.price%></p>
+      <div>
+        <div class="time-price">
+          <div>
+            <p>Working Hours</p>
+            <p class="time"><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p>
+          </div>
         </div>
-        <div>
-          <p><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p>
+        <div class="address">
+          <p class="time-price">Address</p>
+          <p><%= @hospital.address%></p>
         </div>
-      </div>
-      <div class="address">
-        <p><%= @hospital.address%></p>
       </div>
     </div>
   </div>
   <div class="review">
     <div class= "overflow">
-      <h2>Comments</h2>
+      <h2 class="comment">Reviews</h2>
       <% @hospital.comments.each do |comment| %>
         User: <%= comment.user.first_name %> <%= comment.user.last_name %><br>
         Title: <%= comment.title %><br>

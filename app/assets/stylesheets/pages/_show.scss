@@ -19,14 +19,24 @@
   object-fit: cover;
 }
 
+.tags {
+    margin-left: 24px;
+    width: 465px;
+    margin-top: 15px;
+}
+
 .tag {
-  border: gray solid 1px;
+  border: #81a7d5 solid 1px;
   border-radius: 15px;
   padding: 5px;
   background-color: white;
   text-decoration: none;
   margin: 5px;
+  font-size: small;
+  text-decoration: none;
+  color: #81a7d5;
 }
+
 
 .tag:hover {
   opacity: 0.5;
@@ -39,8 +49,30 @@
 
 .overflow {
   overflow:scroll;
-  width:400px;
   height:400px;
+  width: 528px;
+  background: #f9f8f7;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.time {
+  font-weight: 400;
+}
+
+.time-price {
+  justify-content: center;
+}
+
+#newcomments {
+  font-size: 22px;
+}
+
+.comment {
+  font-size: 22px;
 }
 
 
+.review-button {
+  margin: 0;
+}
