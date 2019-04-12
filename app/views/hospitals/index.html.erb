@@ -12,9 +12,6 @@
           <p id="name"><%= hospital.name%></p>
           <div class="time-price">
             <div>
-              <p> ¥<%=hospital.price%></p>
-            </div>
-            <div>
               <p><%= hospital.open_at.to_formatted_s(:time) %> - <%=hospital.close_at.to_formatted_s(:time) %></p>
             </div>
           </div>
