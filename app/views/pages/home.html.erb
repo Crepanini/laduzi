@@ -1,23 +1,23 @@
 <div class="full">
-  <form>
+  <form action='<%= hospitals_path %>' method='GET'>
     <div class="form-row">
       <div class="col">
         <input type="text" class="form-control" placeholder="Location">
       </div>
-      <div class="col">
+      <!--       <div class="col">
         <input type="text" class="form-control" placeholder="Specialty">
-      </div>
+      </div> -->
       <div class="col">
-        <input type="text" class="form-control" placeholder="Health Insurer">
+        <input type="text" class="form-control" placeholder="Health Insurer" name="tag[]">
       </div>
-      <div class="col-auto">
+      <!-- <div class="col-auto">
         <div class="form-check mb-2">
           <input class="form-check-input" type="checkbox" id="autoSizingCheck">
           <label class="form-check-label" for="autoSizingCheck">
             English?
           </label>
         </div>
-      </div>
+      </div> -->
       <div class="col-auto">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
