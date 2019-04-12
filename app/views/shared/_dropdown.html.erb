@@ -1,5 +1,5 @@
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Insurer
   </button>
   <div class="dropdown-menu">
@@ -9,7 +9,7 @@
   </div>
 </div>
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Provider Type
   </button>
   <div class="dropdown-menu">
@@ -19,7 +19,7 @@
   </div>
 </div>
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Language
   </button>
   <div class="dropdown-menu">
@@ -29,7 +29,7 @@
   </div>
 </div>
 <div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Specialty
   </button>
   <div class="dropdown-menu">
@@ -38,7 +38,7 @@
     <% end %>
   </div>
 </div>
-<div>
+<div class="filtertags">
   <% if params[:tag] %>
     Filters:
     <% (params[:tag] || []).each do |tag| %>
