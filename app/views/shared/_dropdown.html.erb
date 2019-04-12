@@ -38,3 +38,11 @@
     <% end %>
   </div>
 </div>
+<div>
+  <% if params[:tag] %>
+    Filters:
+    <% (params[:tag] || []).each do |tag| %>
+      <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
+    <% end %>
+  <% end %>
+</div>

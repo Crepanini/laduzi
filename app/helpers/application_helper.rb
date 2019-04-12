@@ -1,5 +1,5 @@
 module ApplicationHelper
   def tags(tag)
-    [tag].push(params[:tag])
+    (params[:tag] || []) + [tag] if tag
   end
 end
