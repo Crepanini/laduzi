@@ -1,5 +1,5 @@
 class HospitalsController < ApplicationController
-  # skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!
   before_action :set_hospital, only: :show
 
   def index
@@ -7,7 +7,7 @@ class HospitalsController < ApplicationController
     @insurers = ["Allianz", "AXA PPP", "AXA ICBC", "AXA Tianping", "BUPA", "CIGNA", "Discovery Health", "Generali", "MSH", "NOW Health"]
     @provider_types = ["Private", "Public"]
     @languages = ["Chinese", "English", "Cantonese", "French", "Spanish", "Russian"]
-    @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology"]
+    @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology", "Gastroenterology", "General Surgery", "Anaesthesiology", "Radiology", "Pathology", "Plastic Surgery", "Psychiatry", "Respiratory Medicine", "Urology", "Dentistry", "Chinese Medicine"]
 
     @hospitals = Hospital.all
 
