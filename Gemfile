@@ -15,8 +15,9 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'acts_as_commentable', '3.0.1'
-gem 'simple_form'
 gem 'acts-as-taggable-on', '~> 6.0'
+gem 'bootstrap', '~> 4.3.1'
+gem 'jquery-rails'
 
 # devise
 gem 'devise'
