@@ -50,6 +50,10 @@
 .overflow {
   overflow:scroll;
   height:400px;
+  width: 528px;
+  background: #f9f8f7;
+  padding: 30px;
+  border-radius: 10px;
 }
 
 .time {
@@ -58,4 +62,17 @@
 
 .time-price {
   justify-content: center;
+}
+
+#newcomments {
+  font-size: 22px;
+}
+
+.comment {
+  font-size: 22px;
+}
+
+
+.review-button {
+  margin: 0;
 }

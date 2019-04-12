@@ -1,11 +1,7 @@
 <!-- comments/show.html.erb -->
-<h2> New Comments </h2>
-Remarks: The following should only be shown when user is logged in
-<br>
-<br>
 <br>
 <%= simple_form_for [@hospital, @comment] do |f| %>
   <%= f.input :title %>
   <%= f.input :comment %>
-  <%= f.button :submit, class: "btn btn-primary" %>
+  <%= f.button :submit, class: "btn btn-primary review-button" %>
 <% end %>
