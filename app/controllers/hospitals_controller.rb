@@ -9,31 +9,18 @@ class HospitalsController < ApplicationController
     @languages = ["Chinese", "English", "Cantonese", "French", "Spanish", "Russian"]
     @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology"]
 
-    if params[:tag].present?
-      return @hospitals = Hospital.tagged_with(params[:tag])
-    else
-      @hospitals = Hospital.all
-    end
+    @hospitals = Hospital.all
 
+    if params[:tag].present?
+      @hospitals = Hospital.tagged_with(params[:tag])
+    end
 
     # search bar
     if params[:query].present?
       return @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
-      @markers = @hospitals.map do |hospital|
-        {
-          lat: hospital.latitude,
-          lng: hospital.longitude
-        }
-      end
-    else
-      @hospitals = Hospital.all
-      @markers = @hospitals.map do |hospital|
-        {
-          lat: hospital.latitude,
-          lng: hospital.longitude
-        }
-      end
     end
+
+    set_markers
   end
 
   def show
@@ -52,5 +39,14 @@ class HospitalsController < ApplicationController
 
   def set_hospital
     @hospital = Hospital.find(params[:id])
+  end
+
+  def set_markers
+    @markers = @hospitals.map do |hospital|
+      {
+        lat: hospital.latitude,
+        lng: hospital.longitude
+      }
+    end
   end
 end
