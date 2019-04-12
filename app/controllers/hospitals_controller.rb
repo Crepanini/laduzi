@@ -3,6 +3,7 @@ class HospitalsController < ApplicationController
   before_action :set_hospital, only: :show
 
   def index
+
     @insurers = ["Allianz", "AXA PPP", "AXA ICBC", "AXA Tianping", "BUPA", "CIGNA", "Discovery Health", "Generali", "MSH", "NOW Health"]
     @provider_types = ["Private", "Public"]
     @languages = ["Chinese", "English", "Cantonese", "French", "Spanish", "Russian"]
