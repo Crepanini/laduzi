@@ -15,11 +15,9 @@ body, html {
 .form-row {
   padding-top: 20px;
   display: block;
-  position: fixed;
-  top: 30%;
+  margin-top: 30%;
   width: 600px;
   transition: all .5s cubic-bezier(.4, .25, .8, .3);
-  margin-left: 30%;
   background-color: rgba(32,103,184, 0.2);
   border-radius: 10px;
 }
