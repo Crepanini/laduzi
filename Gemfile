@@ -29,6 +29,10 @@ gem 'pundit'
 # geocode
 gem 'geocoder'
 
+# don't pay heroku
+gem 'letsencrypt_rack'
+gem 'letsencrypt_heroku', require: false
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
