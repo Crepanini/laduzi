@@ -11,5 +11,4 @@ Rails.application.routes.draw do
   resources :hospitals, only: [:index, :show, :new, :create] do
     resources :comments, only: [:show, :new, :create]
   end
-
 end

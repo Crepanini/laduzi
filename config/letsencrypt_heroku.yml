@@ -1,0 +1,3 @@
+- contact:    fake-email@dont-pay-heroku.com
+  domains:    laduzi.org www.laduzi.org
+  heroku_app: laduzi

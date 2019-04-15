@@ -1,15 +1,23 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
-  padding-top: 0;
-}
-
 .logo {
   border-radius: 50%;
+  width: 40px;
+}
+
+.navbar-lewagon {
+  background: white;
+  padding: 0;
+  width: 100%;
 }
 
 .navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+  display: flex;
+  flex-grow: 1;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -24,16 +32,21 @@
   padding-left: 32px;
   width: 356px;
   height: 43px;
-  margin-right: 779px;
+  margin-right: 100%;
 }
 
 .fa-search {
   position: absolute;
   font-size: 18px;
   margin-left: 8px;
+  margin-top: 15px;
 }
 
 .nav-item {
   width: 115px;
+  padding-right: 0;
 }
 
+.serach {
+
+}
