@@ -1,9 +1,10 @@
-<h1 class="name"><%= @hospital.name%></h1>
+<h1 class="name"><a class="heart" href="<%= hospital_upsave_path(@hospital) %>"><i class="fas fa-heart"></i></a> <%= @hospital.name%> </h1>
 <div class="container">
   <div class="row">
     <div class="hospital col-sm">
       <div class="description" >
-        <div><%= image_tag @hospital.image, height: 400, width: 500,class: "hospital-img" %></div>
+        <div><%= image_tag @hospital.image, height: 400, width: 500,class: "hospital-img" %>
+        </div>
         <div class="tags">
           <% @hospital.tag_list.each do |tag| %>
             <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>

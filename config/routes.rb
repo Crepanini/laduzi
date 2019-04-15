@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :hospitals, only: [:index, :show, :new, :create] do
+    get '/upsave' => 'hospitals#upsave'
+    get '/downsave' => 'hospitals#downsave'
     resources :comments, only: [:show, :new, :create]
   end
   get '/users/dashboard', to: 'pages#dashboard'
