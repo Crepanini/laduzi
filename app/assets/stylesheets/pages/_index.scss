@@ -1,2 +1,14 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.filterbutton {
+  margin-bottom: 7px;
+  color: #215696;
+  background: white;
+  border: solid 1px #215696;
+}
+
+.filtertags {
+  margin-left: 34px;
+  margin-bottom: 25px;
+}
