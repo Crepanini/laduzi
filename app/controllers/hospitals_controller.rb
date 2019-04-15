@@ -1,5 +1,5 @@
 class HospitalsController < ApplicationController
-  # skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!
   before_action :set_hospital, only: :show
 
   def index
@@ -7,33 +7,20 @@ class HospitalsController < ApplicationController
     @insurers = ["Allianz", "AXA PPP", "AXA ICBC", "AXA Tianping", "BUPA", "CIGNA", "Discovery Health", "Generali", "MSH", "NOW Health"]
     @provider_types = ["Private", "Public"]
     @languages = ["Chinese", "English", "Cantonese", "French", "Spanish", "Russian"]
-    @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology"]
+    @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology", "Gastroenterology", "General Surgery", "Anaesthesiology", "Radiology", "Pathology", "Plastic Surgery", "Psychiatry", "Respiratory Medicine", "Urology", "Dentistry", "Chinese Medicine"]
+
+    @hospitals = Hospital.all
 
     if params[:tag].present?
-      return @hospitals = Hospital.tagged_with(params[:tag])
-    else
-      @hospitals = Hospital.all
+      @hospitals = Hospital.tagged_with(params[:tag])
     end
-
 
     # search bar
     if params[:query].present?
       return @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
-      @markers = @hospitals.map do |hospital|
-        {
-          lat: hospital.latitude,
-          lng: hospital.longitude
-        }
-      end
-    else
-      @hospitals = Hospital.all
-      @markers = @hospitals.map do |hospital|
-        {
-          lat: hospital.latitude,
-          lng: hospital.longitude
-        }
-      end
     end
+
+    set_markers
   end
 
   def show
@@ -52,5 +39,14 @@ class HospitalsController < ApplicationController
 
   def set_hospital
     @hospital = Hospital.find(params[:id])
+  end
+
+  def set_markers
+    @markers = @hospitals.map do |hospital|
+      {
+        lat: hospital.latitude,
+        lng: hospital.longitude
+      }
+    end
   end
 end
