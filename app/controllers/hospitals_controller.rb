@@ -45,7 +45,6 @@ class HospitalsController < ApplicationController
       lat: @hospital.latitude,
       lng: @hospital.longitude
     }
-
   end
 
   private

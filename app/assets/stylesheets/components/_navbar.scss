@@ -17,7 +17,7 @@
 .navbar-nav {
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -27,7 +27,6 @@
 #welcome {
  margin-top: 9px;
 }
-
 
 .form-control-search {
   padding-left: 32px;
@@ -46,4 +45,8 @@
 .nav-item {
   width: 115px;
   padding-right: 0;
+}
+
+.serach {
+
 }
