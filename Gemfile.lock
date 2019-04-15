@@ -45,6 +45,7 @@ GEM
     acts-as-taggable-on (6.0.0)
       activerecord (~> 5.0)
     acts_as_commentable (3.0.1)
+    acts_as_rateable (2.0.1)
     arel (9.0.0)
     autoprefixer-rails (9.5.1)
       execjs
@@ -230,6 +231,7 @@ PLATFORMS
 DEPENDENCIES
   acts-as-taggable-on (~> 6.0)
   acts_as_commentable (= 3.0.1)
+  acts_as_rateable
   autoprefixer-rails
   bootsnap
   devise

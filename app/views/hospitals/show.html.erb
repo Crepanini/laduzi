@@ -26,7 +26,10 @@
     <div class= "overflow">
       <h2 class="comment">Reviews</h2>
       <% @hospital.comments.each do |comment| %>
-        Title: <%= comment.title %><br>
+        Title: <%= comment.title %> <br>
+        Ratings: <% (comment.avg_rating || 0).round(0).to_i.times do %>
+          <i class="fas fa-star star"></i>
+        <% end %><br>
         Comment: <%= comment.comment %><br>
         <hr>
       <% end %>

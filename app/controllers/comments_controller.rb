@@ -19,6 +19,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.commentable = @hospital
     @comment.user = current_user
+    @comment.avg_rating = (@comment.doctor_rating + @comment.service_rating + @comment.environment_rating + @comment.price_rating) / 4
     @comment.save
     redirect_to hospital_path(@hospital)
   end

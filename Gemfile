@@ -18,6 +18,7 @@ gem 'acts_as_commentable', '3.0.1'
 gem 'acts-as-taggable-on', '~> 6.0'
 gem 'jquery-rails'
 
+
 # devise
 gem 'devise'
 gem 'omniauth-facebook'
@@ -28,6 +29,7 @@ gem 'pundit'
 
 # geocode
 gem 'geocoder'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'

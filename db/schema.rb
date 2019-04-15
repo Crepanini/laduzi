@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_11_030322) do
+ActiveRecord::Schema.define(version: 2019_04_15_032200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 2019_04_11_030322) do
     t.integer "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float "service_rating"
+    t.float "environment_rating"
+    t.float "doctor_rating"
+    t.float "price_rating"
+    t.float "avg_rating"
     t.index ["commentable_id"], name: "index_comments_on_commentable_id"
     t.index ["commentable_type"], name: "index_comments_on_commentable_type"
     t.index ["user_id"], name: "index_comments_on_user_id"
