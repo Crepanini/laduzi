@@ -10,13 +10,17 @@
         <%#= cl_image_tag hospital.image, class: "card-img" %>
         <div class="card-description">
           <%= image_tag hospital.image, class: "card-img" %>
-          <p id="name"><%= hospital.name%></p>
+          <p id="index-name"><%= hospital.name%></p>
+          <hr>
           <div class="time-price">
             <div>
-              <p><%= hospital.open_at.to_formatted_s(:time) %> - <%=hospital.close_at.to_formatted_s(:time) %></p>
+              <p id="index-district"><i class="fas fa-map-pin"></i> <%= hospital.district %></p>
             </div>
           </div>
-          <p><%=hospital.address%></p>
+          <hr>
+          <p id="index-address"><%=hospital.address%></p>
+          <p id="provider_type"><%= hospital.provider_type %></p>
+          <p class="lang-image"><% if hospital.foreign_lang.include?("Eng") %><%= image_tag('eng.svg')%> <% end %></p>
           <%= link_to "", hospital_path(hospital), class: 'card-link' %>
         </div>
       </div>

@@ -48,7 +48,7 @@ Beijing,Chaoyang District,No,Public,"Beijing Anzhen Hospital, VIP Department","C
 00-80-7553 Individual",Eng,"",http://www.anzhen.org/,北京市朝阳区安贞路2号门诊楼11楼,39.972426,116.40237
 Beijing,Chaoyang District,No,Public,"Beijing Ditan Hospital, VIP Department","Liver Disease, Infectious Disease","1F, OP Building, 8 East Jingshun Street, Chaoyang District, Beijing","8:00 am -11:30, 12:30 pm - 4:00 pm",Closed,"00-80-0955 Group
 00-80-7553 Individual","","",http://www.bjdth.com/,北京市朝阳区京顺东街8号门诊1楼,40.022875,116.526314
-Beijing,Chaoyang District,No,Public,Wangjing Hospital VIP Clinic of CACMS,"Orthopaedics, Massage, Acupuncture, Kidney disease, Rheumatology","2F Medical Technical Building, Huajiadi Street, Chaoyang District, Beijing","Monday - Thursday: 8:00 am - 11:30 pm, 1:30 pm - 4:30 pm Friday: 8:00 am - 11:30 pm",Closed,"010-11 
+Beijing,Chaoyang District,No,Public,Wangjing Hospital VIP Clinic of CACMS,"Orthopaedics, Massage, Acupuncture, Kidney disease, Rheumatology","2F Medical Technical Building, Huajiadi Street, Chaoyang District, Beijing","Monday - Thursday: 8:00 am - 11:30 pm, 1:30 pm - 4:30 pm Friday: 8:00 am - 11:30 pm",Closed,"010-11
 010-8739078 ","","",http://www.wjhospital.com.cn/,北京市朝阳区花家地街医技楼2层,39.982587,116.47264
 Beijing,Changping District,No,Public,Peking University International Hospital,"Haematology, Tumor Center, Kidney Disease, Orthopedic Department, Sports Medicine Center, Ophthalmology, Nerve Disease","1 Shengming Kexueyuan Road, Zhongguancun, Changping District, Beijing","8:00 am - 12:00 pm, 1:00 pm - 5:00 pm",Closed,"00-80-0955 Group
 00-80-7553 Individual",Eng,"",,北京市昌平区中关村生命科学园路1号,40.096963,116.2776
@@ -120,7 +120,7 @@ Beijing,Xicheng District,No,Private,PKU Healthcare Management Center (Beijing Yi
 Beijing,Dongcheng District,No,Wellness Checkup,Beijing Lejian Physical Checkup Center,Physical Checkup,"4F, No. 2 Jiaotong Shuniu Building, 39 Dongzhimen Wai Street, Dongcheng District, Beijing",7:30 am - 5:00 pm,Saturday: 7:30 am - 3:00 pm Sunday is closed.,010-53157066,"",Yes,,北京市东城区东直门外大街39号交通枢纽大厦2号四层,39.942107,116.435264
 Beijing,Chaoyang District,No,Wellness Checkup,Ikang Evergreen Medical International (Checkup Department),Physical Checkup,"2F Shuangzizuo Building, Yi 12 Jianguomen Wai Street, Chaoyang District, Beijing",7:30 am - 10:30 am,Sunday is closed,"00-818-010
 1831068033  Zheng Lili","",Yes,,北京市朝阳区建国门外大街乙12双子座厦2层,39.907678,116.448681
-Beijing,Xicheng District,No,Private,Beijing Jiangong Hospital  International Department,"Cardiology, Cardiac Surgery, Neurosurgery, Thoracic Surgery, Osteology","6 Rufuli, Caishikou South Street, Xicheng District, Beijing ( 2F Outpatient Building, Jiangong Hospital)",8:00 am - 5:00 pm,n/a,"010-63561730 
+Beijing,Xicheng District,No,Private,Beijing Jiangong Hospital  International Department,"Cardiology, Cardiac Surgery, Neurosurgery, Thoracic Surgery, Osteology","6 Rufuli, Caishikou South Street, Xicheng District, Beijing ( 2F Outpatient Building, Jiangong Hospital)",8:00 am - 5:00 pm,n/a,"010-63561730
 135099000 ",Eng,"",,北京市西城区菜市口南大街儒福里6号（健宫医院门诊2层）,39.880904,116.375786
 Beijing,Xicheng District,No,Private,New Century International Children's Hospital,"Internal Medicine, Pediatric Surgery, Urology, Neurology, E.N.T.","56 Nanlishi Road, Xicheng District, Beijing",Outpatient: 8:00 am - 5:00 pm Emergency: 6:00 pm - 8:00 am,Outpatient: 8:00 am - 5:00 pm Emergency: 6:00 pm - 8:00 am,"010-6805588 ext. 8000
 010-8806000 H",Eng,"",,北京市西城区南礼士路56号,39.912365,116.354713
@@ -200,7 +200,7 @@ Beijing,Chaoyang District,No,Private,Beijing New Century Women's and Children's 
 Beijing,Chaoyang District,No,Private,Smile Angel Children’s Hospital,"Pediatrics, Cleft Lip and Palate","Building No.519, East Wangjing Garden, Chaoyang District, Beijing",8:00 am - 4:00 pm 8:00 am - 7:30 pm (Internal Medicine) 8:00 am - 4:30 pm (Health Care),8:00 am - 4:00 pm 8:00 am - 7:30 pm (Internal Medicine),010-8781977,Eng,"",,北京市朝阳区望京东园519号楼(阜通东大街望京SOHO对面）,39.996703,116.483892
 Beijing,Chaoyang District,No,Private,Beijing Intech Rehabilitation Hospital,Rehabilitation,"5 Balizhuang  Nanli, North Chaoyang Road, Chaoyang District, Beijing",8:00 am - 5:00 pm,8:00 am - 4:00 pm,010-85813399,Eng,"",,北京市朝阳区朝阳北路八里庄南里5号,39.922257,116.497361
 Beijing,Chaoyang District,No,Private,Beijing Premiere & Promise Hospital,"Rehabilitation, Sport Medicine, Postoperative Rehabilitation","29 Jianguo Road, Chaoyang District, Beijing","8:00 am - 12:00 pm, 1:00 pm - 5:00 pm",Closed,010-530716,Eng,"",,北京市朝阳区建国路29号,39.916367,116.522766
-Beijing,Chaoyang District,No,Private,Sanfine International Hospital,"GP, Internal Medicine, Surgery, Women’s Health and Wellness, Pediatrics, Ophthalmology, ENT, Dermatology, Rehabilitation, Traditional Chinese Medicine","Building No.4, Shimao International Center, 13 Gongti North Road, Chaoyang District, Beijing",8:30 am - 5:30 pm,Closed (Saturday only dental available),"010-613675 
+Beijing,Chaoyang District,No,Private,Sanfine International Hospital,"GP, Internal Medicine, Surgery, Women’s Health and Wellness, Pediatrics, Ophthalmology, ENT, Dermatology, Rehabilitation, Traditional Chinese Medicine","Building No.4, Shimao International Center, 13 Gongti North Road, Chaoyang District, Beijing",8:30 am - 5:30 pm,Closed (Saturday only dental available),"010-613675
 010-613676 English",Eng,Yes,,北京市朝阳区工体北路13号院世茂国际中心4号楼,39.934605,116.449014
 Beijing,Chaoyang District,No,Private,Beijing Vitup Hospital,"Health Checkup, TCM","52 Dongsanhuan Road, Chaoyang District, Beijing",7:30 am - 4:30 pm,Closed,010-6777789 ext.Chinese: 811/81/813 English: 88    ,Eng,"",,北京市朝阳区东三环南路乙52号,39.886823,116.462026
 Beijing,Chaoyang District,No,Private,Ikang Evergreen Medical International (Outpatient Department),"Cardiovascular Diseases, Tumor, Dental","2F LG Plaza Twin Towers, B12 Jianguo Men Wai Avenue, Chaoyang District, Beijing",Outpatient: 8:30 am - 5:00 pm Check-up: 7:40 am - 3:00 pm Dental: 8:00 am - 5:00 pm,Outpatient: Saturday 8:30 am - 5:00 pm                  Sunday closed Check-up: Saturday 7:40 am - 3:00 pm                Sunday closed Dental: Saturday to Sunday            8:00 am - 5:00 pm,"010-65681895
@@ -212,7 +212,7 @@ Beijing,Chaoyang District,No,Private,Beijing Horizon Sports Medicine Clinic,"Reh
 Beijing,Chaoyang District,No,Private,MedicGo General Medical Practice,General Medicine,"Uint A04 (Ground floor), Block A, Ocean Express Buildings, 66 Xia Guang Li, Chaoyang District, Beijing",8:30 am - 6:00 pm,Saturday: 9:00 am - 5:00 pm Sunday is closed.,"010-86759
 001080198 ",Eng,"",,北京市朝阳区霞光里66号院远洋新干线A座A04室,39.957191,116.459537
 Beijing,Chaoyang District,No,Private,Beijing Passion International  Medical Center,"Surgery, Gynecology, Ophthalmology, E.N.T., Dermatology","B1 Bory Building, 26 North Road, East Third Ring, Chaoyang District, Beijing (near Zhong Xin Medical Building)",9:30 am -  6:30 pm Wednesday :  8:00  -  6:30 pm,Saturday: 8:00 am - 5:00 pm Sunday is closed,"010-65167667
-010-65167806 
+010-65167806
 010-6516703 English
 010-6516701 Japanese","Eng
 Jp","",,北京市朝阳区东三环北路甲26号博瑞大厦B1 (近中信医疗大厦),39.928153,116.462476
@@ -245,8 +245,8 @@ Beijing,Chaoyang District,No,Private,OASIS international Hospital,Family Medicin
 Beijing,Chaoyang District,Yes,Private,International Medical Center-Beijing,"Reproductive System Diseases, Dentistry","S106 Lufthansa Center, 50 Liangmaqiao Road, Chaoyang District, Beijing",8:00 am - 5:00 pm,8:00 am - 5:00 pm,"010-6651561
 010-665156
 010-6651563
-010-665138 
-010-665139 
+010-665138
+010-665139
 Japanese: 010-6651560",Eng,"",,北京市朝阳区亮马桥路50号北京燕沙中心办公楼S106,39.950122,116.465566
 Beijing,Chaoyang District,Yes,Private,Beijing United Family- CBD Clinic,"Family Medicine, Pediatrics, Family Counseling","3017, 2F Building AB, Vantone Center, 6 Chaoyangmenwai Street, Chaoyang District, Beijing",9:00 am - 6:00 pm,Saturday: 9:00 am - 6:00 pm,"008-919191 /H  Appointment
 010-5979191（
@@ -379,7 +379,7 @@ Changzhou,Zhonglou District,No,Public,"Changzhou Dental Hospital, VIP Clinic",St
 Changzhou,Xinbei District,No,Public,"Changzhou Fourth People’s Hospital, International Medical Center",Oncology,"1F Outpatient Building, 68 Honghe Road, Xinbei District, Changzhou","8:00 am - 11:30 am, 2:00 pm - 5:00 pm",Closed,0519-698070,Eng,"",http://czdsyy.cn/index.html,常州市新北区红河路68号门诊楼1楼,31.870688,119.963558
 Changzhou,Tianning District,No,Public,"Changzhou TCM Hospital, VIP Clinic",TCM,"1F, Outpatient Building, 25 North Heping Road, Tianning District, Changzhou","8:00 am - 11:30 am, 2:00 pm - 5:00 pm",Closed,"0519-89897039  H
 1896110070  H",Eng,"",http://www.czzyy.com/,常州市天宁区和平北路25号门诊楼1楼,31.773036,119.965041
-Changzhou,Tianning District,No,Public,"Changzhou 2nd People's Hospital, VIP Medical Center & Checkup Center (Temporarily Closed)","Physical Checkup, Internal Medicine","29 Xinglong Lane, Tianning District, Changzhou","8:00 am - 10:00 am, 2:00 pm - 4:00 pm",Closed,"13651508505 
+Changzhou,Tianning District,No,Public,"Changzhou 2nd People's Hospital, VIP Medical Center & Checkup Center (Temporarily Closed)","Physical Checkup, Internal Medicine","29 Xinglong Lane, Tianning District, Changzhou","8:00 am - 10:00 am, 2:00 pm - 4:00 pm",Closed,"13651508505
 0519-8813736","","",http://www.czey.com/,常州市天宁区兴隆巷29号,31.774508,119.959944
 Chengdu,Wuhou District,No,Wellness Checkup,Meinian Health Wuhou Clinic,Physical Checkup,"1F-2F, Tianyi Mansion, 27 Jiangxi Street, Wuhou District, Chengdu",8:00 am - 10:30 am,Saturday: 8:00 am - 10:30 am Sunday is closed.,"01-13913 ext. 8308
 1500058316 ",Eng,Yes,,成都市武侯区浆洗街27号天亿大厦1-2层,30.645926,104.058807
@@ -464,7 +464,7 @@ Guangzhou,Tianhe District,No,Private,Guangzhou Zan TCM Clinic,TCM,"130A, 2F Gaod
 18988939368","",Yes,,广州市天河区珠江新城花城大道99号高德汇购物广场2座130A,23.117777,113.333333
 Guangzhou,Tianhe District,No,Private,Eur Am International Medical Center,"General Medicine, OB/GYN","1F North Tower, Ocean Pearl Building, 19 Huali Road, Zhujiang New City, Tianhe District, Guangzhou",8:00 am - 8:00 pm ,9:00 am - 6:00 pm,"English: 00-3758538
 Japanese: 00-37591168
-English: 137101337 
+English: 137101337
 H emergency hotline
 Japanese: 138611711  H emergency hotline","/Cantonese
 Eng
@@ -652,7 +652,7 @@ Shanghai,Changning District,No,Private,Shanghai Kanghui Clinic,"Dermatology, Int
 Shanghai,Changning District,No,Private,Sun-Tec Medical Center (Temporarily Closed),"Gynecology, Dermatology, Pediatrics, Internal Medicine, TCM","2F, 2281 Hongqiao Road, Changning District, Shanghai",8:00 am - 4:30 pm,"Saturday: 8:30 am - 12:00 pm, Sunday is closed.",01-51750505  ,"Eng
 Jp
 Kr","",,上海市长宁区虹桥路2281号2楼,31.192109,121.374244
-Shanghai,Changning District,No,Private,Shanghai Tenghe Clinic,"Internal Medicine, Pediatrics, Surgery, Orthopedics, Ophthalmology, ENT, Gynecology, Traditional Chinese Medicine, Dental, Rehabilitation","Floor 4, 88 Ronghuadongdao, Changning District, Shanghai", 9:00 am - 7:00 pm,9:00 am - 5:00 pm,"01-50613 
+Shanghai,Changning District,No,Private,Shanghai Tenghe Clinic,"Internal Medicine, Pediatrics, Surgery, Orthopedics, Ophthalmology, ENT, Gynecology, Traditional Chinese Medicine, Dental, Rehabilitation","Floor 4, 88 Ronghuadongdao, Changning District, Shanghai", 9:00 am - 7:00 pm,9:00 am - 5:00 pm,"01-50613
 13167138700 ER","Eng
 Jp","",,上海市长宁区荣华东道88号4F (華一银行上),31.196269,121.39729
 Shanghai,Changning District,No,Private,SAKURA Clinic,"Internal Medicine, OB/GYN, Pediatrics, TCM","4F, 2558 West Yan'an Road, Changning District, Shanghai",8:00 am - 9:00 pm Public Holidays: 9:00 am - 5:00 pm,8:00 am - 9:00 pm Public Holidays: 9:00 am - 5:00 pm,"01-609980
@@ -964,7 +964,7 @@ Tianjin,Hexi District,No,Private,IMHealthcare Medical Clinic- Hexi,Family Medici
 Tianjin,Hexi District,Yes,Private,Tianjin United Family Hospital,"General Medicine, Family Medicine","22 Tianxiaoyuan, Tanjiang Road, Hexi District, Tianjin",8:30 am - 5:30 pm,Saturday: 8:30 am - 5:30 pm Sunday is closed.,"0-58568500
 0-58568555",Eng,Yes,,天津市河西区潭江道天潇园22号,39.053635,117.221
 Tianjin,Heping District,No,Private,Tianjin New Century Women’s and Children's Hospital,"Internal Medicine, Pediatric Surgery, Urology, Neurology, ENT","33 Chifeng Road, Heping District, Tianjin",Outpatient: 8:00 am - 5:00 pm Emergency: 5:00 pm - 8:00 am,Outpatient: 8:00 am - 5:00 pm Emergency: 5:00 pm - 8:00 am,"0-60975151
-0-6097573 
+0-6097573
 0-6097500 ",Eng,"",,天津市和平区赤峰道33号,39.127799,117.207498
 Tianjin,TEDA,No,Public,"Teda Hospital, International Department","Western Rehabilitation, Psychology, Traumatic Orthopedics, Cardiovascular Medicine and Surgery, Neurology and Neurosurgery, Pediatric","Consulting Room 2, VIP Clinic, F3, OP Building A, No.65 Third Ave, TEDA, Tianjin",9:00 am - 4:30 pm,Emergency only,0-650100,Eng,"",www.tedahospital.com.cn,天津市经济技术开发区第三大街65号门诊楼A区三层特需门诊2诊室,39.027968,117.715091
 Tianjin,Nankai District,No,Public,"Tianjin First Central Hospital, International Medical Center","Internal Medicine, Surgery, Comprehensive Pediatric Internal Medicine, Gynecology & Obstetrics","24 Fukang Road, Nankai District, Tianjin","8:00 am - 12:00 pm, 2:00 pm - 5:00 pm",Emergency only,"0-366360
@@ -1057,7 +1057,7 @@ Zhuhai,Xiangzhou District,No,Public,"The Fifth Affiliated Hospital of Sun Yat-Se
 189698190","",Yes,www.zsufivehos.com,珠海市香洲区梅华东路52号,22.297936,113.57434
 Zhuhai,Xiangzhou District,No,Dental,Zhuhai Liu He Dental Hospital,Dental,"46 Yinhua Road, Xiangzhou District, Zhuhai",8:30 am - 9:00 pm,8:30 am - 9:00 pm,0756-160088,Eng,Yes,www.khhospital.com,珠海市香洲区银桦路46号,22.277721,113.563679
 Zhuhai,Xiangzhou District,No,Dental,Zhuhai Liu He Dental Clinic,Dental,"345 Ningxi Road, Xiangzhou District, Zhuhai",8:00 am - 9:00 pm,8:00 am - 9:00 pm,0756-38138,Eng,Yes,,珠海市香洲区柠溪路345号,22.264497,113.555749
-Beijing,Haidian District,No,Public,"Xiyuan Hospital, CACMS  International Medical Center","Cardiovascular Disease, Blood Disease, Senile Disease, Diabetes, Gastrointestinal Disease","1 Xiyuan Caochang, Haidian District, Beijing","8:30 am - 11:00 am, 1:30 pm - 4:30 pm",Saturday: 8:30 am - 11:30 am Sunday is closed.,"010-68356 
+Beijing,Haidian District,No,Public,"Xiyuan Hospital, CACMS  International Medical Center","Cardiovascular Disease, Blood Disease, Senile Disease, Diabetes, Gastrointestinal Disease","1 Xiyuan Caochang, Haidian District, Beijing","8:30 am - 11:00 am, 1:30 pm - 4:30 pm",Saturday: 8:30 am - 11:30 am Sunday is closed.,"010-68356
 00800955 CGHB
 00807553 IPMI
 0081767 NGB",Eng,Yes,http://www.xyhospital.com/,北京市海淀区西苑操场1号(颐和园东侧)杏苑楼一层,39.994462,116.292612
@@ -1087,7 +1087,7 @@ Shanghai,Pudong New District,No,Dental,Arrail Dental Lianyang Clinic,Dental,"Sec
 Hangzhou,Xiacheng District,No,Dental,Arrail Dental Hangzhou Tower Clinic,Dental,"Room CZ501, Building C, No.208 North Huancheng Road, HangzhouTower, Xiacheng District, Hangzhou",10:00 am - 6:00 pm,10:00 am - 6:00 pm,0571-85808616,Eng,Yes,,杭州市下城区环城北路208号杭州大厦C座CZ501室,30.27394,120.16085
 Shenzhen,Futian District,No,Dental,Arrail Dental Century Place Clinic,Dental,"Unit A-D,19F, Century Place,No.3018 Shennan Road, Futian District, Shenzhen",9:00 am - 5:30 pm,9:00 am - 5:30 pm,0755-870980,Eng,Yes,,深圳市福田区深南中路3018号世纪汇办公楼19层a-d单元,22.540922,114.083729
 Shenzhen,Nanshan District,No,Dental,Arrail Dental Zhenye International Clinic,Dental,"Unit 02-03,24F,Zhenye International Business Center, Nanshan District, Shenzhen",9:00 am - 5:30 pm,9:00 am - 5:30 pm,0755-86706660,Eng,Yes,,深圳市南山区深南路与前海路交汇处振业国际商务中心24层02、03单元,22.540677,113.91389
-Shenyang,Yuhong District,No,Private,Shenyang He Shi Eye Hospital,Ophthalmology,"No. 128, Huanghe North Street Yuhong District, Shenyang",8:00 am – 4:30 pm,8:00 am – 4:30 pm,"0-8650800 ext. 
+Shenyang,Yuhong District,No,Private,Shenyang He Shi Eye Hospital,Ophthalmology,"No. 128, Huanghe North Street Yuhong District, Shenyang",8:00 am – 4:30 pm,8:00 am – 4:30 pm,"0-8650800 ext.
 0-8653913 ext. ","Eng
 Jp",Yes,,沈阳市于洪区黄河北大街128号,41.879512,123.403857
 Shenyang,Dadong District,No,Private,Roicare Hospital&Clinic,"OB/GYN, Pediatrics","No. 136 Dongbei Damalu Road District, Shenyang",8:00 am - 5:00 pm,Closed,"0-319510
@@ -1103,7 +1103,7 @@ Beijing,Chaoyang District,No,Private,Capital Medical University of Beijing Medic
 Beijing,Chaoyang District,No,Private,St.Marco.Hospital,"Burns surgery, Orthopedics","Building 5, Haiyu Plaza, No.53 South Road of East 4th Ring road, Chaoyang District, Beijing",n/a,n/a,010-50967777,Eng,Yes,,北京市朝阳区东四环南路53号院林达海渔广场5号楼,39.864946,116.485666
 Yantai,High Tech Zone,No,Private,Luye Babath Rehabilitation hospital,All types of Rehabilitation,"No.8 Haibo Road, Yantai high tech Zone, Yantai, Shandong Province",n/a,n/a,"0535-807617
 1555371",Eng,Yes,,山东省烟台市高新区海博路8号,37.446704,121.497223
-Shanghai,Jing'an District,No,Private,Jiahui Clinic (Jing’an),"General Practice, Pediatric, Dermatology, Dental,E.N.T.","Room 101, 102, 103 and 2F, No. 88 Changshu Road, Jing'an District, Shanghai",9:00am -6:00pm,Saturday: 9:00am-6:00pm Sunday: closed,"01-85800 
+Shanghai,Jing'an District,No,Private,Jiahui Clinic (Jing’an),"General Practice, Pediatric, Dermatology, Dental,E.N.T.","Room 101, 102, 103 and 2F, No. 88 Changshu Road, Jing'an District, Shanghai",9:00am -6:00pm,Saturday: 9:00am-6:00pm Sunday: closed,"01-85800
 01-3587300 ",Eng,"",,"静安区常熟路88号1楼101,102, 103单元及2楼整层",31.217039,121.44756
 Chengdu,Jinjiang District,No,Public,Chengdu Jinjiang District Dongda Community Service Center,"Practice, Dental Care, Traditional Chinese Medicine, Integrated Traditional and Western Medicine, Child Health Care, Preventive Care","No.26, Tonghui Street, Jinjiang District, Chengdu",8:00am-5:30pm,8:00am-12:00am Sunday is closed.,08-6506070,Eng,"",无,成都市锦江区通汇街26号,30.636727,104.11815
 Suzhou,Gusu District,No,Public,The affiliated Suzhou Eye Hosptial of Wenzhou Medical College,Ophthalmology,"18 Shuyuan Lane,Shuzhou,Jiangsu",8:00 am - 5:00 pm,8:00 am - 5:30 pm,051-65775111,Eng,"",http://sz.cnksr.com/szyy/337.html,江苏省苏州市姑苏区书院巷18号,31.297956,120.622813
@@ -1238,7 +1238,7 @@ Beijing,Dongcheng District,No,Private,Beijing Guss Pediatrics Clinic,Pediatric,"
 Changsha,Yuelu District,No,Public,Hunan space flight hospital,"Neurology, Endocrinology, Cardiothoracic Surgery ,Cardiovascular Disease,",189 Fenglin 3rd road，yuelu district,"8:00 am - 12:00 pm, 2:30 pm – 5:30 pm",Closed,13787171673 ,"","",http://www.hnhtyy.com.cn/,长沙市岳麓区枫林三路189号,28.20656,112.90217
 Haikou,Xiuying District,n/a,Public,Hainan Cancer Hospital,"","No.6, West 4th Changbin Street, Xiuying District, Haikou","8:00 am - 11:30 am, 1:30 pm - 5:00 pm",Closed,"0898-36379999
 0898-36379999",Eng,"",,海口市秀英区长滨西四路6号,20.050364,110.182925
-Beijing,Dongcheng District,No,Private,PEK HORIZON CLINIC,"Medicine of Rehabilitation ,Sports Medicine ","2nd Floor, Beijing Sports Centre, National Sports Bureau NO.2 Stadium Road,  Dongcheng  District, Beijing",9:00 am - 6:00 pm,Closed,"010-871808 
+Beijing,Dongcheng District,No,Private,PEK HORIZON CLINIC,"Medicine of Rehabilitation ,Sports Medicine ","2nd Floor, Beijing Sports Centre, National Sports Bureau NO.2 Stadium Road,  Dongcheng  District, Beijing",9:00 am - 6:00 pm,Closed,"010-871808
 010-65530906 ",Eng,"",,北京市东城区体育馆路甲2号 北京体育馆2层,39.883284,116.428266
 Beijing,Dongcheng District,No,Public,"XinglinYuan TCM Medical Center,Beijing Traditional Chinese Medicine Hospital",TCM,"No.23 art gallery backstreet , dongcheng District,Beijing No12,Huangchenggen North Street,Dongcheng District,Beijing",7:30 am -11:30 am 1:00 pm - 7:00 pm ,"Saturday：7:30 am -11:30 am, 1:00 pm - 7:00 pm Sunday：7:30 am -12:00 am","010-5176710
 010-5176955","",Yes,http://www.bjzhongyi.com/,北京东城区美术馆后街23号 北京东城区东黄城根北街12号,39.932658,116.407797
@@ -1339,9 +1339,9 @@ Shenzhen,Luohu District,No,Dental,Shenzhen Bybo Haiyan Dental Clinic- Guomao Den
 Shenzhen,Futian District,No,Dental,Shenzhen Bybo By'er Dental  Hospital,Dental,"1-2F Bybo Dental Hospital, Nanguo Mansion, No. 2061 Hongling Zhong Road, Futian District, Shenzhen",9:30 am - 5:30 pm,9:30 am - 5:30 pm,0755-3677688,Eng,Yes,,深圳市福田区红岭中路2061号南国大厦拜博口腔医院1-2楼,22.555609,114.103776
 Shenzhen,Futian District,No,Dental,Shenzhen Bybo Dental Clinic- Fortune Dental Clinic,Dental,"6F Fortune Mansion, No. 88 Fuhua 3rd Road, Futian District, Shenzhen",9:30 am - 5:30 pm,9:30 am - 5:30 pm,0755-3998185,Eng,Yes,,深圳市福田区福华三路88号财富大厦六楼,22.533358,114.063845
 Shenzhen,Futian District,No,Dental,Shenzhen Bybo Xinain Dental Clinic- Chegongmiao Dental Clinic,Dental,"Room 2501-2508, Building A, Xi'xinian Center,Tairan 9th Road, South Shennan Avenue, Futian District, Shenzhen",9:30 am - 5:30 pm,9:30 am - 5:30 pm,0755-888766,Eng,Yes,,深圳市福田区沙头街道深南大道南、泰然九路西喜年中心A座2501-2508室,22.534678,114.02388
-Chengdu,Chenghua District,No,Private,Chengdu AIER East Eye Hospital,Ophthalmology,"No. 388, Shuanglin Road, Chenghua District, Chengdu","9:00 am - 12:00 pm, 2:00 pm - 5:00 pm",Make appoinment to have clinic visiting ,"08-68100800 
+Chengdu,Chenghua District,No,Private,Chengdu AIER East Eye Hospital,Ophthalmology,"No. 388, Shuanglin Road, Chenghua District, Chengdu","9:00 am - 12:00 pm, 2:00 pm - 5:00 pm",Make appoinment to have clinic visiting ,"08-68100800
 08-68100811 ",Eng,Yes,,成都市成华区双林路388号,30.659918,104.093784
-Changsha,Changsha xian,No,Public,Changsha TCM hospital,"orthopedics and traumatology,acupuncture and moxibustion,anorectal section","No.22 Xingsha Road,Changshaxian, ChangSha","8:00 am - 12:00 pm, 2:30 pm – 5:30 pm",Closed,"0731-8559115 
+Changsha,Changsha xian,No,Public,Changsha TCM hospital,"orthopedics and traumatology,acupuncture and moxibustion,anorectal section","No.22 Xingsha Road,Changshaxian, ChangSha","8:00 am - 12:00 pm, 2:30 pm – 5:30 pm",Closed,"0731-8559115
 1380818306 Eng, ",Eng,Yes,http://www.cssbyy.com/,长沙市长沙县星沙大道22号,28.236464,113.086719
 Changsha,Yuhua District,No,Public,The 2nd People's hospital of Hunan province/Hunan Brain Hospital,psychiatry,"No.437 the 3rd section of Furong zhong road, Changsha","8:00 am - 12:00 pm, 2:30 pm – 5:31 pm",Closed,1397580396 ,Eng,Yes,http://www.hnnkyy.com/,长沙市芙蓉中路三段437号,28.15514,112.984789
 Yantai,High Tech Zone,No,Private,Yantai Lvye Ailimei Obstetrics and Gynecology Hospital,"Gastroenterology, Obstetrics","No.8 Haibo Road, Yantai high tech Zone, Yantai, Shandong Province",8:30 am - 5:00 pm,8:30 am - 5:00 pm,0535-6575000,Eng,Yes,,山东省烟台市高新区海博路8号,37.446704,121.497223
@@ -1358,7 +1358,7 @@ Guangzhou,Tianhe District,No,Private,Sing Health Medical @ Guangzhou,"Family Med
 00-3739500","Eng  Kr
 Filipino","",,广州市天河区珠江新城冼村路2号,23.114951,113.328645
 Shanghai,Jing'an District,No,Private,Shanghai HeShengTang Clinic,Internal Medicine; Acupunture & Massage therapy,"1/F, 888 Wanhangdu Road, Jingan District, Shanghai",09:30 - 18:00 (Closed on Tuesday) provide night clinic service to 20:30 every Thursday,09:30 - 18:00,01-6660699,"、Provide English,French and Japanese service, please notify when make the appointment.",Yes,,上海万航渡路888号1楼,31.22863,121.428328
-Nanjing,Jiangning District,No,Private,GZ Clinic,Pediatrics、Family Medicine、Psychological Consult、OBS&GYN、Traditional Chinese medical、Plastic surgery、Rehabilitation etc,"1680 Shuanglong Avenue, Jiangning district, Nanjing (Near the southeast gate of 1912)",9:00 am - 12:00 am 13:00 pm - 18:00 pm,9:00 am - 12:00 am 13:00 pm - 18:00 pm,"05-86153390 
+Nanjing,Jiangning District,No,Private,GZ Clinic,Pediatrics、Family Medicine、Psychological Consult、OBS&GYN、Traditional Chinese medical、Plastic surgery、Rehabilitation etc,"1680 Shuanglong Avenue, Jiangning district, Nanjing (Near the southeast gate of 1912)",9:00 am - 12:00 am 13:00 pm - 18:00 pm,9:00 am - 12:00 am 13:00 pm - 18:00 pm,"05-86153390
 18061959 English service h","Eng
 Jp",Yes,,南京市江宁区双龙大道1680号，1912东南门附近,31.934025,118.818513
 Shenyang,Huanggu District,No,Private,Madein International clinic,"GP, Gynecology, Obstetrics, Pediatrics","15 Taishan Road, Huanggu District, Shenyang",8:00 am - 17:00 pm,8:00 am - 17:00 pm,0-866853,"Eng
@@ -1366,7 +1366,7 @@ Jp
 /Korea","",,沈阳市皇姑区泰山路15号（北陵公园正门）,41.83869,123.427069
 Langfang,Yanjiao Economic & Technological Development Zone,No,Private,Hebei Yanda Ludaopei Hospitlal,Hematology,"West side of Sipulan Road, Yanjiao Economic & Technological Development Zone, Langfang, Heibei",8:00 am - 4:30 pm,closed,"0316-330638
 185189985",Eng,Yes,,河北省廊坊市燕郊开发区思菩兰路西侧,39.922446,116.798559
-Chengdu,Chenghua District,No,Private,Care Alliance rehabilition hospital of Chengdu,Rehabilitation,"YalongJiang road,（next to West squares of east railway station） Chenghua district,Chengdu","8:30 am - 12:00 pm, 1:30 pm - 5:30 pm",n/a,"186800898 
+Chengdu,Chenghua District,No,Private,Care Alliance rehabilition hospital of Chengdu,Rehabilitation,"YalongJiang road,（next to West squares of east railway station） Chenghua district,Chengdu","8:30 am - 12:00 pm, 1:30 pm - 5:30 pm",n/a,"186800898
 08-83100386",Eng,Yes,,成都市成华区雅砻江路 (东客站西广场旁),30.628201,104.131105
 Beijing,Chaoyang District,No,Dental,Pu Jing Dental Clinic,Dental,"Rm 201,204,2nd Floor, Office Building of Nuo, No.2A,Jiangtai Rd. Chaoyang District, Beijing",9:00 am - 6:00 pm,9:00 am - 6:00 pm,"010-637186
 010-637136",Eng Kr,Yes,,北京市朝阳区将台路甲2号诺金写字楼2层201、204室 100016,39.977329,116.481425
@@ -1377,7 +1377,7 @@ Shenzhen,Futian District,No,Private,Shenzhen Dazu Douan Health Management Co. Lt
 00-686-9911",Eng,Yes,,深圳市福田区车公庙泰然八路深业泰然大厦B座2楼,22.530169,114.022141
 Hangzhou,XiHu District,No,Public,Hangzhou Seventh People‘s hospital West Valley Clinic,"Sleep disorders, psychological consultation","Room 207-208, Block C, Qianjiang Zhejiang Business Venture Center, 527 Xixi Road, Xihu District, Hangzhou","8:00 am - 11:30 pm, 1:30 pm - 5:00 pm Tuesday, Wednesday, Thursday extended outpatient time: 17:30-20:30",8:00 am - 12:00 pm,"00-80-0955 Group
 00-80-7553 Individual",Cn,"",http://www.hz7hospital.com/xlzxmzb.html,杭州市西湖区西溪路527号钱江浙商创投中心C座207-208室,30.266025,120.108065
-Dalian,Development Zone,No,Private,Dalian VITUP International Hospital,"General practice, Internal Medicine, General surgery, Pediatrics, Dentistry, Gynecology, TCM","22，No.2 DNA Road,DD Port, Kaifa dist., Dalian",8:30 am - 5:30 pm,Saturday: 8:30 am - 5:30 pm Sunday is on call,"011-3976866 
+Dalian,Development Zone,No,Private,Dalian VITUP International Hospital,"General practice, Internal Medicine, General surgery, Pediatrics, Dentistry, Gynecology, TCM","22，No.2 DNA Road,DD Port, Kaifa dist., Dalian",8:30 am - 5:30 pm,Saturday: 8:30 am - 5:30 pm Sunday is on call,"011-3976866
 011-3971901 Eng
 011-397190 ",Eng,"",,大连市开发区双D港生命二路22号,39.062307,121.88102
 Beijing,Xicheng District,No,Private,SinoRehab Clinic,rehabilitation medicine,S1 Floor，Donglian Plaza，No.8 Deshengmen East Avenue，Xicheng District,9:00 am - 6:00 pm,Closed,010-85188000,Eng,"",,北京市西城区德胜门东大街8号东联大厦S1层西区,39.948438,116.389413
@@ -1445,8 +1445,8 @@ Shanghai,Xuhui District,No,Private,Jun He Tang TCM Clinic,"Department of Pediatr
 English
 (marked when appointment is required)",Yes,,上海市徐汇区凯旋路3580号2楼,31.181113,121.433593
 Shanghai,Minhang District,No,Private,Shanghai Baijia Maternity Hospital,OB/GYN,"No. 1045 of Hongmei Road, Minhang District, Shanghai City  ",8:00 am - 5:00 pm,8:00 am - 5:00 pm,"01-678599
-1361185035 Sabrina 
-15800633833 Alex 
+1361185035 Sabrina
+15800633833 Alex
 18177860 Jenny ",Eng,"",,上海市闵行区虹梅路1045号,31.157473,121.403366
 Beijing,Haidian District,No,Dental,Jiamei Dental Zizhuyuan Clinic,Dental,"D, Zizhu Park No. 88, Zizhuyuan Rd ,Haidian District,Beijing P.R.C",9:00 am - 6:00 pm,9:00 am - 6:00 pm,"006509970
 010-885569",Eng,"",,北京市海淀区紫竹院路88号紫竹园D座,39.943935,116.30427
