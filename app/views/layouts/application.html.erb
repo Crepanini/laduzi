@@ -9,7 +9,7 @@
     <meta property="og:site_name" content="Latudzi"/>
     <title>Laduzi. Find the best clinic in two clicks.</title>
 
-    <%= favicon_link_tag 'favicon-32x32.png', class: "logo" %>
+    <%= favicon_link_tag 'favicon-32x32.png' %>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -18,8 +18,6 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
