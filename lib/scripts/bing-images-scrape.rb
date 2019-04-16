@@ -34,7 +34,7 @@ def scrape_bing(hospital)
     p result
     urls << result["thumbnailUrl"]
   end
-
+  # contentUrl
   # urls.each do |url|
   #   download = open(url)
   #   count += 1
