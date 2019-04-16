@@ -35,7 +35,7 @@ filepath = 'db/data.csv'
 
 CSV.foreach(filepath, csv_options) do |row|
   # p row["lat"].to_f
-  Hospital.create!(image: "https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png", city: row["city"], district: row["district"], provider_type: row["provider type"], name: row["name"], address: row["address"], open_at: row["mon-fri"], close_at:["sat-sun"], tel: row["appointment tel"], foreign_lang: row["foreign lang. service"], cn_address: row["cn_address"], longitude: row["long"].to_f, latitude: row["lat"].to_f)
+  Hospital.create!(image: "https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png", city: row["city"], district: row["district"], provider_type: row["provider type"], name: row["name"], specialty: row["specialties"], address: row["address"], weekday: row["mon-fri"], weekend: row["sat-sun"], tel: row["appointment tel"], foreign_lang: row["foreign lang. service"], website: row["website"], cn_address: row["cn_address"], longitude: row["long"].to_f, latitude: row["lat"].to_f)
 end
 
 
