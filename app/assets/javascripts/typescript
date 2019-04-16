@@ -5072,3 +5072,895 @@ Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.4ms)
 NoMethodError (undefined method `+' for nil:NilClass):
   
 app/controllers/comments_controller.rb:22:in `create'
+c c C\  cc  ^C- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2019-04-15 19:27:43 +0800 ===
+- Goodbye!
+Exiting
+[1m[7m%[27m[1m[0m                                                                                ]2;tracylee@Tracys-MacBook-Air]1;..ycslee/laduzi]7;file://Tracys-MacBook-Air.local/Users/tracylee/code/tracycslee/laduzi[0m[27m[24m[J[01;32m➜  [36mladuzi[00m [01;34mgit:([31madd-rating[34m)[00m [K[?1h=[?2004h[32mr[39m[1m[31mr[1m[31ma[0m[39m[1m[31mr[1m[31ma[1m[31mi[0m[39m[1m[31mi[1m[31ml[0m[39m[0m[32mr[0m[32ma[0m[32mi[0m[32ml[32ms[39m [4ms[24m[?1l>[?2004l[24ms
+]2;rails s]1;rails=> Booting Puma
+=> Rails 5.2.2.1 application starting in development 
+=> Run `rails server -h` for more startup options
+Puma starting in single mode...
+* Version 3.12.1 (ruby 2.5.3-p105), codename: Llamas in Pajamas
+* Min threads: 5, max threads: 5
+* Environment: development
+* Listening on tcp://localhost:3000
+Use Ctrl-C to stop
+Started GET "/" for ::1 at 2019-04-16 09:17:41 +0800
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (29.8ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 2661ms (Views: 2651.2ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/hospitals" for ::1 at 2019-04-16 09:18:27 +0800
+Processing by HospitalsController#index as HTML
+  [1m[36mHospital Load (1.0ms)[0m  [1m[34mSELECT "hospitals".* FROM "hospitals"[0m
+  ↳ app/controllers/hospitals_controller.rb:45
+  Rendering hospitals/index.html.erb within layouts/application
+  Rendered shared/_dropdown.html.erb (2.8ms)
+  Rendered hospitals/index.html.erb within layouts/application (7.2ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (5.8ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 208ms (Views: 117.4ms | ActiveRecord: 18.9ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 09:18:32 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.6ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (0.9ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mComment Load (2.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:28
+  Rendered comments/_new.html.erb (1.7ms)
+  Rendered hospitals/show.html.erb within layouts/application (66.6ms)
+  [1m[36mUser Load (67.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (72.3ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 227ms (Views: 109.7ms | ActiveRecord: 85.1ms)
+
+
+Started POST "/hospitals/1/comments" for ::1 at 2019-04-16 10:05:52 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Oxw8Gl4dYQmfS8YvYZFyHMP8yqkyjvPJmwvlTtA26CGqfCfmFCg/07UdNoKWjOI8lsYeBqH+b+XvJTIwMbx8g==", "comment"=>{"doctor_rating"=>"4.6", "service_rating"=>"3.6", "environment_rating"=>"2.5", "price_rating"=>"4.6", "title"=>"AAAAA", "comment"=>"AAAAA"}, "hospital_id"=>"1"}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mHospital Load (0.5ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:30
+Unpermitted parameters: :doctor_rating, :service_rating, :environment_rating, :price_rating
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 12.1ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:22:in `create'
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:13 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:19 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:20 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:25 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:26 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:29 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:30 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:31 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:41 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:49 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:49 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:51 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:53 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:06:58 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:08:33 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:08:33 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:08:38 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:08:40 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:08:42 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:08:43 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:08:44 +0800
+Started PUT "/__web_console/repl_sessions/1dfa8c70aa4eb0bb7e17a399fee8b355" for ::1 at 2019-04-16 10:08:47 +0800
+Started POST "/hospitals/1/comments" for ::1 at 2019-04-16 10:09:54 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Oxw8Gl4dYQmfS8YvYZFyHMP8yqkyjvPJmwvlTtA26CGqfCfmFCg/07UdNoKWjOI8lsYeBqH+b+XvJTIwMbx8g==", "comment"=>{"doctor_rating"=>"4.6", "service_rating"=>"3.6", "environment_rating"=>"2.5", "price_rating"=>"4.6", "title"=>"AAAAA", "comment"=>"AAAAA"}, "hospital_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mHospital Load (3.0ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[35m (36.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Create (11.3ms)[0m  [1m[32mINSERT INTO "comments" ("title", "comment", "commentable_type", "commentable_id", "user_id", "created_at", "updated_at", "service_rating", "environment_rating", "doctor_rating", "price_rating", "avg_rating") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "AAAAA"], ["comment", "AAAAA"], ["commentable_type", "Hospital"], ["commentable_id", 1], ["user_id", 3], ["created_at", "2019-04-16 02:09:55.284248"], ["updated_at", "2019-04-16 02:09:55.284248"], ["service_rating", 3.6], ["environment_rating", 2.5], ["doctor_rating", 4.6], ["price_rating", 4.6], ["avg_rating", 3.8249999999999997]]
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:23
+Redirected to http://localhost:3000/hospitals/1
+Completed 302 Found in 375ms (ActiveRecord: 99.7ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 10:09:55 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (6.7ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (3.6ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mActsAsTaggableOn::Tag Load (5.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:28
+  Rendered comments/_new.html.erb (3.6ms)
+  Rendered hospitals/show.html.erb within layouts/application (52.6ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (15.7ms)
+  Rendered shared/_flashes.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 304ms (Views: 267.6ms | ActiveRecord: 23.8ms)
+
+
+Started POST "/hospitals/1/comments" for ::1 at 2019-04-16 10:14:41 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m1PKvPkOanTZP/Jnt13/Qh6FjqADtV1BZnLNtn0oeAn9FkrTCCa/D7GWqaUAgYkCn9Fl8r34nzHXonbrhq5SWw==", "comment"=>{"doctor_rating"=>"2", "service_rating"=>"2", "environment_rating"=>"2", "price_rating"=>"2", "title"=>"BBBBB", "comment"=>"BBBBBBBB"}, "hospital_id"=>"1"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mHospital Load (5.5ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Create (0.9ms)[0m  [1m[32mINSERT INTO "comments" ("title", "comment", "commentable_type", "commentable_id", "user_id", "created_at", "updated_at", "service_rating", "environment_rating", "doctor_rating", "price_rating", "avg_rating") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["title", "BBBBB"], ["comment", "BBBBBBBB"], ["commentable_type", "Hospital"], ["commentable_id", 1], ["user_id", 3], ["created_at", "2019-04-16 02:14:41.810120"], ["updated_at", "2019-04-16 02:14:41.810120"], ["service_rating", 2.0], ["environment_rating", 2.0], ["doctor_rating", 2.0], ["price_rating", 2.0], ["avg_rating", 2.0]]
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:23
+Redirected to http://localhost:3000/hospitals/1
+Completed 302 Found in 33ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 10:14:41 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.3ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (1.4ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mActsAsTaggableOn::Tag Load (1.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:28
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  Rendered comments/_new.html.erb (1.3ms)
+  Rendered hospitals/show.html.erb within layouts/application (38.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (3.6ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 163ms (Views: 149.7ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 10:15:04 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (1.9ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (0.4ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:28
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  Rendered comments/_new.html.erb (1.8ms)
+  Rendered hospitals/show.html.erb within layouts/application (25.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (5.9ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 112ms (Views: 102.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 10:15:15 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.5ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (0.7ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:28
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  Rendered comments/_new.html.erb (1.7ms)
+  Rendered hospitals/show.html.erb within layouts/application (24.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (4.7ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 90ms (Views: 80.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 10:16:16 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.5ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (0.6ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mActsAsTaggableOn::Tag Load (1.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:28
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  Rendered comments/_new.html.erb (1.4ms)
+  Rendered hospitals/show.html.erb within layouts/application (35.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (4.4ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 105ms (Views: 93.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 10:16:44 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.7ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (0.5ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mActsAsTaggableOn::Tag Load (0.8ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:6
+  [1m[36mComment Load (1.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:28
+  [1m[36mUser Load (5.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:29
+  Rendered comments/_new.html.erb (2.1ms)
+  Rendered hospitals/show.html.erb within layouts/application (44.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (5.1ms)
+  Rendered shared/_flashes.html.erb (0.9ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 127ms (Views: 109.2ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 10:33:51 +0800
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.5ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  Rendered hospitals/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 57.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `round' for nil:NilClass):
+    2: <div class="hospital">
+    3:   <div class="description" >
+    4:     <div><%= image_tag @hospital.image, height: 400, width: 400,class: "hospital-img" %></div>
+    5:     <div> Hospital rating: <%= @hospital.rating.round(2) %></div>
+    6:     <div class="tags">
+    7:       <% @hospital.tag_list.each do |tag| %>
+    8:         <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
+  
+app/views/hospitals/show.html.erb:5:in `_app_views_hospitals_show_html_erb___1853744421662730480_70258600940180'
+Started GET "/hospitals/1" for ::1 at 2019-04-16 10:34:31 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.4ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (1.3ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mActsAsTaggableOn::Tag Load (1.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  Rendered comments/_new.html.erb (1.3ms)
+  Rendered hospitals/show.html.erb within layouts/application (54.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (4.9ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 111ms (Views: 93.9ms | ActiveRecord: 11.6ms)
+
+
+Started POST "/hospitals/1/comments" for ::1 at 2019-04-16 11:44:09 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kXT1NIKdaHjV6E5fzBkffIV5L/ntnO2HAHoQ55Bj9CL3MXVbc7W9A71BFZ17xWk8BC3Eq1PRL/exqqu6a+XecA==", "comment"=>{"doctor_rating"=>"4.2", "service_rating"=>"2.5", "environment_rating"=>"2", "price_rating"=>"2.5", "comment"=>"CCCCCCCCC"}, "hospital_id"=>"1"}
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mHospital Load (0.6ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Create (3.1ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "commentable_type", "commentable_id", "user_id", "created_at", "updated_at", "service_rating", "environment_rating", "doctor_rating", "price_rating", "avg_rating") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["comment", "CCCCCCCCC"], ["commentable_type", "Hospital"], ["commentable_id", 1], ["user_id", 3], ["created_at", "2019-04-16 03:44:09.776924"], ["updated_at", "2019-04-16 03:44:09.776924"], ["service_rating", 2.5], ["environment_rating", 2.0], ["doctor_rating", 4.2], ["price_rating", 2.5], ["avg_rating", 2.8]]
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mHospital Load (0.5ms)[0m  [1m[34mSELECT "hospitals".* FROM "hospitals"[0m
+  ↳ app/controllers/comments_controller.rb:27
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 16.4ms)
+
+
+  
+NoMethodError (undefined method `comment' for #<Hospital:0x00007fccafc306f8>
+Did you mean?  comments
+               comments=):
+  
+app/controllers/comments_controller.rb:28:in `block in create'
+app/controllers/comments_controller.rb:27:in `create'
+Started POST "/hospitals/1/comments" for ::1 at 2019-04-16 11:45:31 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kXT1NIKdaHjV6E5fzBkffIV5L/ntnO2HAHoQ55Bj9CL3MXVbc7W9A71BFZ17xWk8BC3Eq1PRL/exqqu6a+XecA==", "comment"=>{"doctor_rating"=>"4.2", "service_rating"=>"2.5", "environment_rating"=>"2", "price_rating"=>"2.5", "comment"=>"CCCCCCCCC"}, "hospital_id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mHospital Load (0.2ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Create (0.4ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "commentable_type", "commentable_id", "user_id", "created_at", "updated_at", "service_rating", "environment_rating", "doctor_rating", "price_rating", "avg_rating") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["comment", "CCCCCCCCC"], ["commentable_type", "Hospital"], ["commentable_id", 1], ["user_id", 3], ["created_at", "2019-04-16 03:45:31.676187"], ["updated_at", "2019-04-16 03:45:31.676187"], ["service_rating", 2.5], ["environment_rating", 2.0], ["doctor_rating", 4.2], ["price_rating", 2.5], ["avg_rating", 2.8]]
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:23
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 64.9ms)
+
+
+  
+NoMethodError (undefined method `comment' for #<Hospital:0x00007fccaf5b57b0>
+Did you mean?  comments
+               comments=):
+  
+app/controllers/comments_controller.rb:27:in `create'
+Started POST "/hospitals/1/comments" for ::1 at 2019-04-16 11:45:44 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kXT1NIKdaHjV6E5fzBkffIV5L/ntnO2HAHoQ55Bj9CL3MXVbc7W9A71BFZ17xWk8BC3Eq1PRL/exqqu6a+XecA==", "comment"=>{"doctor_rating"=>"4.2", "service_rating"=>"2.5", "environment_rating"=>"2", "price_rating"=>"2.5", "comment"=>"CCCCCCCCC"}, "hospital_id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mHospital Load (0.3ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:39
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Create (0.8ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "commentable_type", "commentable_id", "user_id", "created_at", "updated_at", "service_rating", "environment_rating", "doctor_rating", "price_rating", "avg_rating") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["comment", "CCCCCCCCC"], ["commentable_type", "Hospital"], ["commentable_id", 1], ["user_id", 3], ["created_at", "2019-04-16 03:45:44.448638"], ["updated_at", "2019-04-16 03:45:44.448638"], ["service_rating", 2.5], ["environment_rating", 2.0], ["doctor_rating", 4.2], ["price_rating", 2.5], ["avg_rating", 2.8]]
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[35m (33.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/controllers/comments_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:32
+  [1m[36mHospital Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "hospitals" WHERE "hospitals"."image" = $1 AND "hospitals"."id" != $2 LIMIT $3[0m  [["image", "https://www.cpgcorp.com.sg/cpgc/Content/Projects/1263/1263_04.jpg"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:32
+  [1m[36mHospital Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "hospitals" WHERE "hospitals"."name" = $1 AND "hospitals"."id" != $2 LIMIT $3[0m  [["name", "Shanghai International Medical Center"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:32
+  [1m[36mHospital Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "hospitals" WHERE "hospitals"."address" = $1 AND "hospitals"."id" != $2 LIMIT $3[0m  [["address", "4358 Kangxin Highway, Pudong New District, Shanghai"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:32
+  [1m[36mHospital Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "hospitals" WHERE "hospitals"."tel" = $1 AND "hospitals"."id" != $2 LIMIT $3[0m  [["tel", "021-60236000"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:32
+  [1m[36mHospital Update (66.9ms)[0m  [1m[33mUPDATE "hospitals" SET "rating" = $1, "updated_at" = $2 WHERE "hospitals"."id" = $3[0m  [["rating", 1.4224999999999999], ["updated_at", "2019-04-16 03:45:44.498116"], ["id", 1]]
+  ↳ app/controllers/comments_controller.rb:32
+  [1m[36mActsAsTaggableOn::Tagging Load (1.1ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/controllers/comments_controller.rb:32
+  [1m[35m (32.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:32
+Redirected to http://localhost:3000/hospitals/1
+Completed 302 Found in 242ms (ActiveRecord: 152.4ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 11:45:44 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.4ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (1.0ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mActsAsTaggableOn::Tag Load (0.9ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  Rendered comments/_new.html.erb (17.6ms)
+  Rendered hospitals/show.html.erb within layouts/application (69.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (5.4ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 162ms (Views: 151.1ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 11:47:11 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.7ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (4.6ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mActsAsTaggableOn::Tag Load (1.1ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  Rendered comments/_new.html.erb (1.4ms)
+  Rendered hospitals/show.html.erb within layouts/application (66.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (5.0ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 224ms (Views: 127.5ms | ActiveRecord: 33.8ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 11:47:19 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (1.3ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (0.5ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  Rendered comments/_new.html.erb (3.2ms)
+  Rendered hospitals/show.html.erb within layouts/application (590.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (8.1ms)
+  Rendered shared/_flashes.html.erb (0.8ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 886ms (Views: 680.1ms | ActiveRecord: 27.3ms)
+
+
+Started POST "/hospitals/1/comments" for ::1 at 2019-04-16 11:47:31 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LanCp4cXgg/xju+nTn67SJHtdl+m5VX2GGx9LE6r5RBL7ELIdj9XdJkntGX5os0IELmdDRiol4apvMZxtS3PQg==", "comment"=>{"doctor_rating"=>"4.6", "service_rating"=>"4.6", "environment_rating"=>"4.6", "price_rating"=>"4.6", "comment"=>"RRRRRR"}, "hospital_id"=>"1"}
+  [1m[36mUser Load (10.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mHospital Load (0.3ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Create (0.5ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "commentable_type", "commentable_id", "user_id", "created_at", "updated_at", "service_rating", "environment_rating", "doctor_rating", "price_rating", "avg_rating") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["comment", "RRRRRR"], ["commentable_type", "Hospital"], ["commentable_id", 1], ["user_id", 3], ["created_at", "2019-04-16 03:47:32.039938"], ["updated_at", "2019-04-16 03:47:32.039938"], ["service_rating", 4.6], ["environment_rating", 4.6], ["doctor_rating", 4.6], ["price_rating", 4.6], ["avg_rating", 4.6]]
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/controllers/comments_controller.rb:26
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 12.2ms)
+
+
+  
+NoMethodError (undefined method `+' for nil:NilClass):
+  
+app/controllers/comments_controller.rb:27:in `block in create'
+app/controllers/comments_controller.rb:26:in `create'
+Started POST "/hospitals/1/comments" for ::1 at 2019-04-16 11:47:39 +0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LanCp4cXgg/xju+nTn67SJHtdl+m5VX2GGx9LE6r5RBL7ELIdj9XdJkntGX5os0IELmdDRiol4apvMZxtS3PQg==", "comment"=>{"doctor_rating"=>"4.6", "service_rating"=>"4.6", "environment_rating"=>"4.6", "price_rating"=>"4.6", "comment"=>"RRRRRR"}, "hospital_id"=>"1"}
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/tracylee/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mHospital Load (1.5ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:37
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Create (0.7ms)[0m  [1m[32mINSERT INTO "comments" ("comment", "commentable_type", "commentable_id", "user_id", "created_at", "updated_at", "service_rating", "environment_rating", "doctor_rating", "price_rating", "avg_rating") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["comment", "RRRRRR"], ["commentable_type", "Hospital"], ["commentable_id", 1], ["user_id", 3], ["created_at", "2019-04-16 03:47:39.542938"], ["updated_at", "2019-04-16 03:47:39.542938"], ["service_rating", 4.6], ["environment_rating", 4.6], ["doctor_rating", 4.6], ["price_rating", 4.6], ["avg_rating", 4.6]]
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:23
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/controllers/comments_controller.rb:26
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/controllers/comments_controller.rb:29
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[36mHospital Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "hospitals" WHERE "hospitals"."image" = $1 AND "hospitals"."id" != $2 LIMIT $3[0m  [["image", "https://www.cpgcorp.com.sg/cpgc/Content/Projects/1263/1263_04.jpg"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[36mHospital Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "hospitals" WHERE "hospitals"."name" = $1 AND "hospitals"."id" != $2 LIMIT $3[0m  [["name", "Shanghai International Medical Center"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[36mHospital Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "hospitals" WHERE "hospitals"."address" = $1 AND "hospitals"."id" != $2 LIMIT $3[0m  [["address", "4358 Kangxin Highway, Pudong New District, Shanghai"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[36mHospital Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "hospitals" WHERE "hospitals"."tel" = $1 AND "hospitals"."id" != $2 LIMIT $3[0m  [["tel", "021-60236000"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[36mHospital Update (0.5ms)[0m  [1m[33mUPDATE "hospitals" SET "rating" = $1, "updated_at" = $2 WHERE "hospitals"."id" = $3[0m  [["rating", 1.9520833333333334], ["updated_at", "2019-04-16 03:47:39.607347"], ["id", 1]]
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[36mActsAsTaggableOn::Tagging Load (19.6ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/controllers/comments_controller.rb:30
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/comments_controller.rb:30
+Redirected to http://localhost:3000/hospitals/1
+Completed 302 Found in 208ms (ActiveRecord: 37.5ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 11:47:39 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (0.4ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (13.3ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:7
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:30
+  Rendered comments/_new.html.erb (1.7ms)
+  Rendered hospitals/show.html.erb within layouts/application (41.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 104ms (Views: 82.6ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 11:53:37 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (1.1ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (1.4ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:10
+  [1m[36mActsAsTaggableOn::Tag Load (1.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:10
+  [1m[36mComment Load (0.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:32
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  Rendered comments/_new.html.erb (2.3ms)
+  Rendered hospitals/show.html.erb within layouts/application (50.4ms)
+  [1m[36mUser Load (60.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (65.6ms)
+  Rendered shared/_flashes.html.erb (0.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 197ms (Views: 110.5ms | ActiveRecord: 79.7ms)
+
+
+Started GET "/hospitals/1" for ::1 at 2019-04-16 11:53:44 +0800
+Processing by HospitalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHospital Load (14.3ms)[0m  [1m[34mSELECT  "hospitals".* FROM "hospitals" WHERE "hospitals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/hospitals_controller.rb:41
+  Rendering hospitals/show.html.erb within layouts/application
+  [1m[36mActsAsTaggableOn::Tagging Load (2.0ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:10
+  [1m[36mActsAsTaggableOn::Tag Load (8.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = $1 AND "taggings"."taggable_type" = $2 AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:10
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 1], ["commentable_type", "Hospital"]]
+  ↳ app/views/hospitals/show.html.erb:32
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mUser Load (56.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hospitals/show.html.erb:33
+  Rendered comments/_new.html.erb (2.2ms)
+  Rendered hospitals/show.html.erb within layouts/application (212.6ms)
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (6.3ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 345ms (Views: 131.3ms | ActiveRecord: 206.8ms)
+
+
+Started GET "/hospitals" for ::1 at 2019-04-16 11:55:40 +0800
+Processing by HospitalsController#index as HTML
+  [1m[36mHospital Load (0.7ms)[0m  [1m[34mSELECT "hospitals".* FROM "hospitals"[0m
+  ↳ app/controllers/hospitals_controller.rb:45
+  Rendering hospitals/index.html.erb within layouts/application
+  Rendered shared/_dropdown.html.erb (3.7ms)
+  Rendered hospitals/index.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `rating' for nil:NilClass):
+    10:         <%#= cl_image_tag hospital.image, class: "card-img" %>
+    11:         <div class="card-description">
+    12:           <%= image_tag hospital.image, class: "card-img" %>
+    13:           <div> Rating: <% (@hospital.rating || 0).round(0).to_i.times do%>
+    14:               <i class="fas fa-star star"></i>
+    15:             <% end %>
+    16:           </div>
+  
+app/views/hospitals/index.html.erb:13:in `block in _app_views_hospitals_index_html_erb___3424048679188764719_70258595929220'
+app/views/hospitals/index.html.erb:7:in `_app_views_hospitals_index_html_erb___3424048679188764719_70258595929220'
+Started GET "/" for ::1 at 2019-04-16 11:56:12 +0800
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (5.4ms)
+  Rendered shared/_flashes.html.erb (0.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 79.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hospitals?tag%5B%5D=" for ::1 at 2019-04-16 11:56:15 +0800
+Processing by HospitalsController#index as HTML
+  Parameters: {"tag"=>[""]}
+  [1m[36mHospital Load (0.5ms)[0m  [1m[34mSELECT "hospitals".* FROM "hospitals" WHERE (1 = 0)[0m
+  ↳ app/controllers/hospitals_controller.rb:45
+  Rendering hospitals/index.html.erb within layouts/application
+  Rendered shared/_dropdown.html.erb (3.8ms)
+  Rendered hospitals/index.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (4.1ms)
+  Rendered shared/_flashes.html.erb (0.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 72ms (Views: 65.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/hospitals?tag%5B%5D=&tag%5B%5D=CIGNA" for ::1 at 2019-04-16 11:56:25 +0800
+Processing by HospitalsController#index as HTML
+  Parameters: {"tag"=>["", "CIGNA"]}
+  [1m[36mHospital Load (8.3ms)[0m  [1m[34mSELECT "hospitals".* FROM "hospitals" INNER JOIN "taggings" "hospital_taggings_4d196ac" ON "hospital_taggings_4d196ac"."taggable_id" = "hospitals"."id" AND "hospital_taggings_4d196ac"."taggable_type" = 'Hospital' AND "hospital_taggings_4d196ac"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE LOWER("tags"."name") ILIKE 'cigna' ESCAPE '!')[0m
+  ↳ app/controllers/hospitals_controller.rb:45
+  Rendering hospitals/index.html.erb within layouts/application
+  Rendered shared/_dropdown.html.erb (6.7ms)
+  Rendered hospitals/index.html.erb within layouts/application (16.3ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 8.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `rating' for nil:NilClass):
+    10:         <%#= cl_image_tag hospital.image, class: "card-img" %>
+    11:         <div class="card-description">
+    12:           <%= image_tag hospital.image, class: "card-img" %>
+    13:           <div> Rating: <% (@hospital.rating || 0).round(0).to_i.times do%>
+    14:               <i class="fas fa-star star"></i>
+    15:             <% end %>
+    16:           </div>
+  
+app/views/hospitals/index.html.erb:13:in `block in _app_views_hospitals_index_html_erb___3424048679188764719_70258596763780'
+app/views/hospitals/index.html.erb:7:in `_app_views_hospitals_index_html_erb___3424048679188764719_70258596763780'
+Started GET "/hospitals?tag%5B%5D=&tag%5B%5D=CIGNA" for ::1 at 2019-04-16 11:56:39 +0800
+Processing by HospitalsController#index as HTML
+  Parameters: {"tag"=>["", "CIGNA"]}
+  [1m[36mHospital Load (2.3ms)[0m  [1m[34mSELECT "hospitals".* FROM "hospitals" INNER JOIN "taggings" "hospital_taggings_4d196ac" ON "hospital_taggings_4d196ac"."taggable_id" = "hospitals"."id" AND "hospital_taggings_4d196ac"."taggable_type" = 'Hospital' AND "hospital_taggings_4d196ac"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE LOWER("tags"."name") ILIKE 'cigna' ESCAPE '!')[0m
+  ↳ app/controllers/hospitals_controller.rb:45
+  Rendering hospitals/index.html.erb within layouts/application
+  Rendered shared/_dropdown.html.erb (6.9ms)
+  Rendered hospitals/index.html.erb within layouts/application (11.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/shared/_navbar.html.erb:10
+  Rendered shared/_navbar.html.erb (4.2ms)
+  Rendered shared/_flashes.html.erb (0.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 72.5ms | ActiveRecord: 2.8ms)
+
+
