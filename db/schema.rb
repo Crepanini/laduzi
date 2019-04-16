@@ -44,7 +44,12 @@ ActiveRecord::Schema.define(version: 2019_04_16_022341) do
     t.float "latitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "tel"
+    t.string "tel"e
+    t.string "cn_address"
+    t.string "city"
+    t.string "district"
+    t.string "provider_type"
+    t.string "foreign_lang"
     t.float "rating"
   end
 
