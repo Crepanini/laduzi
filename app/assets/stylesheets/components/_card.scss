@@ -25,13 +25,41 @@
 .time-price {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
-  font-weight: bold;
+  margin-top: 1px;
 }
 
-#name {
+hr {
+  border: 0;
+  border-top: 0.7px solid rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+#index-name {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+#index-address {
+  font-size: 13px;
+}
+
+#index-district {
+  color: #215696;
+  font-size: 16px;
+}
+
+#provider_type {
+  color: #215696;
+  border: solid 0.7px #215696;
+  width: fit-content;
+  padding: 0px 5px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.lang-image {
+    width: 21px;
 }
 
 .card-link {

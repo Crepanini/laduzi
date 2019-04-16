@@ -77,6 +77,11 @@
   margin: 0;
 }
 
+.star {
+  color: orange;
+}
+
+
 @media(max-width: 992px) {
   .hospital {
     grid-template-columns: 1fr 1fr;
@@ -103,3 +108,4 @@
     width: 100%;
   }
 }
+
