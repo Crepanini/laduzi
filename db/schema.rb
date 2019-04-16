@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_04_16_031912) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -46,13 +45,13 @@ ActiveRecord::Schema.define(version: 2019_04_16_031912) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "tel"
-    t.float "rating"
     t.string "cn_address"
     t.string "city"
     t.string "district"
     t.string "provider_type"
     t.string "foreign_lang"
     t.string "specialty"
+    t.float "rating"
     t.string "website"
   end
 
