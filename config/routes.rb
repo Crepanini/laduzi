@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   resources :hospitals, only: [:index, :show, :new, :create] do
     resources :comments, only: [:show, :new, :create]
   end
+  get '/users/dashboard', to: 'pages#dashboard'
+  get '/users/profile', to: 'users#show'
 end
