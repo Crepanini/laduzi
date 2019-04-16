@@ -4,6 +4,10 @@ class PagesController < ApplicationController
 
   end
 
+  def dashboard
+    @saves = current_user.get_up_saved Hospital
+  end
+
   private
 
   def hospital_params

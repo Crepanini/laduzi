@@ -25,7 +25,7 @@ class HospitalsController < ApplicationController
   def show
     # displaying comments
     @comment = Comment.new
-    @saved = @hospital.saves_for.first.save_flag
+    @saved = @hospital.saves_for.empty? ? false : @hospital.saves_for.first.save_flag
     # mapbox
     @marker = {
       lat: @hospital.latitude,

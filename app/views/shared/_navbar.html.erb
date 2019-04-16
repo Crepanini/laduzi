@@ -8,15 +8,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <% if user_signed_in? %>
       <ul class="navbar-nav mr-auto">
-        <div class="search">
-          <i class="fas fa-search"></i>
+        <form class="search">
+          <!-- <input class="type"> -->
+          <i class="fa fa-search"></i>
           <%= form_tag hospitals_index_path, method: :get do %>
-          <%= text_field_tag :query, params[:query], class: "form-control-search",placeholder: "Find a hospital"%>
+          <%= text_field_tag :query, params[:query], class: "form-control-search"%>
           <% end %>
-        </div>
+        </form>
       </ul>
       <ul class="navbar-nav">
-          <li id="welcome">  Welcome <%= current_user.first_name%> <%= current_user.last_name%>!</li>
+          <li id="welcome">  Welcome <%= current_user.first_name%><%= current_user.last_name%>!</li>
           <li class="avatar" style="margin-right: 10px">
             <%= link_to "Saved", users_dashboard_path(@user), class: "nav-link" %>
           </li>
@@ -44,4 +45,5 @@
     </ul>
   </div>
 </nav>
+<hr class="line-nav">
 
