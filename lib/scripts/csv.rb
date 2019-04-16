@@ -93,10 +93,11 @@ CSV.open("../../cn_new_bill.csv", "wb") do |csv|
       tel.gsub!(/\p{Han}/, "")
       tel.gsub!("\，", '')
       tel.gsub!("\。", '')
-      tel.delete!("24小时服务中心")
-      tel.delete!("(仅对保险公司开放)")
+      tel.gsub!("24小时服务中心", "")
+      tel.gsub!("(仅对保险公司开放)", "")
     end
     new_row << tel
+
     # p tel
 
 
@@ -247,11 +248,13 @@ CSV.open("../../eng_new_bill.csv", "wb") do |csv|
       tel.gsub!(/\p{Han}/, "")
       tel.gsub!("\，", '')
       tel.gsub!("\。", '')
-      tel.delete!("24小时服务中心")
-      tel.delete!("(仅对保险公司开放)")
+      tel.gsub!("24小时服务中心", "")
+      tel.gsub!("(仅对保险公司开放)", "")
+      tel.gsub!("()", "")
+      tel.gsub!(" ", "")
     end
     new_row << tel
-    # p tel
+
 
 
     #FOREIGN LANGUAGE SERVICE
@@ -312,7 +315,7 @@ CSV.open("../../eng_new_bill.csv", "wb") do |csv|
     #LONG & LAT
     require 'json'
     require 'open-uri'
-    address_encode = URI.encode("#{addr}output=JSON&key=9b57c5123cd0de1872cd123bf5f440c9")
+    address_encode = URI.encode("#{addr}output=JSON&key=27df61d7d7a623d9d3ef412a48ee6218")
     url = "https://restapi.amap.com/v3/geocode/geo?address=#{address_encode}"
     serialize = open(url).read
     parse = JSON.parse(serialize)

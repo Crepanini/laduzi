@@ -7,17 +7,46 @@
         <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
       <% end %>
     </div>
-    <div class="card-description hospital">
-      <div>
-        <div class="time-price">
-          <div>
-            <p>Working Hours</p>
-            <p class="time"><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p>
-          </div>
+    <div class="hospital">
+      <div class="card-description-show">
+        <div class="telephone">
+          <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
+            <p>Appointment Telephone</p>
+            <p><%= @hospital.tel%></p>
+          <% end %>
         </div>
         <div class="address">
-          <p class="time-price">Address</p>
+          <p>Address</p>
           <p><%= @hospital.address%></p>
+        </div>
+        <div class="working-hours">
+          <div>
+            <p>Working Hours</p>
+            <% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
+            <% else %>
+              <p class="time">Monday - Friday: <%= @hospital.weekday %></p>
+            <% end %>
+            <% if @hospital.weekend.include?("Saturday" || "Sunday") %> <%= @hospital.weekend %>
+            <% else %>
+              <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p>
+            <% end %>
+          </div>
+        </div>
+        <div class="specialties">
+          <p>Specialties</p>
+          <p><%= @hospital.specialty%></p>
+        </div>
+        <div class="foreign-lang">
+          <% unless @hospital.foreign_lang == "" %>
+            <p>Foreign Language Service</p>
+            <p><%= @hospital.foreign_lang%></p>
+          <% end %>
+        </div>
+        <div class="website">
+          <% unless @hospital.website == "" || @hospital.website.nil? %>
+            <p>Website</p>
+            <p><%= @hospital.website%></p>
+          <% end %>
         </div>
       </div>
     </div>
