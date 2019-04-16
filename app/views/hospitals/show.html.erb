@@ -1,32 +1,36 @@
-<h1 class="name"><%= @hospital.name%></h1>
-<div class="hospital">
-  <div class="description" >
-    <div><%= image_tag @hospital.image, height: 400, width: 400,class: "hospital-img" %></div>
-    <div> Hospital rating: <% (@hospital.rating || 0).round(0).to_i.times do%>
+<h1 class="name"><a class="clickable" href="<%= hospital_upsave_path(@hospital) %>"><i class="fas fa-heart <%= @saved ? 'red' : 'gray' %>"></i></a> <%= @hospital.name%> </h1>
+
+
+<div class="container">
+  <div class="row">
+    <div class="hospital col-sm">
+      <div class="description" >
+        <div><%= image_tag @hospital.image, height: 400, width: 500,class: "hospital-img" %>
+          <div> Hospital rating: <% (@hospital.rating || 0).round(0).to_i.times do%>
         <i class="fas fa-star star"></i>
       <% end %>
-    </div>
-    <div class="tags">
-      <% @hospital.tag_list.each do |tag| %>
-        <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
-      <% end %>
-    </div>
-    <div class="card-description hospital">
-      <div>
-        <div class="time-price">
+        </div>
+        <div class="tags">
+          <% @hospital.tag_list.each do |tag| %>
+            <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
+          <% end %>
+        </div>
+        <div class="card-description">
           <div>
-            <p>Working Hours</p>
-            <p class="time"><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p>
+            <div class="time-price">
+              <div>
+                <p>Working Hours</p>
+                <p class="time"><%= @hospital.open_at.to_formatted_s(:time)%> - <%= @hospital.close_at.to_formatted_s(:time)%></p>
+              </div>
+            </div>
+            <div class="address">
+              <p class="time-price">Address</p>
+              <p><%= @hospital.address%></p>
+            </div>
           </div>
         </div>
-        <div class="address">
-          <p class="time-price">Address</p>
-          <p><%= @hospital.address%></p>
-        </div>
       </div>
-    </div>
-  </div>
-  <div class="review">
+      <div class="review col-sm">
     <div class= "overflow">
       <h2 class="comment">Reviews</h2>
       <% @hospital.comments.each do |comment| %>
@@ -41,7 +45,10 @@
     </div>
     <%= render 'comments/new' %>
   </div>
-</div>
+    </div>
+  </div>
+
+<!-- map -->
 <div
   id="map"
   style="width: 100%;

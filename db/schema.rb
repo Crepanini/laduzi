@@ -48,6 +48,20 @@ ActiveRecord::Schema.define(version: 2019_04_16_022341) do
     t.float "rating"
   end
 
+  create_table "saves", id: :serial, force: :cascade do |t|
+    t.string "saveable_type"
+    t.integer "saveable_id"
+    t.string "saver_type"
+    t.integer "saver_id"
+    t.boolean "save_flag"
+    t.string "save_scope"
+    t.integer "save_weight"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["saveable_id", "saveable_type", "save_scope"], name: "index_saves_on_saveable_id_and_saveable_type_and_save_scope"
+    t.index ["saver_id", "saver_type", "save_scope"], name: "index_saves_on_saver_id_and_saver_type_and_save_scope"
+  end
+
   create_table "taggings", id: :serial, force: :cascade do |t|
     t.integer "tag_id"
     t.string "taggable_type"

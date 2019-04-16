@@ -6,12 +6,15 @@ class User < ApplicationRecord
          :omniauthable, omniauth_providers: [:facebook, :google_oauth2]
 
   def self.find_for_facebook_oauth(auth)
-    user_params = auth.slice(:provider, :uid)
-    user_params.merge! auth.info.slice(:email, :first_name, :last_name)
+    user_params = {}
+    user_params.merge! auth.info.to_h.except("name", "image")
+    user_params[:first_name] = auth.info.name
     user_params[:facebook_picture_url] = auth.info.image
     user_params[:token] = auth.credentials.token
     user_params[:token_expiry] = Time.at(auth.credentials.expires_at)
     user_params = user_params.to_h
+    p user_params
+    p auth
 
     user = User.find_by(provider: auth.provider, uid: auth.uid)
     user ||= User.find_by(email: auth.info.email) # User did a regular sign up in the past.
@@ -20,7 +23,11 @@ class User < ApplicationRecord
     else
       user = User.new(user_params)
       user.password = Devise.friendly_token[0, 20] # Fake password for validation
-      user.save
+      if user.save
+        puts "HOORAY!"
+      else
+        p user.errors
+      end
     end
     return user
   end
@@ -42,7 +49,7 @@ class User < ApplicationRecord
     user = User.where(email: data['email']).first
     # Uncomment the section below if you want users to be created if they don't exist
     unless user
-      user = User.create(name: data['name'],
+      user = User.create(first_name: data['name'],
       email: data['email'],
       password: Devise.friendly_token[0, 20]
       )
