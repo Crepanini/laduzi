@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   private
 
   def hospital_params
-    params.require(:hospital).permit(:tag)
+    params.require(:hospital).permit(:tag, :city)
   end
 
 end
