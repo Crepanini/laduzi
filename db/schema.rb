@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_15_110828) do
+ActiveRecord::Schema.define(version: 2019_04_16_022341) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 2019_04_15_110828) do
     t.integer "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float "service_rating"
+    t.float "environment_rating"
+    t.float "doctor_rating"
+    t.float "price_rating"
+    t.float "avg_rating"
     t.index ["commentable_id"], name: "index_comments_on_commentable_id"
     t.index ["commentable_type"], name: "index_comments_on_commentable_type"
     t.index ["user_id"], name: "index_comments_on_user_id"
@@ -39,12 +44,27 @@ ActiveRecord::Schema.define(version: 2019_04_15_110828) do
     t.float "latitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "tel"
+    t.string "tel"e
     t.string "cn_address"
     t.string "city"
     t.string "district"
     t.string "provider_type"
     t.string "foreign_lang"
+    t.float "rating"
+  end
+
+  create_table "saves", id: :serial, force: :cascade do |t|
+    t.string "saveable_type"
+    t.integer "saveable_id"
+    t.string "saver_type"
+    t.integer "saver_id"
+    t.boolean "save_flag"
+    t.string "save_scope"
+    t.integer "save_weight"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["saveable_id", "saveable_type", "save_scope"], name: "index_saves_on_saveable_id_and_saveable_type_and_save_scope"
+    t.index ["saver_id", "saver_type", "save_scope"], name: "index_saves_on_saver_id_and_saver_type_and_save_scope"
   end
 
   create_table "taggings", id: :serial, force: :cascade do |t|

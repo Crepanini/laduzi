@@ -1,15 +1,16 @@
+.logo {
+  border-radius: 50%;
+  width: 40px;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
-  padding-top: 0;
-}
-
-.logo {
-  border-radius: 50%;
 }
 
 .navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+  // flex-grow: 0;
+  margin-left: 0;
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -24,16 +25,16 @@
   padding-left: 32px;
   width: 356px;
   height: 43px;
-  margin-right: 779px;
+  margin-right: 100%;
 }
 
 .fa-search {
   position: absolute;
   font-size: 18px;
   margin-left: 8px;
+  margin-top: 15px;
 }
 
-.nav-item {
-  width: 115px;
+.search {
+  margin-right: 30%;
 }
-

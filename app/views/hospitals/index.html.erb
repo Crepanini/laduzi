@@ -10,6 +10,10 @@
         <%#= cl_image_tag hospital.image, class: "card-img" %>
         <div class="card-description">
           <%= image_tag hospital.image, class: "card-img" %>
+          <div> Rating: <% (hospital.rating || 0).round(0).to_i.times do%>
+              <i class="fas fa-star star"></i>
+            <% end %>
+          </div>
           <p id="index-name"><%= hospital.name%></p>
           <hr>
           <div class="time-price">
