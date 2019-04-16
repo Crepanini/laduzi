@@ -25,7 +25,7 @@ class HospitalsController < ApplicationController
   def show
     # displaying comments
     @comment = Comment.new
-
+    @saved = @hospital.saves_for.first.save_flag
     # mapbox
     @marker = {
       lat: @hospital.latitude,
@@ -34,7 +34,16 @@ class HospitalsController < ApplicationController
   end
 
   def upsave
-    @hospital.upsaved_by current_user
+    @saved = @hospital.saves_for
+    if @saved.empty?
+      @hospital.upsaved_by current_user
+    else
+      if @saved.first.save_flag
+        @hospital.downsave_from current_user
+      else
+        @hospital.upsaved_by current_user
+      end
+    end
     redirect_to hospital_path(@hospital)
   end
 
