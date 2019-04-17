@@ -12,8 +12,7 @@ class HospitalsController < ApplicationController
 
     @hospitals = Hospital.where("city ILIKE ?", "%#{params[:city]}%")
 
-
-    if params[:tag].empty?
+    if params.key?("tag") and !params[:tag].empty?
       @hospitals = @hospitals.tagged_with(params[:tag])
     end
 

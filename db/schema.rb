@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema.define(version: 2019_04_16_031912) do
 
-
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -39,8 +38,8 @@ ActiveRecord::Schema.define(version: 2019_04_16_031912) do
     t.string "name"
     t.string "address"
     t.integer "price"
-    t.string "weekday"
-    t.string "weekend"
+    t.datetime "open_at"
+    t.datetime "close_at"
     t.float "longitude"
     t.float "latitude"
     t.datetime "created_at", null: false
