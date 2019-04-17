@@ -34,12 +34,16 @@ hr {
 
 input {
   border-radius: 10%;
-      /* border-radius: 10%; */
+  border-radius: 10%;
   background: none;
-  border: none;
-  position: absolute;
+  border: white 0.4px solid;
   top: 32px;
   right: 181px;
   color: white;
   font-size: 10px;
+}
+
+
+#markup {
+  margin-bottom: 0;
 }
