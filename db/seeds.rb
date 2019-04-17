@@ -34,11 +34,16 @@ csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
 filepath = 'db/data.csv'
 
 CSV.foreach(filepath, csv_options) do |row|
+  puts "Seeding Hospital #{row['name']}"
   # p row["lat"].to_f
   h = Hospital.create!(image: "https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png", city: row["city"], district: row["district"], provider_type: row["provider type"], name: row["name"], specialty: row["specialties"], address: row["address"], weekday: row["mon-fri"], weekend: row["sat-sun"], tel: row["appointment tel"], foreign_lang: row["foreign lang. service"], website: row["website"], cn_address: row["cn_address"], longitude: row["long"].to_f, latitude: row["lat"].to_f)
   h.tag_list.add("CIGNA")
+  h.tag_list << h.provider_type
+  h.tag_list << h.foreign_lang
+  h.tag_list << h.specialty
   h.save
 end
+
 
 
 
