@@ -3,6 +3,7 @@ require 'open-uri'
 require 'uri'
 require 'json'
 
+RESULT = JSON.parse(File.read("#{Rails.root}/lib/scripts/results.json"))
 
 def scrape_bing(hospital)
   accessKey = '96c237bed77d49bcad12583c726d47db'
@@ -27,14 +28,20 @@ def scrape_bing(hospital)
     end
   end
 
-  count = 0
-  parsed_json = JSON.parse(response.body)
-  urls = []
-  parsed_json["value"].first(5).each do |result|
-    p result
-    urls << result["thumbnailUrl"]
+  RESULT[hospital.name] = JSON.parse(response.body)
+  File.open("#{Rails.root}/lib/scripts/results.json", 'wb') do |file|
+    file.write(JSON.generate(RESULT))
   end
-  # contentUrl
+  # save on each iteration
+
+
+
+
+  # urls = []
+  # parsed_json["value"].first(3).each do |result|
+  #   urls << result["contentUrl"]
+  # end
+
   # urls.each do |url|
   #   download = open(url)
   #   count += 1
@@ -42,13 +49,14 @@ def scrape_bing(hospital)
   # end
 end
 
-# Hospital.all.each do |hospital|
-#   scrape_bing(hospital)
-#   sleep 1
-# end
-scrape_bing(Hospital.first)
-
-
+num_hospitals = 0
+Hospital.all[0..-1].each_with_index do |hospital, i|
+  next if RESULT[hospital.name].present?
+  scrape_bing(hospital)
+  puts "You've scraped #{num_hospitals += 1} hospitals"
+  puts hospital.name
+  sleep 1
+end
 
 # total_returned_images = parsed_json["totalEstimatedMatches"]
 # download = open(url_string)
