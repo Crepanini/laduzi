@@ -4,10 +4,14 @@ class PagesController < ApplicationController
 
   end
 
+  def dashboard
+    @saves = current_user.get_up_saved Hospital
+  end
+
   private
 
   def hospital_params
-    params.require(:hospital).permit(:tag)
+    params.require(:hospital).permit(:tag, :city)
   end
 
 end

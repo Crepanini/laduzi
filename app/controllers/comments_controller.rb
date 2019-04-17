@@ -19,7 +19,15 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     @comment.commentable = @hospital
     @comment.user = current_user
+    @comment.avg_rating = (@comment.doctor_rating + @comment.service_rating + @comment.environment_rating + @comment.price_rating) / 4
     @comment.save
+    hospitals = Hospital.all
+    sum = 0
+    @hospital.comments.each do | comment |
+      sum += comment.avg_rating || 0
+    end
+    @hospital.rating = sum / @hospital.comments.count
+    @hospital.save
     redirect_to hospital_path(@hospital)
   end
 
@@ -30,7 +38,7 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.require(:comment).permit(:title, :comment)
+    params.require(:comment).permit(:title, :comment, :doctor_rating, :service_rating, :environment_rating, :price_rating)
   end
 
 end

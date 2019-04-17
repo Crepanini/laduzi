@@ -1,39 +1,139 @@
+.logo {
+  border-radius: 50%;
+  width: 50px;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
-  padding-top: 0;
-}
 
-.logo {
-  border-radius: 50%;
 }
-
+.navbar-nav {
+  position: relative;
+}
 .navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+  // flex-grow: 0;
+  margin-left: 0;
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 40px;
+  width: 50px;
 }
 
 #welcome {
  margin-top: 9px;
 }
 
+.search {
+    position: absolute;
+    top: 0;
+    left: 90px;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: $blue;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid $blue;
+    padding: 5px;
+}
+
 .form-control-search {
-  padding-left: 32px;
-  width: 356px;
-  height: 43px;
-  margin-right: 779px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
 }
 
-.fa-search {
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+.search:hover {
+    width: 200px;
+    cursor: pointer;
+}
+
+.search:hover .form-control-search {
+    display: block;
+}
+
+.search:hover .fa {
+    background: white;
+    color: $blue;
+}
+
+// .form-control-search {
+//   padding-left: 32px;
+//   width: 356px;
+//   height: 43px;
+//   margin-right: 100%;
+// }
+
+// .fa-search {
+//   position: absolute;
+//   font-size: 18px;
+//   margin-left: 8px;
+//   margin-top: 15px;
+// }
+
+// .search {
+//   margin-right: 30%;
+// }
+
+.nav-link {
+  color:$gray;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color:$gray;
+}
+
+.nav-link::before {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 50%;
+  background-color: #444;
   position: absolute;
-  font-size: 18px;
-  margin-left: 8px;
+  top: 50px;
+  width: 0%;
+  transition: all ease-in-out 250ms;
 }
 
-.nav-item {
-  width: 115px;
+.nav-link:hover::before {
+  width: 50%;
 }
 
+.line-nav {
+  width: 100%;
+  border-bottom: 0.5px solid $gray !important;
+  // height: 0.5px;
+  background-color: $gray;
+  opacity: 0.2;
+  border: 0 none;
+  margin-bottom: 0;
+  margin-top: 0;
+  shadow: 0 0 15px rgba(0,0,0,0.2);
+}
