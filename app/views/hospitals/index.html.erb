@@ -25,7 +25,6 @@
           <div class="info-under-line">
             <p id="index-address"><%=hospital.address%></p>
             <p id="provider-type"><%= hospital.provider_type %></p>
-            <p class="lang-image"><% if hospital.foreign_lang.include?("Eng") %><%= image_tag('eng.svg')%> <% end %></p>
           </div>
           <%= link_to "", hospital_path(hospital), class: 'card-link' %>
         </div>
