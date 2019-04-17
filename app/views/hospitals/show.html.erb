@@ -19,12 +19,10 @@
             <div class="show-description"> -->
               <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
                 <p><strong>Phone:</strong></p>
-                <p><%= @hospital.tel%></p>
+                <p><%= @hospital.tel%></p><br>
               <% end %>
-              <p><strong>Address:</strong></p>
-              <p><%= @hospital.address%></p>
-              <%= render 'shared/modal' %>
-              <p>Working Hours</p>
+              <p><strong>Address:      <%= render 'shared/modal' %></strong></p>
+              <p><%= @hospital.address%></p><br>
               <p><strong>Working Hours:</strong></p>
               <% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
               <% else %>
@@ -32,17 +30,17 @@
               <% end %>
               <% if @hospital.weekend.include?("Saturday" || "Sunday") %> <%= @hospital.weekend %>
               <% else %>
-                <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p>
+                <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p><br>
               <% end %>
               <p><strong>Specialties:</strong></p>
-              <p><%= @hospital.specialty%></p>
+              <p><%= @hospital.specialty%></p><br>
               <% unless @hospital.foreign_lang == "" %>
                 <p><strong>Foreign Language Service:</strong></p>
-                <p><%= @hospital.foreign_lang%></p>
+                <p><%= @hospital.foreign_lang%></p><br>
               <% end %>
               <% unless @hospital.website == "" || @hospital.website.nil? %>
                 <p><strong>Website:</strong></p>
-                <a href="//<%= @hospital.website %>"><%= @hospital.website%></a>
+                <a href="//<%= @hospital.website %>"><%= @hospital.website%></a><br>
               <% end %>
          <!--    </div>
           </div> -->
