@@ -1,49 +1,40 @@
 <nav class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-    <%= link_to hospitals_path, class: "navbar-brand" do %>
+  <%= link_to hospitals_path, class: "navbar-brand" do %>
     <%= image_tag "logo.png", class: "logo" %>
   <% end %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <% if user_signed_in? %>
+    <% if user_signed_in? %>
       <ul class="navbar-nav mr-auto">
         <form class="search">
           <!-- <input class="type"> -->
           <i class="fa fa-search"></i>
           <%= form_tag hospitals_index_path, method: :get do %>
-          <%= text_field_tag :query, params[:query], class: "form-control-search"%>
+            <%= text_field_tag :query, params[:query], class: "form-control-search"%>
           <% end %>
         </form>
       </ul>
       <ul class="navbar-nav">
-          <li id="welcome">  Welcome <%= current_user.first_name%><%= current_user.last_name%>!</li>
-          <li class="avatar" style="margin-right: 10px">
-            <%= link_to "Saved", users_dashboard_path(@user), class: "nav-link" %>
-          </li>
-          <li >
-            <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-          </li>
-      </ul>
-          <% else %>
-        <ul class="navbar-nav ml-auto">
-          <li >
-            <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
-          </li>
-          <li class="login">
-            <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item dropdown">
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-            </div>
-          </li>
+        <li id="welcome">  Welcome <%= current_user.first_name%><%= current_user.last_name%>!</li>
+        <li class="avatar" style="margin-right: 10px">
+          <%= link_to "Saved", users_dashboard_path(@user), class: "nav-link" %>
+        </li>
+        <li >
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
         </li>
       </ul>
-        <% end %>
-    </ul>
+    <% else %>
+      <ul class="navbar-nav ml-auto">
+        <li>
+          <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+        </li>
+        <li class="login">
+          <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+        </li>
+      </ul>
+    <% end %>
   </div>
 </nav>
 <hr class="line-nav">
-
