@@ -8,7 +8,7 @@
   background: white;
 
 }
-.navbar-nav {
+.navbar {
   position: relative;
 }
 .navbar-lewagon .navbar-collapse {
@@ -21,13 +21,13 @@
 }
 
 #welcome {
- margin-top: 9px;
+ margin-top: 30px;
 }
 
 .search {
     position: absolute;
-    top: 0;
-    left: 90px;
+    margin-top: 40px;
+    left: 180px;
     transform: translate(-50%,-50%);
     transition: all 1s;
     width: 50px;
