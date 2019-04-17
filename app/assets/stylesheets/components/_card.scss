@@ -17,15 +17,14 @@
   left: 10px;
   text-align: center;
 }
+
 .card-description p {
   font-size: 16px;
   margin: 0;
 }
 
-.time-price {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1px;
+.location {
+  margin: 0 auto;
 }
 
 hr {
@@ -56,9 +55,12 @@ hr {
   padding: 0px 5px;
   border-radius: 6px;
   font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .lang-image {
+  margin-left: 5px;
   width: 21px;
 }
 
@@ -78,6 +80,10 @@ hr {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.info-under-line {
+  margin-left: 5px;
 }
 
 

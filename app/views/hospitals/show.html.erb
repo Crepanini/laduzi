@@ -3,9 +3,9 @@
   <div class="row">
     <div class="hospital col-sm">
       <div class="description" >
-        <div><%= image_tag @hospital.image, height: 400, width: 500,class: "hospital-img" %>
+        <div><%= image_tag @hospital.image,class: "hospital-img" %>
         </div>
-        <div> Hospital rating: <% (@hospital.rating || 0).round(0).to_i.times do%>
+        <div class="rating-description"> <strong>Hospital rating: </strong> <% (@hospital.rating || 0).round(0).to_i.times do%>
             <i class="fas fa-star star"></i>
           <% end %>
         </div>
@@ -15,16 +15,17 @@
           <% end %>
         </div>
         <div class="card-description">
-          <div>
-            <div class="time-price">
+        <!--   <div>
+            <div class="show-description"> -->
               <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
-                <p>Appointment Telephone</p>
+                <p><strong>Phone:</strong></p>
                 <p><%= @hospital.tel%></p>
               <% end %>
-              <p>Address</p>
+              <p><strong>Address:</strong></p>
               <p><%= @hospital.address%></p>
               <%= render 'shared/modal' %>
               <p>Working Hours</p>
+              <p><strong>Working Hours:</strong></p>
               <% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
               <% else %>
                 <p class="time">Monday - Friday: <%= @hospital.weekday %></p>
@@ -33,18 +34,18 @@
               <% else %>
                 <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p>
               <% end %>
-              <p>Specialties</p>
+              <p><strong>Specialties:</strong></p>
               <p><%= @hospital.specialty%></p>
               <% unless @hospital.foreign_lang == "" %>
-                <p>Foreign Language Service</p>
+                <p><strong>Foreign Language Service:</strong></p>
                 <p><%= @hospital.foreign_lang%></p>
               <% end %>
               <% unless @hospital.website == "" || @hospital.website.nil? %>
-                <p>Website</p>
-                <p><%= @hospital.website%></p>
+                <p><strong>Website:</strong></p>
+                <a href="//<%= @hospital.website %>"><%= @hospital.website%></a>
               <% end %>
-            </div>
-          </div>
+         <!--    </div>
+          </div> -->
         </div>
       </div>
       <div class="review col-sm">
@@ -54,7 +55,7 @@
             User: <%= comment.user.first_name %>  <%= comment.user.last_name %>
             <!--         Title: <%= comment.title %> <br> -->
             <% (comment.avg_rating || 0).round(0).to_i.times do %>
-              <i class="fas fa-star star"></i>
+              <i class="fas fa-star"></i>
             <% end %><br>
             Comment: <%= comment.comment %><br>
             <hr>

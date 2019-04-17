@@ -16,15 +16,17 @@
           </div>
           <p id="name"><%= hospital.name%></p>
           <hr>
-          <div class="time-price">
+          <div class="location">
             <div>
               <p id="index-district"><i class="fas fa-map-pin"></i> <%= hospital.district %></p>
             </div>
           </div>
           <hr>
-          <p id="index-address"><%=hospital.address%></p>
-          <p id="provider-type"><%= hospital.provider_type %></p>
-          <p class="lang-image"><% if hospital.foreign_lang.include?("Eng") %><%= image_tag('eng.svg')%> <% end %></p>
+          <div class="info-under-line">
+            <p id="index-address"><%=hospital.address%></p>
+            <p id="provider-type"><%= hospital.provider_type %></p>
+            <p class="lang-image"><% if hospital.foreign_lang.include?("Eng") %><%= image_tag('eng.svg')%> <% end %></p>
+          </div>
           <%= link_to "", hospital_path(hospital), class: 'card-link' %>
         </div>
       </div>
