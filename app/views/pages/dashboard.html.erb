@@ -3,23 +3,32 @@
   <hr class="dashboard-line">
   <div class="main">
     <div class="cards">
-    <% @saves.each do |hospital| %>
-      <div class="card" >
+      <% @saves.each do |hospital| %>
+        <!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
+        <div class="card" >
           <%#= cl_image_tag hospital.image, class: "card-img" %>
           <div class="card-description">
             <%= image_tag hospital.image, class: "card-img" %>
+            <div> Rating: <% (hospital.rating || 0).round(0).to_i.times do%>
+                <i class="fas fa-star star"></i>
+              <% end %>
+            </div>
             <p id="name"><%= hospital.name%></p>
+            <hr>
             <div class="time-price">
               <div>
-                <p><%= hospital.open_at.to_formatted_s(:time) %> - <%=hospital.close_at.to_formatted_s(:time) %></p>
+                <p id="index-district"><i class="fas fa-map-pin"></i> <%= hospital.district %></p>
               </div>
             </div>
-            <p><%=hospital.address%></p>
+            <hr>
+            <p id="index-address"><%=hospital.address%></p>
+            <p id="provider-type"><%= hospital.provider_type %></p>
+            <p class="lang-image"><% if hospital.foreign_lang.include?("Eng") %><%= image_tag('eng.svg')%> <% end %></p>
             <%= link_to "", hospital_path(hospital), class: 'card-link' %>
           </div>
         </div>
         <!-- </div> -->
-    <% end %>
+      <% end %>
     </div>
   </div>
 </div>
