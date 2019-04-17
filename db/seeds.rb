@@ -28,40 +28,21 @@ Hospital.delete_all if Rails.env.development?
 # "city", "district", special provider", "provider type", "name", "specialties6", "address", "mon-fri", "sat-sun", "appointment tel", "foreign lang. service", "appointment recommended", "website"
 
 #FINAL SEEDS
-# require 'csv'
+require 'csv'
 
-# csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
-# filepath = 'db/data.csv'
+csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
+filepath = 'db/data.csv'
 
-# CSV.foreach(filepath, csv_options) do |row|
-#   puts "Seeding Hospital #{row['name']}"
-#   # p row["lat"].to_f
-#   h = Hospital.create!(image: "https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png", city: row["city"], district: row["district"], provider_type: row["provider type"], name: row["name"], specialty: row["specialties"], address: row["address"], weekday: row["mon-fri"], weekend: row["sat-sun"], tel: row["appointment tel"], foreign_lang: row["foreign lang. service"], website: row["website"], cn_address: row["cn_address"], longitude: row["long"].to_f, latitude: row["lat"].to_f)
-#   h.tag_list.add("CIGNA")
-#   h.tag_list << h.provider_type
-#   h.tag_list << h.foreign_lang
-#   h.tag_list << h.specialty
-#   h.save
-# end
-
-h1 = Hospital.find(27).image = "https://internchina.com/wp-content/uploads/qdyy.jpg"
-h1.save
-
-h2 = Hospital.find(28).image = "http://images.china.cn/attachement/jpg/site1007/20130711/001ec94a1ea1134894333c.jpg"
-h2.save
-
-h3 = Hospital.find(54).image = "http://images.china.cn/attachement/jpg/site1007/20130711/001ec94a1ea11348947852.jpg"
-h3.save
-
-h4 = Hospital.find(167).image = "http://media.bizj.us/view/img/4279741/wuxi-rendering*1200xx1191-670-0-86.jpg"
-h4.save
-
-h5 = Hospital.find(168).image = "http://www.e-architect.co.uk/images/jpgs/china/first_peoples_hospital_hmc111109_2.jpg"
-h5.save
-
-h6 = Hospital.find(225).image = "http://img.theepochtimes.com/n3/eet-content/uploads/2016/09/15/22734155.jpg"
-h6.save
-
+CSV.foreach(filepath, csv_options) do |row|
+  puts "Seeding Hospital #{row['name']}"
+  # p row["lat"].to_f
+  h = Hospital.create!(image: "https://carepharmaceuticals.com.au/wp-content/uploads/sites/19/2018/02/placeholder-600x400.png", city: row["city"], district: row["district"], provider_type: row["provider type"], name: row["name"], specialty: row["specialties"], address: row["address"], weekday: row["mon-fri"], weekend: row["sat-sun"], tel: row["appointment tel"], foreign_lang: row["foreign lang. service"], website: row["website"], cn_address: row["cn_address"], longitude: row["long"].to_f, latitude: row["lat"].to_f)
+  h.tag_list.add("CIGNA")
+  h.tag_list << h.provider_type
+  h.tag_list << h.foreign_lang
+  h.tag_list << h.specialty
+  h.save
+end
 
 
 #SECOND SEEDS
