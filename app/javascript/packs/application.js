@@ -7,3 +7,6 @@ import { initMapboxForShow } from '../plugins/init_mapboxforshow';
 
 initMapbox();
 initMapboxForShow();
+
+import { make_copy_button } from '../plugins/init_copytoclipboard';
+make_copy_button();

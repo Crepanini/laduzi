@@ -23,6 +23,7 @@
               <% end %>
               <p>Address</p>
               <p><%= @hospital.address%></p>
+              <%= render 'shared/modal' %>
               <p>Working Hours</p>
               <% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
               <% else %>
