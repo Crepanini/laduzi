@@ -1,80 +1,69 @@
 <h1 class="name"><a class="clickable" href="<%= hospital_upsave_path(@hospital) %>"><i class="fas fa-heart <%= @saved ? 'red' : 'gray' %>"></i></a> <%= @hospital.name%> </h1>
-
-
 <div class="container">
   <div class="row">
     <div class="hospital col-sm">
       <div class="description" >
         <div><%= image_tag @hospital.image, height: 400, width: 500,class: "hospital-img" %>
-          <div> Hospital rating: <% (@hospital.rating || 0).round(0).to_i.times do%>
-        <i class="fas fa-star star"></i>
-      <% end %>
-    </div>
-            <div class="tags">
+        </div>
+        <div> Hospital rating: <% (@hospital.rating || 0).round(0).to_i.times do%>
+            <i class="fas fa-star star"></i>
+          <% end %>
+        </div>
+        <div class="tags">
           <% @hospital.tag_list.each do |tag| %>
             <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
           <% end %>
         </div>
-    <div class="hospital">
-      <div class="card-description-show">
-        <div class="telephone">
-          <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
-            <p>Appointment Telephone</p>
-            <p><%= @hospital.tel%></p>
-          <% end %>
-        </div>
-        <div class="address">
-          <p>Address</p>
-          <p><%= @hospital.address%></p>
-        </div>
-        <div class="working-hours">
+        <div class="card-description">
           <div>
-            <p>Working Hours</p>
-            <% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
-            <% else %>
-              <p class="time">Monday - Friday: <%= @hospital.weekday %></p>
-            <% end %>
-            <% if @hospital.weekend.include?("Saturday" || "Sunday") %> <%= @hospital.weekend %>
-            <% else %>
-              <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p>
-            <% end %>
+            <div class="time-price">
+              <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
+                <p>Appointment Telephone</p>
+                <p><%= @hospital.tel%></p>
+              <% end %>
+              <p>Address</p>
+              <p><%= @hospital.address%></p>
+              <p>Working Hours</p>
+              <% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
+              <% else %>
+                <p class="time">Monday - Friday: <%= @hospital.weekday %></p>
+              <% end %>
+              <% if @hospital.weekend.include?("Saturday" || "Sunday") %> <%= @hospital.weekend %>
+              <% else %>
+                <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p>
+              <% end %>
+              <p>Specialties</p>
+              <p><%= @hospital.specialty%></p>
+              <% unless @hospital.foreign_lang == "" %>
+                <p>Foreign Language Service</p>
+                <p><%= @hospital.foreign_lang%></p>
+              <% end %>
+              <% unless @hospital.website == "" || @hospital.website.nil? %>
+                <p>Website</p>
+                <p><%= @hospital.website%></p>
+              <% end %>
+            </div>
           </div>
-        </div>
-        <div class="specialties">
-          <p>Specialties</p>
-          <p><%= @hospital.specialty%></p>
-        </div>
-        <div class="foreign-lang">
-          <% unless @hospital.foreign_lang == "" %>
-            <p>Foreign Language Service</p>
-            <p><%= @hospital.foreign_lang%></p>
-          <% end %>
-        </div>
-        <div class="website">
-          <% unless @hospital.website == "" || @hospital.website.nil? %>
-            <p>Website</p>
-            <p><%= @hospital.website%></p>
-          <% end %>
         </div>
       </div>
       <div class="review col-sm">
-    <div class= "overflow">
-      <h2 class="comment">Reviews</h2>
-      <% @hospital.comments.each do |comment| %>
-        User: <%= comment.user.first_name %>  <%= comment.user.last_name %>
-        <!--         Title: <%= comment.title %> <br> -->
-        <% (comment.avg_rating || 0).round(0).to_i.times do %>
-          <i class="fas fa-star star"></i>
-        <% end %><br>
-        Comment: <%= comment.comment %><br>
-        <hr>
-      <% end %>
+        <div class= "overflow">
+          <h2 class="comment">Reviews</h2>
+          <% @hospital.comments.each do |comment| %>
+            User: <%= comment.user.first_name %>  <%= comment.user.last_name %>
+            <!--         Title: <%= comment.title %> <br> -->
+            <% (comment.avg_rating || 0).round(0).to_i.times do %>
+              <i class="fas fa-star star"></i>
+            <% end %><br>
+            Comment: <%= comment.comment %><br>
+            <hr>
+          <% end %>
+        </div>
+        <%= render 'comments/new' %>
+      </div>
     </div>
-    <%= render 'comments/new' %>
   </div>
-    </div>
-  </div>
-
+</div>
 <!-- map -->
 <div
   id="map"
