@@ -2,5 +2,4 @@
 //= require_tree .
 
 //= require jquery3
-//= require bootstrap-star-rating
-
+//= require fix-star-rating
