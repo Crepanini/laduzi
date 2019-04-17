@@ -37,31 +37,19 @@ def scrape_bing(hospital)
 
 
 
-  urls = []
-  parsed_json["value"].first(3).each do |result|
-    urls << result["contentUrl"]
+  num_hospitals = 0
+  Hospital.all[0..-1].each_with_index do |hospital, i|
+    next if RESULT[hospital.name].present?
+    scrape_bing(hospital)
+    puts "You've scraped #{num_hospitals += 1} hospitals"
+    puts hospital.name
+    sleep 1
   end
 
-  urls.each do |url|
-    download = open(url)
-    count += 1
-    IO.copy_stream(download, "#{Rails.root}/app/assets/images/hospitals/#{hospital.name}_#{count}.jpg")
-  end
-end
+  # total_returned_images = parsed_json["totalEstimatedMatches"]
+  # download = open(url_string)
 
-num_hospitals = 0
-Hospital.all[0..-1].each_with_index do |hospital, i|
-  next if RESULT[hospital.name].present?
-  scrape_bing(hospital)
-  puts "You've scraped #{num_hospitals += 1} hospitals"
-  puts hospital.name
-  sleep 1
-end
+  # puts "total number of returned matches: #{total_returned_images}"
+  # puts "Url to the thumbnail of the first returned search result: #{first_result}"
 
-# total_returned_images = parsed_json["totalEstimatedMatches"]
-# download = open(url_string)
-
-# puts "total number of returned matches: #{total_returned_images}"
-# puts "Url to the thumbnail of the first returned search result: #{first_result}"
-
-# end
+  # end
