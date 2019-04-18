@@ -1,12 +1,8 @@
-body, html {
-  height: 100vh;
-}
-
 .full {
   background-image: url(image-path("search.jpg"));
   background-size: cover !important;
   height: 100%;
-
+  height: calc(100vh - 100px);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
