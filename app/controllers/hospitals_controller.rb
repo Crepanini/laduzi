@@ -19,7 +19,7 @@ class HospitalsController < ApplicationController
 
     # search bar
     if params[:query].present?
-      return @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
+      return @hospitals = Hospital.where("name @@ ?", "%#{params[:query]}%")
     end
 
     set_markers
