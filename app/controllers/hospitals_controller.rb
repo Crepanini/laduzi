@@ -12,8 +12,8 @@ class HospitalsController < ApplicationController
     @hospitals = Hospital.all
 
     if params.key?("tag") and !params[:tag].empty?
-      @hospitals = @hospitals.tagged_with(params[:tag])
       location_filter
+      @hospitals = @hospitals.tagged_with(params[:tag])
     else
       location_filter
     end
