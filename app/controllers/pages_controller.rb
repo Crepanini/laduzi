@@ -1,7 +1,10 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!
   def home
-
+    if params[:query].present?
+      return @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
+      redirect_to hospitals_index_path
+    end
   end
 
   def dashboard
@@ -11,7 +14,7 @@ class PagesController < ApplicationController
   private
 
   def hospital_params
-    params.require(:hospital).permit(:tag, :city)
+    params.require(:hospital).permit(:tag, :city, :query)
   end
 
 end
