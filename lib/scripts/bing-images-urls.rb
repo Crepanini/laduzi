@@ -64,31 +64,28 @@ RESULT = JSON.parse(File.read("#{Rails.root}/lib/scripts/results.json"))
 IMAGE_URLS = JSON.parse(File.read("#{Rails.root}/lib/scripts/image_urls.json"))
 
 #
-arrayofhashes = []
-contentUrl = []
-Hospital.all.each do |hospital|
-  next if IMAGE_URLS[hospital.name].present?
-  next if RESULT[hospital.name]["value"][0].nil?
-  # if RESULT[hospital.name]["value"][0]["contentUrl"].present?
-  RESULT[hospital.name]["value"].first(5).each do |value|
-    arrayofhashes << value
-  end
-  arrayofhashes.each do |url|
-    contentUrl << url["contentUrl"]
-    # contentUrl << url["contentURL"]
-    # IMAGE_URLS[hospital.name] = contentUrl
 
-    #     urls << value["thumbnailUrl"]
-    #     IMAGE_URLS[hospital.name] = urls
-    #   end
-    # else
-    #   IMAGE_URLS[hospital.name] = RESULT[hospital.name]["value"][0].each do |value|
-    #     urls << value["contentUrl"]
-    #     IMAGE_URLS[hospital.name] = urls
-    #   end
-  end
-  IMAGE_URLS[hospital.name] = contentUrl
+def top5urls(hospital)
+  arrayofurlstrings = []
+  counter = 0
+  # 5.times do
+  #   arrayofurlstrings << RESULT[hospital.name]["value"][counter]["contentUrl"]
+  #   counter +=1
+  # while counter < 5
+  # next if RESULT[hospital.name]["value"][counter]["contentUrl"].nil?
+  arrayofurlstrings = RESULT[hospital.name]["value"].first(5).map{ |x| x["contentUrl"] }
+
+  # end
+  IMAGE_URLS[hospital.name] = arrayofurlstrings
   File.open("#{Rails.root}/lib/scripts/image_urls.json", 'wb') do |file|
     file.write(JSON.generate(IMAGE_URLS))
   end
+end
+
+Hospital.all.each do |hospital|
+  # next if IMAGE_URLS[hospital.name].present?
+  # next if RESULT[hospital.name]["value"][0].nil?
+  # next if RESULT[hospital.name]["value"].nil?
+  # next if RESULT[hospital.name].nil?
+  top5urls(hospital)
 end

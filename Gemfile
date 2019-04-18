@@ -37,6 +37,10 @@ gem 'letsencrypt_heroku', require: false
 # favourites
 gem 'acts_as_saveable', '~> 0.10.1'
 
+#cloudinary
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary', '~> 1.9.1'
+
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
