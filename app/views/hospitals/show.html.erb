@@ -5,9 +5,9 @@
       <div class="description" >
         <div class="image-on-image">
           <div class="hospital-img"><%= image_tag @hospital.image,class: "hospital-img" %></div>
-            <div class="taxi">
-              <button type="link" data-toggle="modal" data-target="#exampleModalCenter" class='btn btn-primary'><i class="fas fa-taxi"></i> Taxi printout </button>
-            </div>
+          <div class="taxi">
+            <button type="link" data-toggle="modal" data-target="#exampleModalCenter" class='btn btn-primary'><i class="fas fa-taxi"></i> Taxi printout </button>
+          </div>
         </div>
         <div class="rating-description"> <strong>Hospital rating: </strong> <% (@hospital.rating || 0).round(0).to_i.times do%>
             <i class="fas fa-star star"></i>
@@ -21,31 +21,32 @@
         <div class="show-card-description">
           <!--   <div>
             <div class="show-description"> -->
-              <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
-                <div class='static'><strong>Phone:</strong></div>
-                <div class='from-db'><p><%= @hospital.tel%> </p></div>
-              <% end %>
-              <div class='static'><strong>Address:</strong></div>
-              <div class='from-db'><p><%= @hospital.address%> </p></div>
-              <div class='static'><strong>Working Hours:</strong></p></div>
-              <div class='from-db'><% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
-              <% else %>
-                <p class="time">Monday - Friday: <%= @hospital.weekday %> </p>
-              <% end %>
-              <% if @hospital.weekend.include?("Saturday" || "Sunday") %> <%= @hospital.weekend %>
-              <% else %>
-                <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p><br>
-              <% end %></div>
-              <div class='static'><strong>Specialties:</strong></div>
-              <div class='from-db'><%= @hospital.specialty%></p>
-              <% unless @hospital.foreign_lang == "" %></div>
-              <div class='static'><strong>Foreign Language Service:</strong></div>
-              <div class='from-db'><p><%= @hospital.foreign_lang%></p><br>
-              <% end %></div>
-              <% unless @hospital.website == "" || @hospital.website.nil? %>
-              <div class='static'><strong>Website:</strong></div>
-                <div class='from-db'><a href="//<%= @hospital.website %>"><%= @hospital.website%></a>
-              <% end %></div>
+          <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
+            <div class='static'><strong>Phone:</strong></div>
+            <div class='from-db'><p><%= @hospital.tel%> </p></div>
+          <% end %>
+          <div class='static'><strong>Address:</strong></div>
+          <div class='from-db'><p><%= @hospital.address%> </p></div>
+          <div class='static'><strong>Working Hours:</strong></p></div>
+          <div class='from-db'><% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
+          <% else %>
+            <p class="time">Monday - Friday: <%= @hospital.weekday %> </p>
+          <% end %>
+          <% if @hospital.weekend.include?("Saturday" || "Sunday") %> <%= @hospital.weekend %>
+          <% else %>
+            <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p><br>
+          <% end %></div>
+          <div class='static'><strong>Specialties:</strong></div>
+          <div class='from-db'><%= @hospital.specialty%></p>
+          <% unless @hospital.foreign_lang == "" %></div>
+          <div class='static'><strong>Foreign Language Service:</strong></div>
+          <div class='from-db'><p><%= @hospital.foreign_lang%></p><br></div>
+          <% end %>
+          <% unless @hospital.website == "" || @hospital.website.nil? %>
+            <div class='static'><strong>Website:</strong></div>
+              <div class='from-db'><a href="//<%= @hospital.website %>"><%= @hospital.website%></a>
+            </div>
+          <% end %>
         </div>
       </div>
       <div class="review">
