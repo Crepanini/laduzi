@@ -4,7 +4,7 @@
   </button>
   <div class="dropdown-menu">
     <% @insurers.each do |insurer| %>
-      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city],tag: tags(insurer))%>"><%= insurer%></a>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city],tag: tags(insurer)) %>"><%= insurer%></a>
     <% end %>
   </div>
 </div>
@@ -37,6 +37,9 @@
       <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(specialty.split(' ').first))%>"><%= specialty %></a>
     <% end %>
   </div>
+</div>
+<div>
+  <p>Search Location: <%= params[:city] %></p>
 </div>
 <div class="filtertags">
   <% if params[:tag] %>

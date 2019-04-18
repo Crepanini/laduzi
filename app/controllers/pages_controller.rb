@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   def home
     if params[:query].present?
       return @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
+      redirect_to hospitals_index_path
     end
   end
 

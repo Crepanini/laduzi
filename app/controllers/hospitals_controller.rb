@@ -8,12 +8,13 @@ class HospitalsController < ApplicationController
     @languages = ["Cn", "Eng", "Canto", "Fr", "Span", "Ru", "Jp", "Kr", "Ger", "Farsi", "Dutch", "Filipino"]
     @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology", "Gastroenterology", "General Surgery", "Anaesthesiology", "Radiology", "Pathology", "Plastic Surgery", "Psychiatry", "Respiratory Medicine", "Urology", "Dentistry", "Chinese Medicine", "Internal Medicine"]
 
-    # @hospitals = Hospital.all
-
-    @hospitals = Hospital.where("city ILIKE ?", "%#{params[:city]}%")
+    @hospitals = Hospital.all
 
     if params.key?("tag") and !params[:tag].empty?
       @hospitals = @hospitals.tagged_with(params[:tag])
+      location_filter
+    else
+      location_filter
     end
 
     # search bar
@@ -68,5 +69,9 @@ class HospitalsController < ApplicationController
         lng: hospital.longitude
       }
     end
+  end
+
+  def location_filter
+    @hospitals = Hospital.where("city ILIKE ?", "%#{params[:city]}%")
   end
 end
