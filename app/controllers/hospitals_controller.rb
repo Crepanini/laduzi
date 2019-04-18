@@ -6,7 +6,8 @@ class HospitalsController < ApplicationController
     @insurers = ["Allianz", "AXA PPP", "AXA ICBC", "AXA Tianping", "BUPA", "CIGNA", "Discovery Health", "Generali", "MSH", "NOW Health"]
     @provider_types = ["Private", "Public", "Dental", "Wellness Checkup"]
     @languages = ["Cn", "Eng", "Canto", "Fr", "Span", "Ru", "Jp", "Kr", "Ger", "Farsi", "Dutch", "Filipino"]
-    @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology", "Gastroenterology", "General Surgery", "Anaesthesiology", "Radiology", "Pathology", "Plastic Surgery", "Psychiatry", "Respiratory Medicine", "Urology", "Dentistry", "Chinese Medicine", "Internal Medicine"]
+    @specialties = ["Acupuncture", "Cardiology", "Dental", "Dental Care", "Ear, Nose & Throat", "Endocrinology", "Gastroenterology", "General Medicine", "General Surgery", "Gynecology", "Haematology", "Infectious Disease", "Internal Medicine", "Kidney Disease", "Liver Disease", "Neurology", "Nuclear Medicine", "OB & GYN", "Ophthalmology", "Organ Transplants", "Orthopaedics", "Osteology", "Pediatrics", "Physical Checkup", "Pneumology", "Respiratory", "Rheumatology", "Sarcoidosis", "Sport Medicine", "Traditional Chinese Medicine", "TCM physiotherapy", "Tumors", "Urology"]
+
 
     @hospitals = Hospital.all
 
@@ -55,6 +56,17 @@ class HospitalsController < ApplicationController
     @hospital.downsave_from current_user
     redirect_to hospital_path(@hospital)
   end
+
+  # def specialty_list
+  #   temp = []
+  #   @hospitals = Hospital.all
+  #   @hospitals.each do |hospital|
+  #     hospital.specialty.split(", ").each do |specialty|
+  #       temp << specialty
+  #     end
+  #   end
+  #   print @specialties = temp.uniq.sort
+  # end
 
   private
 

@@ -32,7 +32,7 @@
   <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Specialty
   </button>
-  <div class="dropdown-menu">
+  <div class="dropdown-menu scroll">
     <% @specialties.each do |specialty| %>
       <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(specialty.split(' ').first))%>"><%= specialty %></a>
     <% end %>
