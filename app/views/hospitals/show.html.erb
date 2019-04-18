@@ -7,7 +7,7 @@
           <div class="hospital-img"><%= image_tag @hospital.image,class: "hospital-img" %></div>
             <div class="taxi">
               <button type="link" data-toggle="modal" data-target="#exampleModalCenter" class='btn btn-primary'><i class="fas fa-taxi"></i> Taxi printout </button>
-          </div>
+            </div>
         </div>
         <div class="rating-description"> <strong>Hospital rating: </strong> <% (@hospital.rating || 0).round(0).to_i.times do%>
             <i class="fas fa-star star"></i>
@@ -46,10 +46,7 @@
               <div class='static'><strong>Website:</strong></div>
                 <div class='from-db'><a href="//<%= @hospital.website %>"><%= @hospital.website%></a>
               <% end %></div>
-
-         <!--    </div>
-          </div> -->
-
+        </div>
       </div>
       <div class="review">
         <div class= "overflow">
@@ -66,7 +63,6 @@
         </div>
         <%= render 'comments/new' %>
       </div>
-    </div>
     </div>
   </div>
 </div>
