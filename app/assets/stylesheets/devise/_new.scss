@@ -31,6 +31,20 @@
   }
 }
 .form-check-input {
-  top: 5px;
-  right: 292px;
+  position: initial;
+  margin-right: 6px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+@media(max-width: 992px) {
+  .form-login {
+    width: 300px;
+  }
+}
+
+@media(max-width: 768px) {
+  .form-login {
+    width: 300px;
+  }
 }

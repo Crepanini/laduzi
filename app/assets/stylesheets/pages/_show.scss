@@ -28,8 +28,6 @@
 }
 
 .hospital-img {
-  height: 400;
-  width: 400;
   border-radius: 10px;
   margin: 0;
   margin-bottom: 10px;
@@ -141,6 +139,15 @@
   .hospital {
     grid-template-columns: 1fr 1fr;
   }
+  .description {
+    width: 500px;
+  }
+  .hospital-img {
+    width: 500px;
+  }
+  .review {
+    width: 500px;
+  }
   #map {
     width: 100%;
   }
@@ -149,6 +156,15 @@
 @media(max-width: 768px) {
   .hospital {
     grid-template-columns: 1fr;
+  }
+  .description {
+    width: 400px;
+  }
+  .hospital-img {
+    width: 400px;
+  }
+  .review {
+    width: 400px;
   }
   #map {
     width: 100%;
