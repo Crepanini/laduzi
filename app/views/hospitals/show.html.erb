@@ -37,15 +37,14 @@
             <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p><br>
           <% end %></div>
           <div class='static'><strong>Specialties:</strong></div>
-          <div class='from-db'><%= @hospital.specialty%></p>
-          <% unless @hospital.foreign_lang == "" %></div>
+          <div class='from-db'><%= @hospital.specialty%></p></div>
+          <% unless @hospital.foreign_lang == "" %>
           <div class='static'><strong>Foreign Language Service:</strong></div>
           <div class='from-db'><p><%= @hospital.foreign_lang%></p><br></div>
           <% end %>
           <% unless @hospital.website == "" || @hospital.website.nil? %>
             <div class='static'><strong>Website:</strong></div>
-              <div class='from-db'><a href="//<%= @hospital.website %>"><%= @hospital.website%></a>
-            </div>
+            <div class='from-db'><a href="//<%= @hospital.website %>"><%= @hospital.website%></a></div>
           <% end %>
         </div>
       </div>
