@@ -1,12 +1,8 @@
-body, html {
-  height: 100vh;
-}
-
 .full {
   background-image: url(image-path("search.jpg"));
   background-size: cover !important;
   height: 100%;
-
+  height: calc(100vh - 100px);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
@@ -26,3 +22,14 @@ body, html {
   margin-bottom: 5%;
 }
 
+@media(max-width: 992px) {
+  .form-row {
+    width: 500px;
+  }
+}
+
+@media(max-width: 768px) {
+  .form-row {
+    width: 400px;
+  }
+}

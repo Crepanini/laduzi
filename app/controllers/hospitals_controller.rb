@@ -6,19 +6,21 @@ class HospitalsController < ApplicationController
     @insurers = ["Allianz", "AXA PPP", "AXA ICBC", "AXA Tianping", "BUPA", "CIGNA", "Discovery Health", "Generali", "MSH", "NOW Health"]
     @provider_types = ["Private", "Public", "Dental", "Wellness Checkup"]
     @languages = ["Cn", "Eng", "Canto", "Fr", "Span", "Ru", "Jp", "Kr", "Ger", "Farsi", "Dutch", "Filipino"]
-    @specialties = ["Family Medicine", "Pediatrics", "Cardiology", "Dermatology", "Gastroenterology", "General Surgery", "Anaesthesiology", "Radiology", "Pathology", "Plastic Surgery", "Psychiatry", "Respiratory Medicine", "Urology", "Dentistry", "Chinese Medicine", "Internal Medicine"]
+    @specialties = ["Acupuncture", "Cardiology", "Dental", "Dental Care", "Ear, Nose & Throat", "Endocrinology", "Gastroenterology", "General Medicine", "General Surgery", "Gynecology", "Haematology", "Infectious Disease", "Internal Medicine", "Kidney Disease", "Liver Disease", "Neurology", "Nuclear Medicine", "OB & GYN", "Ophthalmology", "Organ Transplants", "Orthopaedics", "Osteology", "Pediatrics", "Physical Checkup", "Pneumology", "Respiratory", "Rheumatology", "Sarcoidosis", "Sport Medicine", "Traditional Chinese Medicine", "TCM physiotherapy", "Tumors", "Urology"]
 
-    # @hospitals = Hospital.all
 
-    @hospitals = Hospital.where("city ILIKE ?", "%#{params[:city]}%")
+    @hospitals = Hospital.all
 
     if params.key?("tag") and !params[:tag].empty?
       @hospitals = @hospitals.tagged_with(params[:tag])
+      location_filter
+    else
+      location_filter
     end
 
     # search bar
     if params[:query].present?
-      return @hospitals = Hospital.where("name ILIKE ?", "%#{params[:query]}%")
+      return @hospitals = Hospital.where("name @@ ?", "%#{params[:query]}%")
     end
 
     set_markers
@@ -55,6 +57,17 @@ class HospitalsController < ApplicationController
     redirect_to hospital_path(@hospital)
   end
 
+  # def specialty_list
+  #   temp = []
+  #   @hospitals = Hospital.all
+  #   @hospitals.each do |hospital|
+  #     hospital.specialty.split(", ").each do |specialty|
+  #       temp << specialty
+  #     end
+  #   end
+  #   print @specialties = temp.uniq.sort
+  # end
+
   private
 
   def set_hospital
@@ -68,5 +81,9 @@ class HospitalsController < ApplicationController
         lng: hospital.longitude
       }
     end
+  end
+
+  def location_filter
+    @hospitals = Hospital.where("city ILIKE ?", "%#{params[:city]}%")
   end
 end
