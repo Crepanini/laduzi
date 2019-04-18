@@ -45,6 +45,53 @@ CSV.foreach(filepath, csv_options) do |row|
 end
 
 
+# HANGZHOU HOSPITALS
+hz1 = Hospital.find_by("Hangzhou Amcare Women & Children's Hospital")
+hz1.tag_list.add("MSH")
+hz1.save
+hz2 = Hospital.find_by("Zhejiang Provincial People's Hospital, VIP Dept")
+hz2.tag_list.add("MSH")
+hz2.save
+hz3 = Hospital.find_by("Meinian Health Yan'an Road Clinic")
+hz3.tag_list.add("MSH")
+hz3.save
+hz4 = Hospital.find_by("Meinian Health Binjiang Clinic")
+hz4.tag_list.add("MSH")
+hz4.save
+hz5 = Hospital.find_by("Hangzhou Aima Maternity Hospital")
+hz5.tag_list.add("MSH")
+hz5.save
+hz6 = Hospital.find_by("Hangzhou American-Sino OBGYN Pediatrics Services")
+hz6.tag_list.add("MSH")
+hz6.save
+hz7 = Hospital.find_by("Sir Run Run Shaw Hospital, International Medical Center")
+hz7.tag_list.add("MSH")
+hz7.save
+hz8 = Hospital.find_by("The Second Affiliated Hospital Zhejiang University School of Medicine, International Medicine Department (Binjiang Branch)")
+hz8.tag_list.add("MSH")
+hz8.save
+hz9 = Hospital.find_by("Hangzhou Arrail Dental Clinic-EAC Clinic")
+hz9.tag_list.add("MSH")
+hz9.save
+hz10 = Hospital.find_by("Arrail Dental Hangzhou Tower Clinic")
+hz10.tag_list.add("MSH")
+hz10.save
+hz11 = Hospital.find_by("Dingxiang clinic")
+hz11.tag_list.add("MSH")
+hz11.save
+hz12 = Hospital.find_by("Zhejiang University International Hospital")
+hz12.tag_list.add("MSH")
+hz12.save
+hz13 = Hospital.find_by("The Second Affiliated Hospital Zhejiang University School of Medicine, International Medicine Department")
+hz13.tag_list.add("MSH")
+hz13.save
+hz14 = Hospital.find_by("Hangzhou Obsterics Hospital")
+hz14.tag_list.add("MSH")
+hz14.save
+
+
+
+
 #SECOND SEEDS
 
 # selected = Hospital.create!(image: "http://www.perkinseastman.com/dynamic/image/week/asset/liquid/1500x/92/777777/Center/3415284.jpg" , name: "Hangzhou Can Am International Medical Center" , address: "Room 301, G Zone, Building No.2, EAC Apartment, 26 Jiaogong Road, Xihu District, Hangzhou" , open_at: "8:00am", close_at: "6:00pm" , tel: "0571-87025120" , latitude: 123, longitude: 123)

@@ -18,12 +18,12 @@
 }
 
 .hospital-img {
-  height: 400;
-  width: 400;
+  height: 400px;
+  width: 100%;
   border-radius: 10px;
   margin: 0;
   margin-bottom: 10px;
-  object-fit: cover;
+  object-fit: cover !important;
 }
 
 .time {
