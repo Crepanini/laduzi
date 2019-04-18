@@ -1,69 +1,78 @@
+require 'net/https'
 require 'open-uri'
-require "net/http"
-require 'openssl'
+require 'uri'
+require 'json'
 
+
+IMAGE_URLS = JSON.parse(File.read("#{Rails.root}/lib/scripts/image_urls.json"))
+
+# urls.each do |url|
+#     download = open(url)
+#     count += 1
+#     IO.copy_stream(download, "#{Rails.root}/app/assets/images/hospitals/#{hospital.name}_#{count}.jpg")
+#     # end
 
 # def url_exist?(url_string)
-
 #   puts "Attempting #{url_string}"
-
 #   url = URI.parse(url_string)
-#   # p url
 #   req = Net::HTTP.new(url.host, url.port)
-#   # p req
 #   req.use_ssl = (url.scheme == 'https')
-#   # p req.use_ssl
-#   path = url.path if url.path.empty?
-#   # p path
+#   path = url.path if url.path.present?
 #   res = req.request_head(path || '/')
-#   # p res
+
 #   if res.kind_of?(Net::HTTPRedirection)
-
 #     return true # Go after any redirect and make sure you can access the redirected URL
-
 #   else
-
 #     ! %W(4 5).include?(res.code[0]) # Not from 4xx or 5xx families
-
 #   end
 
+# rescue
 # rescue Errno::ENOENT
-
 #   false #false if can't find the server
-
 # rescue URI::InvalidURIError
-
 #   false #false if URI is invalid
-
 # rescue SocketError
-
 #   false #false if Failed to open TCP connection
-
 # rescue Errno::ECONNREFUSED
-
 #   false #false if Failed to open TCP connection
-
 # rescue Net::OpenTimeout
-
 #   false #false if execution expired
-
 # rescue OpenSSL::SSL::SSLError
-
 #   false
-
+# rescue Errno::ECONNRESET
+#   false
+# rescue Net::ReadTimeout
+#   false
+# rescue EOFError
+#   false
+# rescue RuntimeErrors
+#   false
 # end
 
-url_string = "https://tse2.mm.bing.net/th?id=OIP.RI4TIvq9NlIktsaDlaT-ZAHaE8&pid=Api"
-# puts url_exist?(url_string)
-
-# url = row['logo_link']
-
-# if url_exist?(url_string)
-
-download = open(url_string)
-
-IO.copy_stream(download, "#{Rails.root}/app/assets/images/hospital1.jpg")
-
-#   sleep 10
-
+# def download_item(url, key, i)
+#   if url_exist?(url)
+#     download = open(url)
+#     IO.copy_stream(download, "#{Rails.root}/app/assets/images/hospitals/#{key}_#{i}.jpg")
+#   end
+# rescue
 # end
+
+
+# IMAGE_URLS.each do |key, value|
+#   next if key.include?("/")
+#   value.each_with_index do |url, i|
+#     download_item(url, key, i)
+#   end
+# end
+
+Dir.foreach('app/assets/images/hospitals') do |file|
+  unless file == '.' or file == '..'
+    hospital_name = file.split('_')[0]
+    p hospital_name
+    hospital = Hospital.find_by(name: hospital_name)
+    puts hospital.name.parameterize.underscore
+
+    Cloudinary::Uploader.upload("#{Rails.root}/app/assets/images/hospitals/#{file}", public_id: "#{hospital.name.parameterize.underscore}")
+    # return cl_image_tag(hospital.id.to_s + ".jpg")
+  end
+end
