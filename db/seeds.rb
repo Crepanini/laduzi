@@ -40,7 +40,9 @@ CSV.foreach(filepath, csv_options) do |row|
   h.tag_list.add("CIGNA")
   h.tag_list << h.provider_type
   h.tag_list << h.foreign_lang
-  h.tag_list << h.specialty
+  h.specialty.split(", ").each do |s|
+    h.tag_list << s
+  end
   h.save
 end
 
