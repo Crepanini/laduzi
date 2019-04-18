@@ -1,10 +1,10 @@
-<div class="btn-group">
+<div class="btn-group" id="anchored">
   <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Insurer
   </button>
   <div class="dropdown-menu">
     <% @insurers.each do |insurer| %>
-      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city],tag: tags(insurer)) %>"><%= insurer%></a>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city],tag: tags(insurer), anchor: "anchored") %>"><%= insurer%></a>
     <% end %>
   </div>
 </div>
@@ -14,7 +14,7 @@
   </button>
   <div class="dropdown-menu">
     <% @provider_types.each do |type| %>
-      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(type))%>"><%=  type%></a>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(type), anchor: "anchored")%>"><%=  type%></a>
     <% end %>
   </div>
 </div>
@@ -24,7 +24,7 @@
   </button>
   <div class="dropdown-menu">
     <% @languages.each do |language| %>
-      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(language))%>"><%= language %></a>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(language), anchor: "anchored")%>"><%= language %></a>
     <% end %>
   </div>
 </div>
@@ -34,7 +34,7 @@
   </button>
   <div class="dropdown-menu scroll">
     <% @specialties.each do |specialty| %>
-      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(specialty.split(' ').first))%>"><%= specialty %></a>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, anchor: "anchored", city: params[:city], tag: tags(specialty.split(' ').first))%>"><%= specialty %></a>
     <% end %>
   </div>
 </div>
