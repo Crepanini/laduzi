@@ -28,6 +28,25 @@ Hospital.delete_all if Rails.env.development?
 # "city", "district", special provider", "provider type", "name", "specialties6", "address", "mon-fri", "sat-sun", "appointment tel", "foreign lang. service", "appointment recommended", "website"
 
 #FINAL SEEDS
+
+# h1 = Hospital.find(27).image = "https://internchina.com/wp-content/uploads/qdyy.jpg"
+# h1.save
+
+# h2 = Hospital.find(28).image = "http://images.china.cn/attachement/jpg/site1007/20130711/001ec94a1ea1134894333c.jpg"
+# h2.save
+
+# h3 = Hospital.find(54).image = "http://images.china.cn/attachement/jpg/site1007/20130711/001ec94a1ea11348947852.jpg"
+# h3.save
+
+# h4 = Hospital.find(167).image = "http://media.bizj.us/view/img/4279741/wuxi-rendering*1200xx1191-670-0-86.jpg"
+# h4.save
+
+# h5 = Hospital.find(168).image = "http://www.e-architect.co.uk/images/jpgs/china/first_peoples_hospital_hmc111109_2.jpg"
+# h5.save
+
+# h6 = Hospital.find(225).image = "http://img.theepochtimes.com/n3/eet-content/uploads/2016/09/15/22734155.jpg"
+# h6.save
+
 require 'csv'
 
 csv_options = { col_sep: ',', quote_char: '"', headers: :first_row }
@@ -45,6 +64,7 @@ CSV.foreach(filepath, csv_options) do |row|
   end
   h.save
 end
+
 
 
 

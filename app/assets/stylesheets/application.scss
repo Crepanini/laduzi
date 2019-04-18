@@ -4,14 +4,14 @@
 @import "config/bootstrap_variables";
 
 //map
-@import 'mapbox-gl/dist/mapbox-gl.css';
-@import 'bootstrap-star-rating/css/star-rating.css';
+// @import 'mapbox-gl/dist/mapbox-gl';
+@import 'bootstrap-star-rating/css/star-rating';
 
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
 
 // Your CSS partials
 @import "components/index";
