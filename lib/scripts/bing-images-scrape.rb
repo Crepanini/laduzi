@@ -37,16 +37,16 @@ def scrape_bing(hospital)
 
 
 
-  # urls = []
-  # parsed_json["value"].first(3).each do |result|
-  #   urls << result["contentUrl"]
-  # end
+  urls = []
+  parsed_json["value"].first(3).each do |result|
+    urls << result["contentUrl"]
+  end
 
-  # urls.each do |url|
-  #   download = open(url)
-  #   count += 1
-  #   IO.copy_stream(download, "#{Rails.root}/app/assets/images/hospitals/#{hospital.name}_#{count}.jpg")
-  # end
+  urls.each do |url|
+    download = open(url)
+    count += 1
+    IO.copy_stream(download, "#{Rails.root}/app/assets/images/hospitals/#{hospital.name}_#{count}.jpg")
+  end
 end
 
 num_hospitals = 0
