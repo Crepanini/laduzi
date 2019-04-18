@@ -3,7 +3,11 @@
   <div class="row">
     <div class="hospital col-sm">
       <div class="description" >
-        <div><%= image_tag @hospital.image,class: "hospital-img" %>
+        <div class="image-on-image">
+          <div class="hospital-img"><%= image_tag @hospital.image,class: "hospital-img" %></div>
+            <div class="taxi">
+              <button type="link" data-toggle="modal" data-target="#exampleModalCenter" class='btn btn-primary'><i class="fas fa-taxi"></i> Taxi printout </button>
+          </div>
         </div>
         <div class="rating-description"> <strong>Hospital rating: </strong> <% (@hospital.rating || 0).round(0).to_i.times do%>
             <i class="fas fa-star star"></i>
@@ -11,42 +15,43 @@
         </div>
         <div class="tags">
           <% @hospital.tag_list.each do |tag| %>
-            <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
+            <div class="tag"><%= link_to tag, hospitals_path(@hospital, tag: tag) %></div>
           <% end %>
         </div>
-        <div class="card-description">
+        <div class="show-card-description">
           <!--   <div>
             <div class="show-description"> -->
               <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
-                <p><strong>Phone:</strong></p>
-                <p><%= @hospital.tel%></p><br>
+                <div class='static'><strong>Phone:</strong></div>
+                <div class='from-db'><p><%= @hospital.tel%> </p></div>
               <% end %>
-              <p><strong>Address:      <%= render 'shared/modal' %></strong></p>
-              <p><%= @hospital.address%></p><br>
-              <p><strong>Working Hours:</strong></p>
-              <% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
+              <div class='static'><strong>Address:</strong></div>
+              <div class='from-db'><p><%= @hospital.address%> </p></div>
+              <div class='static'><strong>Working Hours:</strong></p></div>
+              <div class='from-db'><% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
               <% else %>
-                <p class="time">Monday - Friday: <%= @hospital.weekday %></p>
+                <p class="time">Monday - Friday: <%= @hospital.weekday %> </p>
               <% end %>
               <% if @hospital.weekend.include?("Saturday" || "Sunday") %> <%= @hospital.weekend %>
               <% else %>
                 <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p><br>
-              <% end %>
-              <p><strong>Specialties:</strong></p>
-              <p><%= @hospital.specialty%></p><br>
-              <% unless @hospital.foreign_lang == "" %>
-                <p><strong>Foreign Language Service:</strong></p>
-                <p><%= @hospital.foreign_lang%></p><br>
-              <% end %>
+              <% end %></div>
+              <div class='static'><strong>Specialties:</strong></div>
+              <div class='from-db'><%= @hospital.specialty%></p>
+              <% unless @hospital.foreign_lang == "" %></div>
+              <div class='static'><strong>Foreign Language Service:</strong></div>
+              <div class='from-db'><p><%= @hospital.foreign_lang%></p><br>
+              <% end %></div>
               <% unless @hospital.website == "" || @hospital.website.nil? %>
-                <p><strong>Website:</strong></p>
-                <a href="//<%= @hospital.website %>"><%= @hospital.website%></a><br>
-              <% end %>
+              <div class='static'><strong>Website:</strong></div>
+                <div class='from-db'><a href="//<%= @hospital.website %>"><%= @hospital.website%></a>
+              <% end %></div>
+
          <!--    </div>
           </div> -->
         </div>
       </div>
-      <div class="review col-sm">
+      <div class="review">
         <div class= "overflow">
           <h2 class="comment">Reviews</h2>
           <% @hospital.comments.each do |comment| %>
@@ -72,3 +77,5 @@
   data-markers="<%= @marker.to_json %>"
   data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
 ></div>
+
+<%= render 'shared/modal'%>

@@ -13,8 +13,18 @@
 .hospital {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 30px;
   flex-grow: 1;
+}
+
+.image-on-image {
+  position: relative;
+}
+
+.taxi {
+  z-index: 1;
+  position: absolute;
+  top: 5%;
 }
 
 .hospital-img {
@@ -26,6 +36,13 @@
   object-fit: cover;
 }
 
+.show-card-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  flex-grow: 1;
+}
+
 .time {
   font-weight: 400;
 }
@@ -34,31 +51,39 @@
   margin-bottom: 30px;
 }
 
-.card-description strong{
+.show-card-description strong{
   float: left;
 }
 
+
 .tags {
-    margin-left: 24px;
-    width: 465px;
-    margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
 }
 
 .tag {
+  margin-left: 5px;
   border: #81a7d5 solid 1px;
   border-radius: 15px;
   padding: 5px;
   background-color: white;
   text-decoration: none;
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   font-size: small;
   text-decoration: none;
   color: #81a7d5;
+
 }
 
 .tag:hover {
   opacity: 0.5;
   text-decoration: none;
+}
+
+.rating-description {
+  margin-top: 0;
 }
 
 .overflow {
