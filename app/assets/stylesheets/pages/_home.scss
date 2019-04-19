@@ -9,7 +9,7 @@
 }
 
 .form-row {
-  padding-top: 20px;
+  padding: 20px 10px 10px 10px;
   display: block;
   margin-top: 5%;
   width: 600px;
@@ -43,4 +43,14 @@
   .form-row {
     width: 400px;
   }
+}
+
+.btn-lg {
+  margin: 0;
+  padding-bottom: 5px;
+  border-radius: 3px;
+}
+
+.search {
+  top: -30px;
 }
