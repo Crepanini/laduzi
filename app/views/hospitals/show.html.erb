@@ -1,8 +1,4 @@
-<% if user_signed_in? %>
-  <h1 class="name"><a class="clickable" href="<%= hospital_upsave_path(@hospital) %>"><i class="fas fa-heart <%= @saved ? 'red' : 'gray' %>"></i></a> <%= @hospital.name%> </h1>
-<% else %>
-  <h1 class="name"><i class="fas fa-heart"></i></a> <%= @hospital.name%> </h1>
-<% end %>
+<h1 class="name"><a class="clickable" href="<%= hospital_upsave_path(@hospital) %>"><i class="fas fa-heart <%= @saved ? 'red' : 'gray' %>"></i></a> <%= @hospital.name%> </h1>
 <div class="container">
   <div class="row">
     <div class="hospital col-sm">
