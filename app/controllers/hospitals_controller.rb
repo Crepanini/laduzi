@@ -42,7 +42,7 @@ class HospitalsController < ApplicationController
     }
   end
 
-  #   def show
+  # def show
   #   # displaying comments
   #   @comment = Comment.new
   #   @saved = @hospital.saves_for.empty? ? false : @hospital.saves_for.first.save_flag
@@ -59,11 +59,7 @@ class HospitalsController < ApplicationController
     if !@saved
       @hospital.upsaved_by current_user
     else
-      if @saved.first.save_flag
-        @hospital.downsave_from current_user
-      else
-        @hospital.upsaved_by current_user
-      end
+      @hospital.downsave_from current_user
     end
     redirect_to hospital_path(@hospital)
   end
