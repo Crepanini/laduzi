@@ -65,14 +65,40 @@ IMAGE_URLS = JSON.parse(File.read("#{Rails.root}/lib/scripts/image_urls.json"))
 #   end
 # end
 
-Dir.foreach('app/assets/images/hospitals') do |file|
+# Dir.foreach('app/assets/images/hospitals') do |file|
+#   unless file == '.' or file == '..'
+#     hospital_name = file.split('_')[0]
+#     p hospital_name
+#     hospital = Hospital.find_by(name: hospital_name)
+#     puts hospital.name.parameterize.underscore
+
+#     Cloudinary::Uploader.upload("#{Rails.root}/app/assets/images/hospitals/#{file}", public_id: "#{hospital.name.parameterize.underscore}")
+#     # return cl_image_tag(hospital.id.to_s + ".jpg")
+#   end
+# end
+
+
+
+# Dir.foreach('app/assets/images/hangzhouhospitals') do |file|
+#   unless file == '.' or file == '..'
+#     hospital_name = file.split('_')[0]
+#     p hospital_name
+#     hospital = Hospital.find_by(name: hospital_name)
+#     puts hospital.name.parameterize.underscore
+
+#     Cloudinary::Uploader.upload("#{Rails.root}/app/assets/images/hospitals/#{file}", public_id: "#{hospital.name.parameterize.underscore}")
+#     # return cl_image_tag(hospital.id.to_s + ".jpg")
+#   end
+# end
+
+Dir.foreach('app/assets/images/hangzhouhospitals') do |file|
   unless file == '.' or file == '..'
     hospital_name = file.split('_')[0]
     p hospital_name
     hospital = Hospital.find_by(name: hospital_name)
     puts hospital.name.parameterize.underscore
 
-    Cloudinary::Uploader.upload("#{Rails.root}/app/assets/images/hospitals/#{file}", public_id: "#{hospital.name.parameterize.underscore}")
+    Cloudinary::Uploader.upload("#{Rails.root}/app/assets/images/hangzhouhospitals/#{file}", public_id: "#{hospital.name.parameterize.underscore}")
     # return cl_image_tag(hospital.id.to_s + ".jpg")
   end
 end
