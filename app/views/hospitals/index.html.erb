@@ -11,8 +11,11 @@
         <div class="card-description">
           <%= cl_image_tag((hospital.name.parameterize.underscore + ".jpg"), :class => "card-img") %>
           <!--   <#%= image_tag hospital.image, class: "card-img" %> -->
-          <div> Rating: <% (hospital.rating || 0).round(0).to_i.times do%>
+          <div>
+            <% if !hospital.rating.nil? and hospital.rating >= 1 %>
+            Rating: <% (hospital.rating || 0).round(0).to_i.times do%>
               <i class="fas fa-star star"></i>
+              <% end %>
             <% end %>
           </div>
           <p id="name"><%= hospital.name%></p>
