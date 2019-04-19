@@ -1,15 +1,17 @@
-<h1 class="name"><a class="clickable" href="<%= hospital_upsave_path(@hospital) %>"><i class="fas fa-heart <%= @saved ? 'red' : 'gray' %>"></i></a> <%= @hospital.name%> </h1>
+<% if user_signed_in? %>
+  <h1 class="name"><a class="clickable" href="<%= hospital_upsave_path(@hospital) %>"><i class="fas fa-heart <%= @saved ? 'red' : 'gray' %>"></i></a> <%= @hospital.name%> </h1>
+<% else %>
+  <h1 class="name"><i class="fas fa-heart"></i></a> <%= @hospital.name%> </h1>
+<% end %>
 <div class="container">
   <div class="row">
     <div class="hospital col-sm">
       <div class="description" >
-
         <div class="image-on-image">
           <div class="hospital-img"><%= cl_image_tag((@hospital.name.parameterize.underscore + ".jpg"), :class => "hospital-img")%></div>
           <div class="taxi">
             <button type="link" data-toggle="modal" data-target="#exampleModalCenter" class='btn btn-primary'><i class="fas fa-taxi"></i> Taxi printout </button>
           </div>
-
         </div>
         <div class="rating-description"> <strong>Hospital rating: </strong> <% (@hospital.rating || 0).round(0).to_i.times do%>
             <i class="fas fa-star star"></i>
@@ -25,48 +27,58 @@
             <div class="show-description"> -->
           <% unless @hospital.tel == "n/a" || @hospital.tel.nil? %>
             <div class='static'><strong>Phone:</strong></div>
-            <div class='from-db'><p><%= @hospital.tel%> </p></div>
+            <div class='from-db'>
+              <p><%= @hospital.tel%> </p>
+            </div>
           <% end %>
           <div class='static'><strong>Address:</strong></div>
-          <div class='from-db'><p><%= @hospital.address%> </p></div>
-          <div class='static'><strong>Working Hours:</strong></p></div>
-          <div class='from-db'><% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
+          <div class='from-db'>
+            <p><%= @hospital.address%> </p>
+          </div>
+          <div class='static'><strong>Working Hours:</strong></p>
+        </div>
+        <div class='from-db'><% if @hospital.weekday.include?("Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday") %> <%= @hospital.weekday %>
           <% else %>
             <p class="time">Monday - Friday: <%= @hospital.weekday %> </p>
           <% end %>
           <% if @hospital.weekend.include?("Saturday" || "Sunday") %> <%= @hospital.weekend %>
           <% else %>
-            <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p><br>
+            <p class="time">Saturday and Sunday: <%= @hospital.weekend %></p>
+            <br>
           <% end %></div>
-          <div class='static'><strong>Specialties:</strong></div>
-          <div class='from-db'><%= @hospital.specialty%></p></div>
-          <% unless @hospital.foreign_lang == "" %>
-          <div class='static'><strong>Foreign Language Service:</strong></div>
-          <div class='from-db'><p><%= @hospital.foreign_lang%></p><br></div>
-          <% end %>
-          <% unless @hospital.website == "" || @hospital.website.nil? %>
-            <div class='static'><strong>Website:</strong></div>
-            <div class='from-db'><a href="//<%= @hospital.website %>"><%= @hospital.website%></a></div>
-          <% end %>
-        </div>
+        <div class='static'><strong>Specialties:</strong></div>
+        <div class='from-db'><%= @hospital.specialty%></p>
       </div>
-      <div class="review">
-        <div class= "overflow">
-          <h2 class="comment">Reviews</h2>
-          <% @hospital.comments.each do |comment| %>
-            User: <%= comment.user.first_name %>  <%= comment.user.last_name %>
-            <!--         Title: <%= comment.title %> <br> -->
-            <% (comment.avg_rating || 0).round(0).to_i.times do %>
-              <i class="fas fa-star"></i>
-            <% end %><br>
-            Comment: <%= comment.comment %><br>
-            <hr>
-          <% end %>
+      <% unless @hospital.foreign_lang == "" %>
+        <div class='static'><strong>Foreign Language Service:</strong></div>
+        <div class='from-db'>
+          <p><%= @hospital.foreign_lang%></p>
+          <br>
         </div>
-        <%= render 'comments/new' %>
-      </div>
+      <% end %>
+      <% unless @hospital.website == "" || @hospital.website.nil? %>
+        <div class='static'><strong>Website:</strong></div>
+        <div class='from-db'><a href="//<%= @hospital.website %>"><%= @hospital.website%></a></div>
+      <% end %>
     </div>
   </div>
+  <div class="review">
+    <div class= "overflow">
+      <h2 class="comment">Reviews</h2>
+      <% @hospital.comments.each do |comment| %>
+        User: <%= comment.user.first_name %>  <%= comment.user.last_name %>
+        <!--         Title: <%= comment.title %> <br> -->
+        <% (comment.avg_rating || 0).round(0).to_i.times do %>
+          <i class="fas fa-star"></i>
+        <% end %><br>
+        Comment: <%= comment.comment %><br>
+        <hr>
+      <% end %>
+    </div>
+    <%= render 'comments/new' %>
+  </div>
+</div>
+</div>
 </div>
 <!-- map -->
 <div
@@ -76,5 +88,4 @@
   data-markers="<%= @marker.to_json %>"
   data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
 ></div>
-
 <%= render 'shared/modal'%>
