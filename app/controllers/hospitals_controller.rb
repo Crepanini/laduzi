@@ -29,7 +29,7 @@ class HospitalsController < ApplicationController
     #   @hospitals = @hospitals.tagged_with(params[:tag])
     #   # raise
 
-    #distrcit
+    #district
     @district_hospitals = Hospital.where(city: params["city"])
     @district_hospitals.all.each do |hospital|
       @districts << hospital.district

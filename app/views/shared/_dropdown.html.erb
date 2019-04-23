@@ -8,16 +8,18 @@
     <% end %>
   </div>
 </div>
-<div class="btn-group">
-  <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    District
-  </button>
-  <div class="dropdown-menu">
-    <% @districts.uniq.each do |district| %>
-      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(district), anchor: "anchored")%>"><%= district %></a>
-    <% end %>
+<% if params["city"].present? %>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      District
+    </button>
+    <div class="dropdown-menu">
+      <% @districts.uniq.each do |district| %>
+        <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(district), anchor: "anchored")%>"><%= district %></a>
+      <% end %>
+    </div>
   </div>
-</div>
+<% end %>
 <div class="btn-group">
   <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Provider Type
@@ -48,11 +50,13 @@
     <% end %>
   </div>
 </div>
-<div>
-  <p class='search-loc'>Search Location:  <%= params[:city] %></p>
-</div>
-<div class="filtertags">
-  <% if params[:tag] %>
+<% if params[:city].present? %>
+  <div>
+    <p class='search-loc'>Search Location:  <%= params[:city] %></p>
+  </div>
+<% end %>
+<% if params[:tag] != [""] %>
+  <div class="filtertags">
     Filters:
     <% (params[:tag] || []).each do |tag| %>
       <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
