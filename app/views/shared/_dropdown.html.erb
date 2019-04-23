@@ -10,6 +10,16 @@
 </div>
 <div class="btn-group">
   <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    District
+  </button>
+  <div class="dropdown-menu">
+    <% @districts.uniq.each do |district| %>
+      <a class="dropdown-item" href="<%= hospitals_path(@hospital, city: params[:city], tag: tags(district), anchor: "anchored")%>"><%= district %></a>
+    <% end %>
+  </div>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle filterbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Provider Type
   </button>
   <div class="dropdown-menu">
