@@ -11,20 +11,14 @@ class HospitalsController < ApplicationController
 
     @hospitals = Hospital.all
 
-    if params[:tag] == [""] && !params["city"].empty?
+    if params[:tag] == [""] && params["city"].present?
       location_filter
+    elsif !params[:tag] && !params["city"].present?
+      @hospitals
     else
       location_filter
       @hospitals = @hospitals.tagged_with(params[:tag])
     end
-
-    # if params.key?("tag") && !params[:tag].empty?
-    #   raise
-
-    # else
-    #   raise
-    #   location_filter
-    # end
 
     # search bar
     if params[:query].present?
