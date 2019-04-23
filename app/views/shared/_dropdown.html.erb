@@ -56,11 +56,11 @@
   </div>
 <% end %>
 <% if params[:tag] != [""] %>
+  <% params[:tag].delete_at(0) if params[:tag][0] == "" %>
   <div class="filtertags">
     Filters:
-    <% params[:tag].delete_at(0) %>
     <% (params[:tag] || []).each do |tag| %>
-      <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag" %>
+      <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag"%>
     <% end %>
   <% end %>
 </div>

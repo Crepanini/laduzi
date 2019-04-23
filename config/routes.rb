@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   post 'pages/home'
 
   get '/tagged', to: "hospitals#tagged", as: :tagged
+  delete '/tagged', to: "hospitals#taggeddestroy", as: :tagged_destroy
+
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks', registrations: 'users/registrations' }
   root to: 'pages#home'
 
