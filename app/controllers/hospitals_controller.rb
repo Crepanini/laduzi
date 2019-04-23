@@ -97,9 +97,9 @@ class HospitalsController < ApplicationController
   #   print @specialties = temp.uniq.sort
   # end
 
-  def taggeddestroy
-    @hospital.find(params[:id]).type_list.remove(params[:tag])
-  end
+  # def taggeddestroy
+  #   @hospital.find(params[:id]).type_list.remove(params[:tag])
+  # end
 
   private
 
