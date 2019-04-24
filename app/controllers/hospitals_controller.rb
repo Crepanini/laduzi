@@ -3,19 +3,36 @@ class HospitalsController < ApplicationController
   before_action :set_hospital, only: [:show, :upsave]
 
   def index
-    @insurers = ["Allianz", "AXA PPP", "AXA ICBC", "AXA Tianping", "BUPA", "CIGNA", "Discovery Health", "Generali", "MSH", "NOW Health"]
+    @insurers = ["CIGNA", "MSH"]
+    # "Allianz", "AXA PPP", "AXA ICBC", "AXA Tianping", "BUPA"
     @provider_types = ["Private", "Public", "Dental", "Wellness Checkup"]
     @languages = ["Cn", "Eng", "Canto", "Fr", "Span", "Ru", "Jp", "Kr", "Ger", "Farsi", "Dutch", "Filipino"]
     @specialties = ["Acupuncture", "Cardiology", "Dental", "Dental Care", "Ear, Nose & Throat", "Endocrinology", "Gastroenterology", "General Medicine", "General Surgery", "Gynecology", "Haematology", "Infectious Disease", "Internal Medicine", "Kidney Disease", "Liver Disease", "Neurology", "Nuclear Medicine", "OB & GYN", "Ophthalmology", "Organ Transplants", "Orthopaedics", "Osteology", "Pediatrics", "Physical Checkup", "Pneumology", "Respiratory", "Rheumatology", "Sarcoidosis", "Sport Medicine", "Traditional Chinese Medicine", "TCM physiotherapy", "Tumors", "Urology"]
-
-
+    @districts = []
     @hospitals = Hospital.all
 
-    if params.key?("tag") and !params[:tag].empty?
+    unless (params[:tag] != [""] && params["city"].present?)
+      location_filter
+    end
+
+    if params[:tag] != [""] && params["city"].present?
       location_filter
       @hospitals = @hospitals.tagged_with(params[:tag])
-    else
-      location_filter
+    end
+
+
+    # @hospitals = @hospitals.tagged_with(params[:tag])
+    # elsif !params[:tag] && !params["city"].present?
+    #   @hospitals
+    # else
+    #   location_filter
+    #   @hospitals = @hospitals.tagged_with(params[:tag])
+    #   # raise
+
+    #district
+    @district_hospitals = Hospital.where(city: params["city"])
+    @district_hospitals.all.each do |hospital|
+      @districts << hospital.district
     end
 
     # search bar
@@ -78,6 +95,10 @@ class HospitalsController < ApplicationController
   #     end
   #   end
   #   print @specialties = temp.uniq.sort
+  # end
+
+  # def taggeddestroy
+  #   @hospital.find(params[:id]).type_list.remove(params[:tag])
   # end
 
   private

@@ -41,4 +41,7 @@ class CommentsController < ApplicationController
     params.require(:comment).permit(:title, :comment, :doctor_rating, :service_rating, :environment_rating, :price_rating)
   end
 
+  def location_filter
+    @hospitals = Hospital.where("city ILIKE ?", "%#{params[:city]}%")
+  end
 end
