@@ -1,5 +1,5 @@
 .full {
-  background-image: url(image-path("search.jpg"));
+  background-image: url(image-path("drone.jpg"));
   background-size: cover !important;
   height: 100%;
   height: calc(100vh - 100px);
@@ -9,13 +9,15 @@
 }
 
 .form-row {
-  padding: 20px 10px 10px 10px;
+  padding: 45px 45px;
   display: block;
   margin-top: 5%;
-  width: 600px;
-  transition: all .5s cubic-bezier(.4, .25, .8, .3);
-  background-color: rgba(32,103,184, 0.2);
-  border-radius: 10px;
+  width: 460px;
+  height: 323px;
+  transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
+  background-color: rgba(255, 255, 255, 0.67);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .laduzi {
@@ -46,11 +48,25 @@
 }
 
 .btn-lg {
-  margin: 0;
+  margin-top: 35px;
   padding-bottom: 5px;
   border-radius: 3px;
+  margin-left: 0;
 }
 
 .search {
   top: 0px;
+}
+
+
+.home-form {
+  color: #63696c;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.67);
+  background-clip: padding-box;
 }
