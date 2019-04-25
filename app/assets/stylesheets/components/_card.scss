@@ -2,7 +2,7 @@
   display: flex;
   height: 460px;
   width: 300px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
   background-size: cover !important;
   // background-position: center;
   color: gray;
@@ -12,7 +12,6 @@
 }
 
 .card-description {
-  margin-top: 15px;
   bottom: 10px;
   left: 10px;
   text-align: center;
@@ -80,6 +79,8 @@ hr {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .info-under-line {

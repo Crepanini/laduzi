@@ -1,17 +1,20 @@
 <div class="full">
   <div class="container">
+    <div id="time"></div>
     <div class='laduzi'> Laduzi</div>
     <div class="row">
       <form action='<%= hospitals_index_path %>' method='GET'>
         <div class="form-row">
           <div class="col">
-            <input type="text" class="form-control" placeholder="City" name="city">
+            <p class="home-form">City</p>
+            <input type="text" class="form-control" name="city">
           </div>
           <!--       <div class="col">
             <input type="text" class="form-control" placeholder="Specialty">
           </div> -->
           <div class="col">
-            <input type="text" class="form-control" placeholder="Health Insurer" name="tag[]">
+            <p class="home-form">Health Insurer</p>
+            <input type="text" class="form-control" name="tag[]">
           </div>
           <!-- <div class="col-auto">
             <div class="form-check mb-2">
@@ -22,7 +25,7 @@
             </div>
           </div> -->
           <div class="col-auto">
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Search Hospital</button>
           </div>
         </div>
       </form>
