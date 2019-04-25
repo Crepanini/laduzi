@@ -1,22 +1,25 @@
 <div class="full">
   <div class="container">
-    <div id="time"></div>
-    <div class='laduzi'> Laduzi</div>
     <div class="row">
+      <div class="col-auto">
+        <h2 class="home-tagline">Find a hospital in a matter of seconds
+          <div id="time"></div>
+        </h2>
+      </div>
       <form action='<%= hospitals_index_path %>' method='GET'>
-        <div class="form-row">
-          <div class="col">
-            <p class="home-form">City</p>
-            <input type="text" class="form-control" name="city">
-          </div>
-          <!--       <div class="col">
+        <!--    <div class="form-row"> -->
+        <div class="col-auto">
+          <p class="home-form">City</p>
+          <input type="text" class="form-control" name="city">
+        </div>
+        <!--       <div class="col">
             <input type="text" class="form-control" placeholder="Specialty">
           </div> -->
-          <div class="col">
-            <p class="home-form">Health Insurer</p>
-            <input type="text" class="form-control" name="tag[]">
-          </div>
-          <!-- <div class="col-auto">
+        <div class="col-auto">
+          <p class="home-form">Health Insurer</p>
+          <input type="text" class="form-control" name="tag[]">
+        </div>
+        <!-- <div class="col-auto">
             <div class="form-check mb-2">
               <input class="form-check-input" type="checkbox" id="autoSizingCheck">
               <label class="form-check-label" for="autoSizingCheck">
@@ -24,10 +27,10 @@
               </label>
             </div>
           </div> -->
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary btn-lg btn-block">Search Hospital</button>
-          </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Search Hospital</button>
         </div>
+        <!--    </div> -->
       </form>
     </div>
   </div>

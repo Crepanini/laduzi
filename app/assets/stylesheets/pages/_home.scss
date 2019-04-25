@@ -1,34 +1,57 @@
 .full {
-  background-image: url(image-path("banner.jpg"));
+  background-image: url(image-path("brick.jpg"));
   background-size: cover !important;
   height: 100%;
   height: calc(100vh - 100px);
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
 
 .form-row {
-  padding: 45px 45px;
-  display: block;
-  margin-top: 5%;
-  width: 460px;
-  height: 323px;
-  transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
-  background-color: rgba(255, 255, 255, 0.67);
-  border-radius: 5px;
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  // padding: 45px 45px;
+  // display: block;
+  // margin-top: 5%;
+  // width: 894px;
+  // height: 323px;
+  // transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
+  // border-radius: 5px;
+  // display: flex;
+  // align-items: center;
+    width: 894px;
+    transition: all 0.5s cubic-bezier(0.4, 0.25, 0.8, 0.3);
+    border-radius: 5px;
+    display: flex;
 }
 
 .laduzi {
+  // padding-top: 2%;
+  // margin-left: -5%;
+  // text-align: center;
+  // color: #e94058;
+  // font-size: 90px;
+  // font-weight: bold;
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   padding-top: 2%;
-  margin-left: -5%;
   text-align: center;
-  color: white;
-  font-style: italic;
+  color: #e94058;
   font-size: 90px;
   font-weight: bold;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.home-tagline {
+  text-align: center;
+  color: #63696c;
+  font-weight: 800;
+  font-size: 37px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#time {
+ color: #e94058;
 }
 
 .col {
@@ -52,6 +75,9 @@
   padding-bottom: 5px;
   border-radius: 3px;
   margin-left: 0;
+  background: #e94058;
+  border: none;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .search {
@@ -64,9 +90,32 @@
   margin: 0;
   font-size: 18px;
   font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .form-control {
-  background-color: rgba(255, 255, 255, 0.67);
   background-clip: padding-box;
+  background-color: white;
+  height: 48px;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  margin-bottom: 11px;
+  width: 100%;
+}
+
+.row {
+  padding: 48px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  // border: 1px solid #e94058;
+  border-radius: 10px;
+  background-color: rgba(255,255,255,0.3);
+}
+
+form {
+  width: 73%;
+}
+
+p.home-form {
+  margin-bottom: 3px;
 }
