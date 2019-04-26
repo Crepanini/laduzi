@@ -3,9 +3,9 @@
 
 .filterbutton {
   margin-bottom: 7px;
-  color: #215696;
+  color: $blue;
   background: white;
-  border: solid 1px #215696;
+  border: solid 1px $blue;
 }
 
 .filtertags {
@@ -20,3 +20,8 @@
 }
 
 
+.dropdown {
+  margin-top: 9px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgb(243, 244, 244);
+}

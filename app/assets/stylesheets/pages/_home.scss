@@ -36,7 +36,7 @@
   // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   padding-top: 2%;
   text-align: center;
-  color: #e94058;
+  color: $blue;
   font-size: 90px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
@@ -75,10 +75,15 @@
   padding-bottom: 5px;
   border-radius: 3px;
   margin-left: 0;
-  background: #e94058;
+  background: $blue;
   border: none;
   box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
 }
+
+.btn-lg:hover, .btn-lg:focus{
+  background: $blue !important;
+}
+
 
 .search {
   top: 0px;
@@ -119,3 +124,11 @@ form {
 p.home-form {
   margin-bottom: 3px;
 }
+
+
+input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {
+    background-color: whtie !important;
+    background-image: none !important;
+    color: rgb(0, 0, 0) !important;
+}
+
