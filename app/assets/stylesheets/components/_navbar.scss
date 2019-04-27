@@ -83,6 +83,10 @@
     color: $blue;
 }
 
+@media screen and (max-width:480px) {
+    .search { display:none }
+}
+
 // .form-control-search {
 //   padding-left: 32px;
 //   width: 356px;
@@ -140,4 +144,6 @@
 
 #signup {
   border: 1px solid $blue;
+  width: 9vh;
+  text-align: center;
 }
