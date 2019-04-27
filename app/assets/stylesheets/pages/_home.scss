@@ -245,8 +245,8 @@
 .home-tagline {
   margin-top: 20px;
   text-align: center;
-  color: rgb(60, 60, 60);
-  font-weight: 800;
+  color: rgb(50, 50, 50);
+  font-weight: 600;
   font-size: 37px;
   // text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
@@ -256,17 +256,17 @@
 }
 
 .home-form {
-  color: #4a4a4a;
+  color: rgb(50, 50, 50);
   margin: 0;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 300;
   // text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .form-control {
   background-clip: padding-box;
   background-color: white;
-  height: 48px;
+  height: 39px;
   // box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
   margin-bottom: 11px;
   width: 100%;
