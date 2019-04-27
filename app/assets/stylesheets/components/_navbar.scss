@@ -1,12 +1,11 @@
 
 .logo {
-  border-radius: 50%;
   width: 50px;
 }
 
 .navbar-lewagon {
   justify-content: space-between;
-  // background: white;
+  background: white;
 
 }
 .navbar-nav {
@@ -18,7 +17,7 @@
 }
 
 .navbar-lewagon .navbar-brand img {
-  width: 50px;
+  width: 145px;
 }
 
 #welcome {
@@ -84,6 +83,10 @@
     color: $blue;
 }
 
+@media screen and (max-width:480px) {
+    .search { display:none }
+}
+
 // .form-control-search {
 //   padding-left: 32px;
 //   width: 356px;
@@ -103,12 +106,12 @@
 // }
 
 .nav-link {
-  color:$gray;
+  color:$blue;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  color:$gray;
+  color:$blue;
 }
 
 .nav-link::before {
@@ -123,9 +126,9 @@
   transition: all ease-in-out 250ms;
 }
 
-.nav-link:hover::before {
-  width: 50%;
-}
+// .nav-link:hover::before {
+//   width: 50%;
+// }
 
 .line-nav {
   width: 100%;
@@ -137,4 +140,10 @@
   margin-bottom: 0;
   margin-top: 0;
   shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#signup {
+  border: 1px solid $blue;
+  width: 9vh;
+  text-align: center;
 }

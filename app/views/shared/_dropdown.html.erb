@@ -50,15 +50,14 @@
     <% end %>
   </div>
 </div>
-<% if params[:city].present? %>
-  <div>
+<div>
+  <% unless params[:city] == "" || params[:city].nil? %>
     <p class='search-loc'>Search Location:  <%= params[:city] %></p>
-  </div>
-<% end %>
-<% if params[:tag] != [""] %>
-  <% params[:tag].delete_at(0) if params[:tag][0] == "" %>
-  <div class="filtertags">
-    Filters:
+  <% end %>
+</div>
+<div class="filtertags">
+  <% if !params[:tag].nil? && params[:query] != "" %>
+    <% params[:tag].delete_at(0) if params[:tag][0] == "" %>
     <% (params[:tag] || []).each do |tag| %>
       <%= link_to tag, hospitals_path(@hospital, tag: tag), class: "tag"%>
     <% end %>

@@ -11,15 +11,12 @@ class HospitalsController < ApplicationController
     @districts = []
     @hospitals = Hospital.all
 
-    unless (params[:tag] != [""] && params["city"].present?)
+    if (params[:tag] == [""] && params["city"] != "")
       location_filter
-    end
-
-    if params[:tag] != [""] && params["city"].present?
+    elsif (params[:tag] != [""] && params["city"].present?) || (params[:tag] != [""] && params["city"] == "")
       location_filter
       @hospitals = @hospitals.tagged_with(params[:tag])
     end
-
 
     # @hospitals = @hospitals.tagged_with(params[:tag])
     # elsif !params[:tag] && !params["city"].present?
