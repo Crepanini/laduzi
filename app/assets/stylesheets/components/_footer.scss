@@ -25,3 +25,6 @@
   color: #D23333;
 }
 
+@media screen and (max-width:480px) {
+    .footer-links a { display:none }
+}
