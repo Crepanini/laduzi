@@ -11,6 +11,7 @@ IMAGE_URLS = JSON.parse(File.read("#{Rails.root}/lib/scripts/image_urls.json"))
 #     count += 1
 #     IO.copy_stream(download, "#{Rails.root}/app/assets/images/hospitals/#{hospital.name}_#{count}.jpg")
 #     # end
+
 #DOWNLOAD IMAGES
 # def url_exist?(url_string)
 #   puts "Attempting #{url_string}"
@@ -26,7 +27,6 @@ IMAGE_URLS = JSON.parse(File.read("#{Rails.root}/lib/scripts/image_urls.json"))
 #     ! %W(4 5).include?(res.code[0]) # Not from 4xx or 5xx families
 #   end
 
-# rescue
 # rescue Errno::ENOENT
 #   false #false if can't find the server
 # rescue URI::InvalidURIError
@@ -75,7 +75,6 @@ IMAGE_URLS = JSON.parse(File.read("#{Rails.root}/lib/scripts/image_urls.json"))
 #     puts hospital.name.parameterize.underscore
 
 #     Cloudinary::Uploader.upload("#{Rails.root}/app/assets/images/hospitals/#{file}", public_id: "#{hospital.name.parameterize.underscore}")
-#     # return cl_image_tag(hospital.id.to_s + ".jpg")
 #   end
 # end
 
