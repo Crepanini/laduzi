@@ -4,7 +4,7 @@
     <div class="hospital col-sm">
       <div class="description" >
         <div class="image-on-image">
-          <div class="hospital-img"><%= cl_image_tag((@hospital.name.parameterize.underscore + ".jpg"), :class => "hospital-img")%></div>
+          <div class="hospital-img"><%= cl_image_tag((@hospital.name.parameterize.underscore + ".jpg"), :class => "hospital-img", :default_image => "hospital_placeholder.png")%></div>
           <div class="taxi">
             <button type="link" data-toggle="modal" data-target="#exampleModalCenter" class='btn btn-primary'><i class="fas fa-taxi"></i> Taxi printout </button>
           </div>
