@@ -1,6 +1,6 @@
 <h1 class="name"><a class="clickable" href="<%= hospital_upsave_path(@hospital) %>"><i class="fas fa-heart <%= @saved ? 'red' : 'gray' %>"></i></a> <%= @hospital.name%> </h1>
-<div class="show-container>
-  <div class="show-row">
+<div class="show-container">
+  <div class="show-row" style="height: 50%;">
     <div class="hospital col-sm">
       <div class="d-flex">
         <div class="description" >
@@ -63,18 +63,16 @@
     </div>
     <div
   id="map"
-  style="width: 100%;
-  height: 100vh;"
+  style="width: 180vh;"
   data-markers="<%= @marker.to_json %>"
-  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-></div>
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+    </div>
   </div>
 </div>
-</div>
-</div>
+<hr class="show-line">
 <div class="review">
+  <h2 class="comment">Reviews</h2>
   <div class= "overflow">
-    <h2 class="comment">Reviews</h2>
     <% @hospital.comments.each do |comment| %>
       User: <%= comment.user.first_name %>  <%= comment.user.last_name %>
       <!--         Title: <%= comment.title %> <br> -->

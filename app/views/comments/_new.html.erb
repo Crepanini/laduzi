@@ -1,34 +1,36 @@
 <!-- comments/show.html.erb -->
-<div class="rating-comment">
-  <h2>Ratings</h2>
-  <!-- <input id="input-id" type="text" class="rating" data-size="lg" > -->
-  <%= form_for Comment.new, url: hospital_comments_path(@hospital) do |f|%>
-    <div class="ratings-container">
-      <table>
-        <tr>
-          <td class="left-column">Doctor</td>
-          <td><input id="doctor_rating" name="comment[doctor_rating]" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2" data-size="sm"></td>
-        </tr>
-        <tr>
-          <td class="left-column">Service</td>
-          <td><input id="service_rating" name="comment[service_rating]" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2" data-size="sm"></td>
-        </tr>
-        <tr>
-          <td class="left-column">Environment</td>
-          <td><input id="environment_rating" name="comment[environment_rating]" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2" data-size="sm"></td>
-        </tr>
-        <tr>
-          <td class="left-column">Price</td>
-          <td><input id="price_rating" name="comment[price_rating]" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2" data-size="sm"></td>
-        </tr>
-      </table>
-    </div>
-    <br>
-    <hr/>
-    <!-- <label for="comment_title">Title</label>
+<% if user_signed_in? %>
+  <div class="rating-comment">
+    <!-- <input id="input-id" type="text" class="rating" data-size="lg" > -->
+    <%= form_for Comment.new, url: hospital_comments_path(@hospital) do |f|%>
+      <div class="ratings-container">
+        <table>
+          <tr>
+            <td class="left-column">Doctor</td>
+            <td><input id="doctor_rating" name="comment[doctor_rating]" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2" data-size="sm"></td>
+          </tr>
+          <tr>
+            <td class="left-column">Service</td>
+            <td><input id="service_rating" name="comment[service_rating]" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2" data-size="sm"></td>
+          </tr>
+          <tr>
+            <td class="left-column">Environment</td>
+            <td><input id="environment_rating" name="comment[environment_rating]" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2" data-size="sm"></td>
+          </tr>
+          <tr>
+            <td class="left-column">Price</td>
+            <td><input id="price_rating" name="comment[price_rating]" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" value="2" data-size="sm"></td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <!-- <label for="comment_title">Title</label>
     <input id="comment_title" class="form-control" name="comment[title]" type="text"> -->
-    <label for="comment_comment">Comment</label>
-    <input id="comment_comment" class="form-control" name="comment[comment]" type="text">
-    <input class="btn btn-primary review-button" type="submit" value="Create comment">
-  <% end %>
-</div>
+      <div class="commentbox">
+        <label for="comment_comment">Comment</label>
+        <input id="comment_comment" class="form-control" name="comment[comment]" type="text">
+        <input class="btn btn-primary review-button" type="submit" value="Create comment">
+      </div>
+    <% end %>
+  </div>
+<% end %>
