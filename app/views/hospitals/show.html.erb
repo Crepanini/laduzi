@@ -10,12 +10,6 @@
               <button type="link" data-toggle="modal" data-target="#exampleModalCenter" class='btn btn-primary'><i class="fas fa-taxi"></i> Taxi printout </button>
             </div>
           </div>
-          <% if !@hospital.rating.nil? and @hospital.rating >= 1 %>
-            <div class="rating-description"> <strong>Hospital rating: </strong> <% (@hospital.rating || 0).round(0).to_i.times do%>
-                <i class="fas fa-star star"></i>
-              <% end %>
-            </div>
-          <% end %>
           <div class="tags">
             <% @hospital.tag_list.each do |tag| %>
               <div class="tag"><%= link_to tag, hospitals_path(@hospital, tag: tag) %></div>
@@ -72,15 +66,29 @@
 <hr class="show-line">
 <div class="review">
   <h2 class="comment">Reviews</h2>
+  <div class="overall-rating">
+    <% if !@hospital.rating.nil? and @hospital.rating >= 1 %>
+      <div class="overall-rating-with-number">
+        <div class="rating-description"> Overall rating: </div>
+        <div class="rating-number">
+          <%= @hospital.rating.round(1) %>
+        </div>
+      <% end %>
+    </div>
+  </div>
   <div class= "overflow">
     <% @hospital.comments.each do |comment| %>
-      User: <%= comment.user.first_name %>  <%= comment.user.last_name %>
-      <!--         Title: <%= comment.title %> <br> -->
+      <div class="d-flex align-items-center">
+        <i class="fas fa-poo-storm"></i>
+        <p class="user-name"><%= comment.user.first_name.capitalize %>  <%= comment.user.last_name.capitalize %></p>
+        <!--         Title: <%= comment.title %> <br> -->
+      </div>
       <% (comment.avg_rating || 0).round(0).to_i.times do %>
         <i class="fas fa-star"></i>
       <% end %><br>
-      Comment: <%= comment.comment %><br>
+      <%= comment.comment %><br>
       <hr>
+      <br>
     <% end %>
   </div>
   <%= render 'comments/new' %>
