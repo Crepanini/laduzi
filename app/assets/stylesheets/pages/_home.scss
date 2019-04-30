@@ -231,16 +231,7 @@
   top: 0px;
 }
 
-// .row {
-//   padding-top: 26px;
-//   background: rgba(255, 255, 255, 0);
-//   border-radius: 10px;
-//   box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-//   // border: 1px solid #e94058;
-//   border-radius: 10px;
-//   background-color: rgba(255, 255, 255, 0.5);
-//   width: 64%;
-// }
+
 
 .home-tagline {
   margin-top: 20px;
@@ -273,12 +264,21 @@
   // border: 1px solid #0c5d1a;
 }
 
-
-
-form {
-  width: 73%;
-}
-
 p.home-form {
   margin-bottom: 3px;
 }
+
+
+@media (max-width: 960px) {
+  nav ul     { display: none; }
+  nav select { display: inline-block; }
+}
+
+
+.home-row {
+  align-items: center;
+  justify-content: center;
+}
+
+// DO NOT CHANGE NAME FOR SESSION (SIGN UP & SIGN IN)
+

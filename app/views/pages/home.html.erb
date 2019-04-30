@@ -6,13 +6,13 @@
     <img src="https://images.pexels.com/photos/1084188/pexels-photo-1084188.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" height="42" width="42">
   </div>
   <div class="container">
-    <div class="row">
+    <div class="home-row">
       <div class="col-auto">
         <h2 class="home-tagline">Find a hospital in a matter of seconds
           <div id="time"></div>
         </h2>
       </div>
-      <form action='<%= hospitals_index_path %>' method='GET'>
+      <form action='<%= hospitals_index_path %>' method='GET' class="home-form">
         <!--    <div class="form-row"> -->
         <div class="col-auto">
           <p class="home-form">CITY</p>
@@ -23,9 +23,13 @@
           </div> -->
         <div class="col-auto">
           <p class="home-form">HEALTH INSURER</p>
-          <input type="text" class="form-control" name="tag[]">
-        </div>
-        <!-- <div class="col-auto">
+          <input list="health insurers" class="form-control" name="tag[]">
+          <datalist id="health insurers">
+            <option value="CIGNA">
+              <option value="MSH">
+              </datalist>
+            </div>
+            <!-- <div class="col-auto">
             <div class="form-check mb-2">
               <input class="form-check-input" type="checkbox" id="autoSizingCheck">
               <label class="form-check-label" for="autoSizingCheck">
@@ -33,11 +37,11 @@
               </label>
             </div>
           </div> -->
-        <div class="col-auto">
-          <button type="submit" class="btn btn-primary btn-lg btn-block">Search Hospital</button>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary btn-lg btn-block">Search Hospital</button>
+            </div>
+            <!--    </div> -->
+          </form>
         </div>
-        <!--    </div> -->
-      </form>
+      </div>
     </div>
-  </div>
-</div>

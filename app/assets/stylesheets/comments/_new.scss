@@ -1,15 +1,15 @@
 // _new.scss
 
 .left-column {
-  font-size: 18px;
-  width: 130px;
+  font-size: 17px;
+  width: 113px;
   font-weight: bold;
 }
 
 
 
-.star {
-
+.fa-star {
+  font-size: 18px;
 }
 
 .star:hover {
@@ -19,4 +19,8 @@
 
 .checked {
   color: orange;
+}
+
+.star {
+  margin-bottom: -8px;
 }
